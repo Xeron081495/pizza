@@ -1,0 +1,617 @@
+
+header#top{
+	width: 100%;
+	background: url("../img/header.jpg");
+	background-size: 100%;
+    background-repeat: no-repeat;
+	height: 700px;
+	float: left;
+	color: #EEE;
+	transition: background 1s linear;
+}
+
+header#top #logo-menu{
+	float: left;
+	clear: both;
+	width: 100%;
+	margin: 0;	
+	padding: 0 15%;
+	clear: both;
+	background: rgba(0, 0, 0, .8);
+}
+header#top #logo-menu  #logo{
+	margin: 1em 0;
+	float: left;
+	clear: left;
+	width: 16%;
+}
+header#top #logo-menu  #logo img{
+	width: 100%;
+	border-radius: 15px;
+	float: left;
+	clear: left;
+}
+header#top #logo-menu  #datos{
+	font-size: 1em;
+	margin: 2em 0 0;
+	float: right;
+	clear: right;
+	text-align: right;
+	width: 70%;
+}
+header#top #logo-menu  #datos .dato{
+	margin: 0 1em;
+}
+header#top #logo-menu  #datos .dato img{
+	margin: 0 0.2em;
+}
+header#top #logo-menu  nav#menu{
+	font-size: 1em;
+	margin: 2em 0 0 0;
+	float: right;
+	clear: right;
+	text-align: right;
+	width: 80%;
+}
+
+header#top #logo-menu  nav#menu a.opcion-menu{
+	font-size: 1em;
+	margin: 0em 1em;
+	float: right;
+	text-align: right;
+	text-decoration: none;
+	color: #FFF;
+	text-transform: uppercase;
+	padding: 0 0.5em;
+}
+header#top #logo-menu  nav#menu a.opcion-menu:hover{
+	background: rgba(203,040,033, .8);
+}
+header#top #logo-menu  a#menu-icono{
+	visibility: hidden;
+	width: 0;
+	height: 0;
+}
+	
+
+header#top h1#nombre{
+	font-family: 'Satisfy', Arial, Helvetica;
+	width: 100%;
+	text-align: center;
+	font-size: 3.2em;
+	margin-top: 2em;
+	float: left;
+	text-shadow: 2px 2px 2px #333;
+}
+header#top h1#slogan1{
+	font-family: 'Montserrat', Arial, Helvetica;
+	width: 100%;
+	text-align: center;
+	font-size: 4.2em;
+	text-transform: uppercase;
+	float: left;
+	text-shadow: 2px 2px 2px #333;
+}
+header#top h1#slogan2{
+	float: left;
+	font-family: 'Satisfy', Arial, Helvetica;
+	width: 100%;
+	text-align: center;
+	font-size: 3.2em;
+	text-shadow: 1px 1px 1px #333;
+}
+header#top #cuadros{
+	margin-top: 6em;
+	float: left;	
+	text-align: center;
+	width: 100%;
+}
+header#top .cuadros_celu{
+	display: none;
+}
+header#top .cuadros_pc{
+	display: inline-block;
+}
+header#top #cuadros .cuadro{
+	margin: 0 1em 0 0;
+	display: inline;	
+	background: #b89472;
+	padding: 0.8em;
+	padding-left: 2.6em;
+	font-weight: normal;
+	background-repeat: no-repeat;
+	background-position: 0.2em center;
+}
+header#top #cuadros .cuadro a{
+	text-decoration: none;
+	color: white;
+}
+header#top #cuadros .calendario{
+	background-image: url("../img/calendar.png");
+}
+header#top #cuadros .reloj{
+	background-image: url("../img/reloj.png");
+}
+header#top #cuadros .persona{
+	background-image: url("../img/persona.png");
+	background-position: 0.8em center;
+}
+header#top #cuadros .lugar{
+	background-image: url("../img/lugar.png");
+	background-position: 0.4em center;
+}
+
+
+section#menu-atajos{
+	width: 100%;
+	float: left;
+	text-align: center;
+	margin: 0;
+	margin-top: 1em;
+	clear: both;
+}
+
+
+section#menu-atajos .opcion{
+	width: 27%;
+	float: left;
+	text-align: center;
+	margin: 0em 3%;
+	background-color: #FEEEFE;
+	min-height: 2em;
+	position: relative;
+	border-radius: 0.5em;
+}
+section#menu-atajos .opcion .pizza{
+	background: url("../img/header4.jpg");
+}
+section#menu-atajos .opcion .milanesa{
+	background: url("../img/header6.jpg");
+}
+section#menu-atajos .opcion .empanada{
+		background: url("../img/header10.jpg");
+}
+section#menu-atajos .opcion .fondo{
+	filter: blur(1px);
+	border-radius: 0.5em;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-position: center center;
+	background-size: 100% auto;
+	background-repeat: no-repeat;
+}
+section#menu-atajos .opcion .texto{
+	position: relative;
+	z-index: 1000;
+	float: letf;
+	clear: both;
+	width: 100%;
+	height: 100%;
+	font-size: 1.8em;
+	padding: 0.5em;
+	font-family: 'Montserrat', Arial, Helvetica;
+	text-shadow: 1px 1px 1px #333;
+	color: #EEE;
+}
+
+
+section#nosotros{
+	width: 70%;
+	float: left;
+	text-align: center;
+	margin: 2em 0;
+}
+section#nosotros h3{
+	display: block-inline;	
+	background-image: url("../img/papel.png");
+	background-repeat: no-repeat;
+	background-position: center top;
+	padding-top: 1.5em;
+	padding-bottom: 0.5em;
+}
+
+section#nosotros h3 span h1{
+	font-size: 2.8em;	
+	font-family: 'Satisfy', Arial, Helvetica;
+	font-weight: normal;
+	color: #4C2882;
+}
+section#nosotros h3 span.sub{
+	font-size: 1em;	
+	font-family: 'Montserrat', Arial, Helvetica;
+	font-weight: normal;
+	text-transform: uppercase;
+}
+section#nosotros h4{
+	display: block-inline;	
+	background-color: #666;
+	padding-top: 0.5em;
+	padding-bottom: 0em;
+	width: 90%;
+	margin: 0 auto;
+	background-image: url("../img/fondo-gris.jpg");
+	font-family: 'Montserrat', Arial, Helvetica;
+	color: #DDD;
+	padding: 2em;
+	border-radius: 15px;
+	line-height: 2em;
+	font-weight: normal;
+	font-size: 0.9em;		
+}
+section#nosotros h4 p{
+	padding-bottom: 2em;	
+}
+section#nosotros h4 p.ultimo{
+	padding-bottom: 0em;	
+}
+
+section#oferta{
+	width: 25%;
+	float: right;	
+	text-align: center;
+	margin: 4.2em 0;
+	margin-right: 5%;
+}
+section#oferta img{
+	width: 100%;
+	float: left;	
+	text-align: center;
+	margin: 2em 0;
+}
+
+/*arreglos para la versión grande */
+@media only screen and (min-width: 1400px)  {
+	header#top #logo-menu  #datos{
+		margin: 2.5em 0 0;
+	}
+	header#top #logo-menu  nav#menu{
+		margin: 2.5em 0 0 0;
+	}	
+	section#nosotros h4{
+		font-size: 1em;	
+		width: 80%;	
+	}	
+	section#oferta{
+		width: 20%;
+		float: right;	
+		text-align: center;
+		margin: 4.2em 0;
+		margin-right: 10%;
+	}
+}
+
+/* Version para netbook*/
+@media only screen and (max-width: 1350px)  {
+	
+	header#top{
+		height: 500px;
+	}
+
+	header#top #logo-menu{
+		padding: 0 5%;
+	}
+	header#top #logo-menu  #logo{
+		width: 16%;
+	}
+	header#top #logo-menu  #logo img{
+		border-radius: 5px;
+	}
+	header#top #logo-menu  #datos{
+		font-size: 0.9em;
+		margin: 1em 0 0;
+	}
+	header#top #logo-menu  #datos .dato{
+		margin: 0 1em;
+	}
+	header#top #logo-menu  #datos .dato img{
+		margin: 0 0.2em;
+	}
+	header#top #logo-menu  nav#menu{
+		font-size: 0.9em;
+		margin: 2.4em 0 0 0;
+		float: right;
+		clear: right;
+		text-align: right;
+		width: 80%;
+	}
+	header#top #logo-menu  nav#menu a.opcion-menu{
+		font-size: 1em;
+		margin: 0em 0.5em;
+		float: right;
+		padding: 0 0.5em;
+	}
+	
+	
+	header#top h1#nombre{
+		font-size: 2.5em;
+		margin-top: 1em;
+	}
+	header#top h1#slogan1{
+		font-size: 3em;
+		text-transform: uppercase;
+		float: left;
+		text-shadow: 1px 1px 1px #333;
+	}
+	header#top h1#slogan2{
+		font-size: 2.5em;
+	}
+	header#top #cuadros{
+		margin-top: 5em;
+	}
+	header#top #cuadros .cuadro{
+		font-size: 1em;
+	}
+	header#top #cuadros .calendario{
+		background-image: url("../img/calendar.png");
+	}
+	header#top #cuadros .reloj{
+		background-image: url("../img/reloj.png");
+	}
+	header#top #cuadros .persona{
+		background-image: url("../img/persona.png");
+		background-position: 0.8em center;
+	}
+	header#top #cuadros .lugar{
+		background-image: url("../img/lugar.png");
+		background-position: 0.4em center;
+	}
+	
+	section#menu-atajos{
+	}
+
+
+	section#menu-atajos .opcion{
+		width: 30%;
+		float: left;
+		margin: 1em 1.5%;
+	}
+	section#menu-atajos .opcion .pizza{
+		background: url("../img/header4.jpg");
+	}
+	section#menu-atajos .opcion .milanesa{
+		background: url("../img/header6.jpg");
+	}
+	section#menu-atajos .opcion .empanada{
+		background: url("../img/header10.jpg");
+	}
+	section#menu-atajos .opcion .fondo{
+	}
+	section#menu-atajos .opcion .texto{
+		font-size: 1.5em;
+		padding: 0.5em;
+	}
+
+	
+	section#nosotros{
+		width: 100%;
+	}
+	section#nosotros h3{
+		display: block-inline;	
+		background-image: url("../img/papel.png");
+		background-repeat: no-repeat;
+		background-position: center top;
+		padding-top: 1.5em;
+		padding-bottom: 0.5em;
+	}
+
+	section#nosotros h3 span h1{
+		font-size: 2.8em;	
+		font-family: 'Satisfy', Arial, Helvetica;
+		font-weight: normal;
+		color: #4C2882;
+	}
+	section#nosotros h3 span.sub{
+		font-size: 1em;	
+		font-family: 'Montserrat', Arial, Helvetica;
+		font-weight: normal;
+		text-transform: uppercase;
+	}
+	section#nosotros h4{
+		display: block-inline;	
+		background-color: #666;
+		padding-top: 0.5em;
+		padding-bottom: 0em;
+		width: 90%;
+		margin: 0 auto;
+		background-image: url("../img/fondo-gris.jpg");
+		font-family: 'Montserrat', Arial, Helvetica;
+		color: #DDD;
+		padding: 2em;
+		border-radius: 15px;
+		line-height: 2em;
+		font-weight: normal;
+		font-size: 0.9em;		
+	}
+	section#nosotros h4 p{
+		padding-bottom: 2em;	
+	}
+	section#nosotros h4 p.ultimo{
+		padding-bottom: 0em;	
+	}
+
+	section#oferta{
+		width: 50%;
+		float: right;	
+		text-align: center;
+		margin: 1em 25%;
+	}
+	section#oferta img{
+		width: 100%;
+		float: left;	
+		text-align: center;
+		margin: 2em 0;
+	}
+	
+}
+/*celular */
+@media only screen and (max-width:800px) {
+	header#top{
+		width: 100%;
+		float: left;
+		clear: both;
+		overflow: hidden;
+		background-size: auto 100%;
+		background-position: center center;
+		background-repeat: repeat;
+		height: auto;
+	}
+
+	header#top #logo-menu{
+		float: left;
+		clear: both;
+		width: 100%;
+		margin: 0;	
+		padding: 0 1%;
+		clear: both;
+		background: rgba(0, 0, 0, .8);
+		overflow: hidden;
+	}
+	header#top #logo-menu  #logo{
+		margin: 1em 5%;
+		float: left;
+		clear: left;
+		width: 40%;
+	}
+	header#top #logo-menu  #logo img{
+		width: 100%;
+		border-radius: 15px;
+		float: left;
+		clear: left;
+	}
+	header#top #logo-menu  #datos{
+		display: none;
+	}
+	header#top #logo-menu  nav#menu{
+		display: none;
+	}
+	header#top #logo-menu  a#menu-icono{
+		background-image: url("../img/menu.png");
+		background-size: 100%;
+		background-repeat: no-repeat;
+		width: 20%;
+		margin-left: 15%;
+		margin-right: 5%;
+		margin-top: 1.5em;
+		float: right;
+		clear: right;
+		height: 6em;
+		visibility: visible;
+	}
+	
+	header#top h1#nombre{
+		margin-top: 0.5em;
+		font-size: 1.8em;
+	}
+	header#top h1#slogan1{
+		font-size: 1.7em;
+	}
+	header#top h1#slogan2{
+		font-size: 1.8em;
+	}
+	header#top #cuadros{
+		margin-top: 0.25em;
+		float: left;	
+		text-align: center;
+		width: 100%;
+	}
+	header#top .cuadros_celu{
+		display: inline-block;
+	}
+	header#top .cuadros_pc{
+		display: none;
+	}
+	header#top #cuadros .linea{
+		float: left;
+		clear: both;
+		width: 100%;
+	}	
+	header#top #cuadros .linea .cuadro{
+		float: left;
+		width: 45%;
+		margin: 0.6em 2.5%;
+		font-size: 1.1sem;
+		min-height: 4.2em;
+	}	
+	
+	
+	section#menu-atajos{
+	}
+
+
+	section#menu-atajos .opcion{
+		width: 90%;
+		float: left;
+		margin: 0 5%;
+		margin-top: 1em;
+	}
+		
+	section#menu-atajos .opcion .pizza{
+		background: url("../img/header4.jpg");
+	}
+	section#menu-atajos .opcion .milanesa{
+		background: url("../img/header6.jpg");
+	}
+	section#menu-atajos .opcion .empanada{
+		background: url("../img/header10.jpg");
+	}
+	section#menu-atajos .opcion .fondo{
+		background-position: center center;
+		background-size: 100% auto;
+		background-repeat: no-repeat;
+	}
+	section#menu-atajos .opcion .texto{
+		font-size: 1.5em;
+		padding: 0.5em;
+	}
+	
+	
+	section#nosotros{
+		width: 100%;
+		float: left;
+		text-align: center;
+		margin: 1em 0;
+	}
+	section#nosotros h3{
+		float: left;
+		background-size: 100%;
+		padding: 0.7em 10%;
+		padding-bottom: 0;
+		width: 95%;
+		margin: 0 2.5%;
+	}
+
+	section#nosotros h3 span h1{
+		font-size: 1.1em;	
+	}
+	section#nosotros h3 span.sub{
+		font-size: 0.6em;	
+	}
+	section#nosotros h4{
+		float: left;
+		background-size: 100%;
+		width: 95%;
+		margin: 0 2.5%;
+	}
+	section#nosotros h4 p{
+		padding-bottom: 2em;	
+	}
+	section#nosotros h4 p.ultimo{
+		padding-bottom: 0em;	
+	}
+
+	section#oferta{
+		width: 90%;
+		float: right;	
+		text-align: center;
+		margin: 0.5em 5%;
+	}
+	section#oferta img{
+		width: 100%;
+		float: left;	
+		text-align: center;
+		margin: 2em 0;
+	}
+}

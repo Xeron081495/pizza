@@ -1,0 +1,115 @@
+body{
+	background-image: url('../img/fondo-marron.jpg');	
+}
+section#menu{
+	width: 1300px;
+	margin: 0em auto;
+	display: block-inline;
+	padding: 0em 0;
+	overflow: hidden;
+	padding-bottom: 3em;
+}
+section#menu h1.titulo{
+	width: 100%;
+	font-size: 3em;
+	font-family: 'Montserrat', Arial, Helvetica;
+	font-size: normal;
+	text-transform: uppercase;
+	text-align: center;
+	padding-bottom: 0.5em;
+	float: left;
+	clear: both;
+	margin-top: 1em;
+}
+section#menu #info{
+	width: 100%;
+	font-size: 1em;
+	font-family: 'Montserrat', Arial, Helvetica;
+	font-size: normal;
+	text-align: center;
+	margin-bottom: 2em;
+	float: left;
+	clear: both;
+	margin-top: 0.7em;
+	text-align: center;
+}
+section#menu .col{
+	width: 33%;
+	padding: 0em 1em; 
+	float: left;
+}
+section#menu .col .variedad{
+	width: 100%;
+	padding: 0.5em 0;
+	float: left;
+	font-size: 1.1em;
+	clear: both;
+}
+section#menu .col .variedad .num{
+	width: 10%;
+	padding: 0em 0;
+	float: left;
+	font-weight: bold;
+}
+section#menu .col .variedad .pizza{
+	width: 90%;
+	padding: 0em 0;
+	float: left;
+}
+section#menu .col .variedad a{
+	text-decoration: none;
+	color: #111;
+}
+section#menu .col .variedad a:hover{
+	text-decoration: underline;
+	color: orange;
+}
+
+/*arreglos para la versi&oacute;n grande */
+@media only screen and (min-width: 1400px)  {
+}
+
+/* Version para netbook*/
+@media only screen and (max-width: 1350px)  {
+	section#menu{
+		width: 960px;
+	}
+	section#menu .col .variedad{
+		width: 100%;
+		padding: 0.5em 0;
+		float: left;
+		font-size: 1em;
+		clear: both;
+	}
+	section#menu .col .variedad a{
+		text-decoration: none;
+		color: #111;
+	}
+	section#menu .col .variedad a:hover{
+		text-decoration: underline;
+		color: orange;
+	}
+}
+/*celular */
+@media only screen and (max-width:800px) {	
+	section#menu{
+		width: 100%;
+	}
+	section#menu h1.titulo{
+		font-size: 2em;
+	}
+	section#menu .col{
+		width: 100%;
+		padding: 0em 1em; 
+		float: left;
+	}
+	section#menu .col .variedad a{
+		text-decoration: none;
+		color: #111;
+	}
+	section#menu .col .variedad a:hover{
+		text-decoration: underline;
+		color: orange;
+	}
+	
+}
