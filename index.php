@@ -12,7 +12,7 @@
 <link rel="shortcut icon" href="img/icono.png" />
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <link href="https://fonts.googleapis.com/css?family=Montserrat|Satisfy" rel="stylesheet">
-<meta name="description" content="Con recetas clásicas o una selecta variedad de gustos especiales en nuestras pizzas y empanadas, y con tentadoras promociones, hemos hecho que sea un placer comer en las casas bahienses." />
+<meta name="description" content="Con recetas clï¿½sicas o una selecta variedad de gustos especiales en nuestras pizzas y empanadas, y con tentadoras promociones, hemos hecho que sea un placer comer en las casas bahienses." />
 
 <!-- Cambia de imagenes slider -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -26,11 +26,11 @@ $(function() {
 });*/
 
 
-var imagenes = ['header4.jpg', 'header6.jpg', 'header.jpg', 'header5.jpg'];
+var imagenes = ['header4.jpg', 'header.jpg'];
 var texto1 = ['Pizza al cuadrado', 'La pizza m&aacute;s grande', 'de Bah&iacute;a Blanca'];
 var texto2 = ['Las m&aacute;s deliciosas', 'milanesas a la pizza', 'a partir del Lunes 4'];
 var texto3 = ['Las m&aacute;s deliciosas', 'milanesas a la pizza', 'est&aacute;n en pizza al cuadrado'];
-var texto = [texto1,texto3,texto1,texto3];
+var texto = [texto1,texto1,texto1,texto1];
 
 var actual = 0;
 var max = imagenes.length-1;
@@ -96,7 +96,7 @@ function avanzar(){
 	   <div id="cuadros" class="cuadros_celu">
 			<div class="linea">
 				<h3 class="cuadro calendario">Martes a Domingo</h3>
-				<h3 class="cuadro reloj">20:00hs a <br> 23:30hs</h3>
+				<h3 class="cuadro reloj">20hs a <br> 23hs</h3>
 			</div>
 			<div class="linea">
 				<h3 class="cuadro lugar">Sarmiento <br> al 906</h3>
@@ -105,31 +105,40 @@ function avanzar(){
 	   </div>
 	   <div id="cuadros" class="cuadros_pc">
 			<h3 class="cuadro calendario">Martes a Domingo</h3>
-			<h3 class="cuadro reloj">20:00hs a 23:30hs</h3>
+			<h3 class="cuadro reloj">20hs a 23hs</h3>
 			<h3 class="cuadro lugar" onclick="siguiente()">Sarmiento al 906</h3>
 			<h3 class="cuadro persona">Delivery al 452-6024</h3>
 	   </div>
     </header>
-	<section id="menu-atajos">
+	<!--<section id="menu-atajos" class="col-12">
 		<a href="menu.php#tag-pizza">
 		<div class="opcion">
 			<div class="pizza fondo"></div>
 			<div class="texto">Menu de Pizzas</div>
 		</div>
 		</a>
+
+		<div class="col-0 col-lg-0 col-xl-2 float-left">&nbsp;</div>
+
 		<a href="menu.php#tag-milanesa">
-		<div class="opcion">
+		<div class="opcion float-left col-12 col-lg-6 col-xl-4">
 			<div class="milanesa fondo"></div>
 			<div class="texto">Menu de Milanesas</div>
 		</div>
 		</a>
+		
+		<div class="col-0 col-lg-1 float-left">&nbsp;</div>
+
 		<a href="menu.php#tag-empanada">
-		<div class="opcion">
+		<div class="opcion float-left col-12 col-lg-5 col-xl-4">
 			<div class="empanada fondo"></div>
 			<div class="texto">Menu de Empanadas</div>
 		</div>
 		</a>
-	</section>
+
+		
+		<div class="col-0 col-lg-0 col-xl-2 float-left">&nbsp;</div>
+	</section>-->
 	
     <section id="nosotros">
 	  <h3>
@@ -167,4 +176,17 @@ function avanzar(){
 	</section>	
 	<?php include_once 'bloques/footer.php'; ?>
 </body>
+
+<!-- Latest compiled and minified CSS 
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+<!-- jQuery library 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<!-- Popper JS 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+
+<!-- Latest compiled JavaScript 
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>-->
+
 </html>

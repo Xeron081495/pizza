@@ -58,7 +58,7 @@ $(function() {
 			?>
 		</div>
 		
-		<h1 id="tag-milanesa" class="titulo"><img src="img/linea-curva.png"> Milanesas a la pizza <img src="img/linea-curva.png"></h1>
+		<!--<h1 id="tag-milanesa" class="titulo"><img src="img/linea-curva.png"> Milanesas a la pizza <img src="img/linea-curva.png"></h1>
 		<div id="info"><i>
 				Todas las variedades vienen con medio kilo de papa fritas. Preguntá por la opción de convertir tu milanesa en pizzanesa y sorpendete!
 				<br />
@@ -84,6 +84,7 @@ $(function() {
 		   <div class="variedad"><div class="num">13</div><div class="pizza"></div>Muzza y Champignones a la provenzal</div>
 		   <div class="variedad"><div class="num">14</div><div class="pizza"></div>Muzza, Cebolla de Verdeo y Ajo</div>
 		</div>
+		-->
 		
 		<h1 id="tag-empanada" class="titulo"><img src="img/linea-curva.png"> Empanadas <img src="img/linea-curva.png"></h1>
 		<div class="col">

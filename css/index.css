@@ -143,20 +143,16 @@ header#top #cuadros .lugar{
 
 
 section#menu-atajos{
-	width: 100%;
 	float: left;
 	text-align: center;
-	margin: 0;
 	margin-top: 1em;
 	clear: both;
 }
 
 
 section#menu-atajos .opcion{
-	width: 27%;
 	float: left;
 	text-align: center;
-	margin: 0em 3%;
 	background-color: #FEEEFE;
 	min-height: 2em;
 	position: relative;
@@ -358,33 +354,7 @@ section#oferta img{
 		background-image: url("../img/lugar.png");
 		background-position: 0.4em center;
 	}
-	
-	section#menu-atajos{
-	}
-
-
-	section#menu-atajos .opcion{
-		width: 30%;
-		float: left;
-		margin: 1em 1.5%;
-	}
-	section#menu-atajos .opcion .pizza{
-		background: url("../img/header4.jpg");
-	}
-	section#menu-atajos .opcion .milanesa{
-		background: url("../img/header6.jpg");
-	}
-	section#menu-atajos .opcion .empanada{
-		background: url("../img/header10.jpg");
-	}
-	section#menu-atajos .opcion .fondo{
-	}
-	section#menu-atajos .opcion .texto{
-		font-size: 1.5em;
-		padding: 0.5em;
-	}
-
-	
+		
 	section#nosotros{
 		width: 100%;
 	}

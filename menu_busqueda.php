@@ -72,7 +72,7 @@ $(function() {
 		</div>
 		
 		
-		<h1 class="titulo"><img src="img/linea-curva.png"> Milanesas a la pizza <img src="img/linea-curva.png"></h1>
+		<!--<h1 class="titulo"><img src="img/linea-curva.png"> Milanesas a la pizza <img src="img/linea-curva.png"></h1>
 		<div class="col">
 		   <div class="variedad"><div class="num">1</div><div class="pizza"></div>Simple</div>
 		   <div class="variedad"><div class="num">2</div><div class="pizza"></div>Muzza y cantimpalo</div>
@@ -92,7 +92,7 @@ $(function() {
 		   <div class="variedad"><div class="num">12</div><div class="pizza"></div>Muzza, Roquefort y Cebolla</div>
 		   <div class="variedad"><div class="num">13</div><div class="pizza"></div>Muzza y Champignones a la provenzal</div>
 		   <div class="variedad"><div class="num">14</div><div class="pizza"></div>Muzza, Cebolla de Verdeo y Ajo</div>
-		</div>
+		</div>-->
 		
 		<h1 class="titulo"><img src="img/linea-curva.png"> Empanadas <img src="img/linea-curva.png"></h1>
 		<div class="col">
