@@ -2,7 +2,7 @@
 <!DOCTYPE HTML> 
 <html> 
 <head>
-<title><?php echo $lugar; ?> | Pizza al cuadrado, Pizzas y Empanadas - Bahía Blanca</title>
+<title><?php echo $lugar; ?> | Pizza al cuadrado, Pizzas y Empanadas - Bahï¿½a Blanca</title>
 <meta charset="UTF-8" />
 <link rel="stylesheet" href="css/global.css" />
 <link rel="stylesheet" href="css/footer.css" />
@@ -10,7 +10,7 @@
 <link rel="shortcut icon" href="img/icono.png" />
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <link href="https://fonts.googleapis.com/css?family=Montserrat|Satisfy" rel="stylesheet">
-<meta name="description" content="Con recetas clásicas o una selecta variedad de gustos especiales en nuestras pizzas y empanadas, y con tentadoras promociones, hemos hecho que sea un placer comer en las casas bahienses." />
+<meta name="description" content="Con recetas clï¿½sicas o una selecta variedad de gustos especiales en nuestras pizzas y empanadas, y con tentadoras promociones, hemos hecho que sea un placer comer en las casas bahienses." />
 <script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.4.3/jquery.min.js'></script> 
 <script type="text/javascript">
 $(function() {
@@ -25,6 +25,15 @@ $(function() {
 	<?php include_once 'bloques/header.php'; ?>
 	<?php 
 		$arreglo = array(
+		'<iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2F1425058161135210%2Fposts%2F2094585820849104%2F&width=500&show_text=false&height=498&appId" width="500" height="498" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>',	
+		'<iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fpizzaalcuadrado%2Fposts%2F1595980414042983%3A0&width=500&show_text=false&height=375&appId" width="500" height="375" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>',
+		'<iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fpizzaalcuadrado%2Fposts%2F1600869526887405%3A0&width=500&show_text=false&height=318&appId" width="500" height="318" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>',	
+		'<iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fpizzaalcuadrado%2Fposts%2F1597728747201483%3A0&width=500&show_text=false&height=375&appId" width="500" height="375" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>',
+		'<iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fpizzaalcuadrado%2Fposts%2F1600878130219878%3A0&width=500&show_text=false&height=498&appId" width="500" height="498" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>',
+		'<iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fpizzaalcuadrado%2Fposts%2F1593500230957668%3A0&width=500&show_text=false&height=375&appId" width="500" height="375" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>',
+		'<iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fpizzaalcuadrado%2Fposts%2F1619137951727229%3A0&width=500&show_text=false&height=498&appId" width="500" height="498" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>',
+		'<iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2F1425058161135210%2Fposts%2F2063556253952061&width=500&show_text=false&height=498&appId" width="500" height="498" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>',
+		'<iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fpizzaalcuadrado%2Fposts%2F1591260097848348%3A0&width=500&show_text=false&height=498&appId" width="500" height="498" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>'/*					
 		'<iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fpizzaalcuadrado%2Fposts%2F1634937370147287%3A0&width=500" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>',
 		'<iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fpizzaalcuadrado%2Fposts%2F1619137951727229%3A0&width=500" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>',
 		'<iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fpizzaalcuadrado%2Fposts%2F1619137411727283%3A0&width=500" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>',
@@ -36,7 +45,7 @@ $(function() {
 		'<iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fpizzaalcuadrado%2Fposts%2F1595980414042983%3A0&width=500" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>',
 		'<iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fpizzaalcuadrado%2Fposts%2F1593500230957668%3A0&width=500" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>',
 		'<iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fpizzaalcuadrado%2Fposts%2F1591260097848348%3A0&width=500" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>',	
-		'<iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fpizzaalcuadrado%2Fposts%2F1787729238201432%3A0&width=500" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>',		
+		'<iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fpizzaalcuadrado%2Fposts%2F1787729238201432%3A0&width=500" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>',*/		
 		);	
 		shuffle($arreglo); 
 	?>
