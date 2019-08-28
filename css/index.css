@@ -82,6 +82,7 @@ header#top h1#nombre{
 	margin-top: 2em;
 	float: left;
 	text-shadow: 2px 2px 2px #333;
+	font-weight: bold;
 }
 header#top h1#slogan1{
 	font-family: 'Montserrat', Arial, Helvetica;
@@ -91,6 +92,7 @@ header#top h1#slogan1{
 	text-transform: uppercase;
 	float: left;
 	text-shadow: 2px 2px 2px #333;
+	font-weight: bold;
 }
 header#top h1#slogan2{
 	float: left;
@@ -99,6 +101,7 @@ header#top h1#slogan2{
 	text-align: center;
 	font-size: 3.2em;
 	text-shadow: 1px 1px 1px #333;
+	font-weight: bold;
 }
 header#top #cuadros{
 	margin-top: 6em;
@@ -117,28 +120,14 @@ header#top #cuadros .cuadro{
 	display: inline;	
 	background: #b89472;
 	padding: 0.8em;
-	padding-left: 2.6em;
 	font-weight: normal;
 	background-repeat: no-repeat;
 	background-position: 0.2em center;
+	font-size: 1.4em; 
 }
 header#top #cuadros .cuadro a{
 	text-decoration: none;
 	color: white;
-}
-header#top #cuadros .calendario{
-	background-image: url("../img/calendar.png");
-}
-header#top #cuadros .reloj{
-	background-image: url("../img/reloj.png");
-}
-header#top #cuadros .persona{
-	background-image: url("../img/persona.png");
-	background-position: 0.8em center;
-}
-header#top #cuadros .lugar{
-	background-image: url("../img/lugar.png");
-	background-position: 0.4em center;
 }
 
 
@@ -205,18 +194,18 @@ section#nosotros h3{
 	background-image: url("../img/papel.png");
 	background-repeat: no-repeat;
 	background-position: center top;
-	padding-top: 1.5em;
-	padding-bottom: 0.5em;
+	padding-top: 0.7em;
+	padding-bottom: 0em;
 }
 
 section#nosotros h3 span h1{
-	font-size: 2.8em;	
+	font-size: 2em;	
 	font-family: 'Satisfy', Arial, Helvetica;
 	font-weight: normal;
 	color: #4C2882;
 }
 section#nosotros h3 span.sub{
-	font-size: 1em;	
+	font-size: 0.6em;	
 	font-family: 'Montserrat', Arial, Helvetica;
 	font-weight: normal;
 	text-transform: uppercase;
@@ -340,20 +329,6 @@ section#oferta img{
 	header#top #cuadros .cuadro{
 		font-size: 1em;
 	}
-	header#top #cuadros .calendario{
-		background-image: url("../img/calendar.png");
-	}
-	header#top #cuadros .reloj{
-		background-image: url("../img/reloj.png");
-	}
-	header#top #cuadros .persona{
-		background-image: url("../img/persona.png");
-		background-position: 0.8em center;
-	}
-	header#top #cuadros .lugar{
-		background-image: url("../img/lugar.png");
-		background-position: 0.4em center;
-	}
 		
 	section#nosotros{
 		width: 100%;
@@ -363,18 +338,14 @@ section#oferta img{
 		background-image: url("../img/papel.png");
 		background-repeat: no-repeat;
 		background-position: center top;
-		padding-top: 1.5em;
-		padding-bottom: 0.5em;
 	}
 
 	section#nosotros h3 span h1{
-		font-size: 2.8em;	
 		font-family: 'Satisfy', Arial, Helvetica;
 		font-weight: normal;
 		color: #4C2882;
 	}
 	section#nosotros h3 span.sub{
-		font-size: 1em;	
 		font-family: 'Montserrat', Arial, Helvetica;
 		font-weight: normal;
 		text-transform: uppercase;

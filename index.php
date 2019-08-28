@@ -5,9 +5,6 @@
 <head>
 <title>Pizza al cuadrado, Pizzas y Empanadas - Bah&iacute;a Blanca</title>
 <meta charset="UTF-8" />
-<link rel="stylesheet" href="css/global.css" />
-<link rel="stylesheet" href="css/footer.css" />
-<link rel="stylesheet" href="css/index.css" />
 <meta name="theme-color" content="orange">
 <link rel="shortcut icon" href="img/icono.png" />
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -34,8 +31,18 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
 
 <!-- Cambia de imagenes slider -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://kit.fontawesome.com/591d68fa75.js"></script>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
  
+<link rel="stylesheet" href="css/global.css" />
+<link rel="stylesheet" href="css/footer.css" />
+<link rel="stylesheet" href="css/index.css" />
+
+
 <script type="text/javascript">
 
 /*
@@ -100,9 +107,9 @@ function avanzar(){
 				<span class="dato">Encontranos en <strong>Sarmiento 906</strong></span>
 				<span class="dato">Delivery al (0291) <strong>4526-024</strong></span>
 				<span class="dato">
-					<a href="https://www.facebook.com/pizzaalcuadrado" target="_blanck"><img src="img/facebook.jpg" /></a>
-					<!--<a href="https://www.facebook.com/pizzaalcuadrado" target="_blanck"><img src="img/twitter.jpg" /></a>-->
-					<a href="http://instagram.com/pizaalcuadrado" target="_blanck"><img src="img/instagram.jpg" /></a>
+					<a href="https://www.facebook.com/pizzaalcuadrado" target="_blanck"><i class="fab fa-facebook-square ml-2"></i></a>
+					<a href="http://instagram.com/pizaalcuadrado" target="_blanck"><i class="fab fa-instagram ml-2"></i></a>
+					<a href="https://api.whatsapp.com/send?phone=5492914400810" target="_blanck"><i class="fab fa-whatsapp ml-2"></i></a>
 				<span>
 			</div>
 			<nav id="menu">
@@ -118,19 +125,25 @@ function avanzar(){
 	   <h1 id="slogan2">de Bah&iacute;a Blanca</h1>
 	   <div id="cuadros" class="cuadros_celu">
 			<div class="linea">
-				<h3 class="cuadro calendario">Martes a Domingo</h3>
-				<h3 class="cuadro reloj">20hs a <br> 23hs</h3>
+				<h3 class="cuadro calendario"><i class="fas fa-calendar-alt mr-2"></i> Martes a Domingo</h3>
+				<h3 class="cuadro reloj"><i class="far fa-clock mr-2"></i>20hs a <br> 23hs</h3>
 			</div>
 			<div class="linea">
-				<h3 class="cuadro lugar">Sarmiento <br> al 906</h3>
-				<h3 class="cuadro persona">Delivery al <br> <a href="tel:02914526024">452-6024</a></h3>
+				<h3 class="cuadro lugar"><i class="fas fa-map-marked-alt mr-2"></i>Sarmiento <br> al 906</h3>
+				<h3 class="cuadro persona">
+					<i class="fas fa-phone mr-2"></i><a href="tel:02914526024">452-6024</a><br>	<br>					
+					<a href="https://api.whatsapp.com/send?phone=5492914400810" target="_blanck">
+						<i class="fab fa-whatsapp mr-2"></i> 2914400810
+					</a>
+				</h3>
 			</div>
 	   </div>
 	   <div id="cuadros" class="cuadros_pc">
-			<h3 class="cuadro calendario">Martes a Domingo</h3>
-			<h3 class="cuadro reloj">20hs a 23hs</h3>
-			<h3 class="cuadro lugar" onclick="siguiente()">Sarmiento al 906</h3>
-			<h3 class="cuadro persona">Delivery al 452-6024</h3>
+			<h3 class="cuadro calendario"><i class="fas fa-calendar-alt mr-2"></i> Martes a Domingo</h3>
+			<h3 class="cuadro reloj"><i class="far fa-clock mr-2"></i>20hs a 23hs</h3>
+			<h3 class="cuadro lugar" onclick="siguiente()"><i class="fas fa-map-marked-alt mr-2"></i>Sarmiento al 906</h3>
+			<h3 class="cuadro persona"><i class="fas fa-phone mr-2"></i> 452-6024</h3>
+			<h3 class="cuadro persona"><i class="fab fa-whatsapp mr-2"></i> 291-4400810</h3>
 	   </div>
     </header>
 	<!--<section id="menu-atajos" class="col-12">
@@ -164,7 +177,7 @@ function avanzar(){
 	</section>-->
 	
     <section id="nosotros">
-	  <h3>
+	  <h3 class="m-0 p-0 pt-4">
 		<span>
 			<h1>Pizzas de 43cm por 43cm</h1>
 		</span>
