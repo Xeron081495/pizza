@@ -21,6 +21,7 @@ header#top #logo-menu{
 	height: 150px;
 	overflow: hidden;
 	position: fixed;
+	z-index: 10;
 }
 header#top #logo-menu  #logo{
 	margin: 1em 0;
@@ -120,13 +121,14 @@ header#top .cuadros_pc{
 }
 header#top #cuadros .cuadro{
 	margin: 0 1em 0 0;
-	display: inline;	
+	display: inline-block;
 	background: #b89472;
 	padding: 0.8em;
 	font-weight: normal;
 	background-repeat: no-repeat;
 	background-position: 0.2em center;
 	font-size: 1.4em; 
+	margin-bottom: 10px;
 }
 header#top #cuadros .cuadro a{
 	text-decoration: none;
@@ -137,10 +139,12 @@ header#top #cuadros .cuadro a{
 section#menu-atajos{
 	float: left;
 	text-align: center;
-	margin-top: 1em;
+	padding-top: 16px;
 	clear: both;
 	z-index: inherit;
 	width: 100%;
+	background-image: url('../img/fondo-marron.jpg');	
+	border-bottom: solid rgba(211, 211, 211, 0.719) 1px;
 }
 
 
@@ -152,6 +156,7 @@ section#menu-atajos .opcion{
 	border-radius: 0.5em;
 	width: 600px;
 	max-width: 100%;
+	margin-bottom: 16px;
 }
 section#menu-atajos .opcion .pizza{
 	background: url("../img/header4.jpg");
@@ -174,6 +179,9 @@ section#menu-atajos .opcion .fondo{
 	background-size: 100% auto;
 	background-repeat: no-repeat;
 }
+section#menu-atajos .opcion .fondo:hover{
+	background-size: 110% auto;
+}
 section#menu-atajos .opcion .texto{
 	position: relative;
 	z-index: 1000;
@@ -181,17 +189,18 @@ section#menu-atajos .opcion .texto{
 	clear: both;
 	width: 100%;
 	height: 100%;
-	font-size: 1.8em;
+	font-size: 30px;
 	padding: 0.5em;
 	font-family: 'Montserrat', Arial, Helvetica;
 	text-shadow: 1px 1px 1px #333;
 	color: #EEE;
+	text-transform: uppercase;
 	font-weight: 400;
 }
 
 
 section#nosotros{
-	width: 70%;
+	width: 100%;
 	float: left;
 	text-align: center;
 	margin: 2em 0;
@@ -231,10 +240,11 @@ section#nosotros h4{
 	border-radius: 15px;
 	line-height: 2em;
 	font-weight: normal;
-	font-size: 0.9em;		
+	font-size: 18px;		
 }
 section#nosotros h4 p{
-	padding-bottom: 2em;	
+	padding-bottom: 2em;
+		
 }
 section#nosotros h4 p.ultimo{
 	padding-bottom: 0em;	
@@ -259,11 +269,23 @@ section#oferta img{
 }
 
 /* Version para netbook*/
-@media only screen and (max-width: 1200px)  {
+@media only screen and (max-width: 1270px)  {
 	
-header#top #logo-menu  nav#menu a.opcion-menu{
-	margin: 0em 0.5em;
-}	
+	header#top #logo-menu  nav#menu a.opcion-menu{
+		margin: 0em 0.5em;
+	}
+	header#top #logo-menu  #datos{	
+		margin: 25px 0 0;
+		width: 71%;
+	}	
+	header#top #logo-menu  nav#menu{
+		width: 70%;
+	}
+	header#top #logo-menu  nav#menu a.opcion-menu{
+		font-size: 1em;
+		margin: 0em 5px;
+		padding: 0 0.5em;
+	}
 }
 /*celular */
 @media only screen and (max-width: 960px) {
@@ -419,6 +441,12 @@ header#top #logo-menu  nav#menu a.opcion-menu{
 	
 	header#top h1#slogan1{
 		font-size: 28px;
+	}
+	header#top #cuadros .cuadro{
+		padding: 10px;
+		font-size: 13px;
+		margin-bottom: 10px;
+		display: inline-block;
 	}
 
 

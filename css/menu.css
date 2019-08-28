@@ -2,7 +2,8 @@ body{
 	background-image: url('../img/fondo-marron.jpg');	
 }
 section#menu{
-	width: 1300px;
+	width: 100%;
+	max-width: 1300px;
 	margin: 0em auto;
 	display: block-inline;
 	padding: 0em 0;
@@ -11,31 +12,32 @@ section#menu{
 }
 section#menu h1.titulo{
 	width: 100%;
-	font-size: 3em;
+	font-size: 55px;
 	font-family: 'Montserrat', Arial, Helvetica;
 	font-size: normal;
 	text-transform: uppercase;
 	text-align: center;
-	padding-bottom: 0.5em;
+	padding-bottom: 20px;
 	float: left;
 	clear: both;
 	margin-top: 1em;
+	font-weight: bold;
 }
 section#menu #info{
 	width: 100%;
-	font-size: 1em;
+	font-size: 18px;
 	font-family: 'Montserrat', Arial, Helvetica;
 	font-size: normal;
 	text-align: center;
-	margin-bottom: 2em;
+	margin-bottom: 25px;
 	float: left;
 	clear: both;
-	margin-top: 0.7em;
+	margin-top: 0;
 	text-align: center;
 }
 section#menu .col{
 	width: 33%;
-	padding: 0em 1em; 
+	padding: 1em 1em; 
 	float: left;
 }
 section#menu .col .variedad{
@@ -72,7 +74,6 @@ section#menu .col .variedad a:hover{
 /* Version para netbook*/
 @media only screen and (max-width: 1350px)  {
 	section#menu{
-		width: 960px;
 	}
 	section#menu .col .variedad{
 		width: 100%;

@@ -105,7 +105,7 @@ function avanzar(){
 			<div id="logo"><a href="./"><img src="img/logo.png" /></a></div>
 			<div id="datos">
 				<span class="dato"><span class="d-none d-xl-inline-block mr-2">Encontranos en </span><strong>Sarmiento 906</strong></span>
-				<span class="dato">Delivery al (0291) <strong>4526-024</strong></span>
+				<span class="dato"><span class="d-none d-xl-inline-block mr-2">Delivery al</span> (0291) <strong>4526-024</strong></span>
 				<span class="dato">
 					<a href="https://www.facebook.com/pizzaalcuadrado" target="_blanck"><i class="fab fa-facebook-square ml-2"></i></a>
 					<a href="http://instagram.com/pizaalcuadrado" target="_blanck"><i class="fab fa-instagram ml-2"></i></a>
@@ -115,8 +115,8 @@ function avanzar(){
 			<nav id="menu">
 				<a class="opcion-menu" href="contacto.php">Contacto</a>
 				<a class="opcion-menu" href="galeria.php">Galer&iacute;a</a>
-				<a class="opcion-menu" href="faq.php">Preguntas Frecuentes</a>
-				<a class="opcion-menu" href="menu.php">Men&uacute;</a>
+				<a class="opcion-menu" href="faq.php">Preguntas <span class="d-none d-xl-inline-block mr-2">Frecuentes</span></a>
+				<a class="opcion-menu" href="menu.php">Nuestras pizzas</a>
 			</nav>
 			<a href="#menu-celu" id="menu-icono"><i class="fas fa-bars"></i></a>
 	   </div>
@@ -146,23 +146,30 @@ function avanzar(){
 				<i class="fas fa-phone mr-2"></i> 
 				452-6024
 			</h3>
-			<h3 class="cuadro persona d-md-none">
+			<h3 class="cuadro persona d-sm-none">
 				<a href="http://instagram.com/pizaalcuadrado" target="_blanck"><i class="fab fa-instagram"></i></a>
 			</h3>
 			<h3 class="cuadro persona">
 				<i class="fab fa-whatsapp mr-2"></i>
 				<a href="https://api.whatsapp.com/send?phone=5492914400810" target="_blanck">Pedí por Whatsapp</a>
 			</h3>
-			<h3 class="cuadro persona d-md-none">
+			<h3 class="cuadro persona d-sm-none">
 				<a href="https://www.facebook.com/pizzaalcuadrado" target="_blanck"><i class="fab fa-facebook-square"></i></a>
 			</h3>
 	   </div>
     </header>
 	<section id="menu-atajos" class="col-12">
-		<a href="menu.php#tag-pizza">
-		<div class="opcion">
+		<a href="menu.php?desde_inicio#tag-pizza">
+		<div class="opcion mr-2">
 			<div class="pizza fondo"></div>
 			<div class="texto">Nuestras Pizzas</div>
+		</div>
+		</a>
+
+		<a href="faq.php">
+		<div class="opcion">
+			<div class="milanesa fondo"></div>
+			<div class="texto">¿Son las más grandes?</div>
 		</div>
 		</a>
 
@@ -189,37 +196,39 @@ function avanzar(){
 	</section>
 	
     <section id="nosotros">
-	  <h3 class="m-0 p-0 pt-4">
-		<span>
-			<h1>Pizzas de 43cm por 43cm</h1>
-		</span>
-		<span class="sub">Para <strong>4 o 5 personas</strong> con 4 gustos</span>			
-	  </h3>      
-	  <h4>
-	    <p>
-		Con un encanto especial, nos destaca la incomparable calidad de nuestros productos. 
-		Logramos conjugar armoniosamente el gran y extravagante tama&ntilde;o de nuestras pizzas 
-		junto a una variedad de sabores innovadores. Es ideal para disfrutar inolvidables 
-		momentos con amigos, en pareja o en familia, sorprendi&eacute;ndolos con una nueva manera 
-		de pedir una pizza y dejando de lado la forma tradicional.
-		</p>
-	    <p>
-		Nuestras pizzas, empanadas y milanesas, elaboradas con la materia prima de mejor calidad, llegan 
-		a ser, hoy en d&iacute;a, una de las m&aacute;s exquisitas de la ciudad bahiense. Con recetas cl&aacute;sicas
-		o una selecta variedad de gustos especiales en nuestras pizzas y empanadas, y con 
-		tentadoras promociones, hemos hecho que sea un placer comer en casa.
-		</p>
-	    <p class="ultimo">
-		&#191;Est&aacute;s c&oacute;modo en tu casa?, &#191;Se te complica acercarte a Sarmiento 906? Nosotros tenemos 
-		la soluci&oacute;n: &#161;ENTREGAMOS PEDIDOS POR MEDIO DE NUESTRO DELIVERY!, el cual se encuentra
-		disponible para gran parte de Bah&iacute;a Blanca. Recomendamos en &eacute;pocas de bajas temperaturas 
-		esperar la pizza con el horno precalentado e introducirla 3/4 minutos, para disfrutar de 
-		su m&aacute;ximo sabor. Antes de llamar al (0291) 4526024 para hacer tu pedido, consulta la 
-		secci&oacute;n preguntas frecuentes, y enterate como encargar nuestros productos.
-		</p>
-	  </h4>
+		<div class="mx-auto col-12 col-sm-10 col-xl-9 p-0 m-0 container">
+			<h3 class="m-0 p-0 pt-4">
+				<span>
+					<h1>Pizzas de 43cm por 43cm</h1>
+				</span>
+				<span class="sub">Para <strong>4 o 5 personas</strong> con 4 gustos</span>			
+			</h3>      
+			<h4>
+				<p>
+				Con un encanto especial, nos destaca la incomparable calidad de nuestros productos. 
+				Logramos conjugar armoniosamente el gran y extravagante tama&ntilde;o de nuestras pizzas 
+				junto a una variedad de sabores innovadores. Es ideal para disfrutar inolvidables 
+				momentos con amigos, en pareja o en familia, sorprendi&eacute;ndolos con una nueva manera 
+				de pedir una pizza y dejando de lado la forma tradicional.
+				</p>
+				<p>
+				Nuestras pizzas, empanadas y milanesas, elaboradas con la materia prima de mejor calidad, llegan 
+				a ser, hoy en d&iacute;a, una de las m&aacute;s exquisitas de la ciudad bahiense. Con recetas cl&aacute;sicas
+				o una selecta variedad de gustos especiales en nuestras pizzas y empanadas, y con 
+				tentadoras promociones, hemos hecho que sea un placer comer en casa.
+				</p>
+				<p class="ultimo">
+				&#191;Est&aacute;s c&oacute;modo en tu casa?, &#191;Se te complica acercarte a Sarmiento 906? Nosotros tenemos 
+				la soluci&oacute;n: &#161;ENTREGAMOS PEDIDOS POR MEDIO DE NUESTRO DELIVERY!, el cual se encuentra
+				disponible para gran parte de Bah&iacute;a Blanca. Recomendamos en &eacute;pocas de bajas temperaturas 
+				esperar la pizza con el horno precalentado e introducirla 3/4 minutos, para disfrutar de 
+				su m&aacute;ximo sabor. Antes de llamar al (0291) 4526024 para hacer tu pedido, consulta la 
+				secci&oacute;n preguntas frecuentes, y enterate como encargar nuestros productos.
+				</p>
+			</h4>
+		</div>
 	</section> 
-    <section id="oferta">
+    <section id="oferta" class="d-none">
 		<img src="img/promocion.jpg" />
 	</section>	
 	<?php include_once 'bloques/footer.php'; ?>

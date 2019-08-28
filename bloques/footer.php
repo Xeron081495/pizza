@@ -20,9 +20,9 @@
 		 <nav id="menu">
 		   <a class="opcion-menu" href="contacto.php">Contacto</a>
 		   <a class="opcion-menu" href="galeria.php">Galer&iacute;a</a>
-		   <a class="opcion-menu" href="menu.php">Men&uacute; - Pizzas / Empanadas</a>
 		   <a class="opcion-menu" href="faq.php">Preguntas Frecuentes</a>
+		   <a class="opcion-menu" href="menu.php">Nuestras Pizzas</a>
 		 </nav>
 	</div>
-	<div id="firma">Copyright <?php echo date('Y'); ?> &#169; Pizza al cuadrado | Todos los derechos reservados | Dise&ntilde;ado por <a href="http://estudiowebxeron.com/" target="_black">>>Xeron!</a></div>
+	<div id="firma">Copyright <?php echo date('Y'); ?> &#169; Pizza al cuadrado | Todos los derechos reservados | Dise&ntilde;ado por <a href="http://xeronweb.com/" target="_black">>>Xeron!</a></div>
 </footer>

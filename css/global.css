@@ -37,10 +37,12 @@ header#top{
 	width: 100%;
 	background-size: 105% auto;
     background-repeat: repeat;
-	height: 200px;
+	height: 320px;
 	float: left;
 	color: #EEE;
+	overflow: hidden;
 	transition: background 1s linear;
+	z-index: 10;
 }
 
 header#top #logo-menu{
@@ -71,7 +73,7 @@ header#top #logo-menu  #datos{
 	float: right;
 	clear: right;
 	text-align: right;
-	width: 80%;
+	width: 78%;
 }
 header#top #logo-menu  #datos .dato{
 	margin: 0 1em;
@@ -79,13 +81,21 @@ header#top #logo-menu  #datos .dato{
 header#top #logo-menu  #datos .dato img{
 	margin: 0 0.2em;
 }
+header#top #logo-menu  #datos .dato a{
+	color:#EEE;
+	font-size: 20px;
+}
+header#top #logo-menu  #datos .dato a:hover{
+	color:rgb(221, 58, 58);
+	font-size: 20px;
+}
 header#top #logo-menu  nav#menu{
 	font-size: 1em;
 	margin: 2em 0 0 0;
 	float: right;
 	clear: right;
 	text-align: right;
-	width: 80%;
+	width: 78%;
 }
 
 header#top #logo-menu  nav#menu a.opcion-menu{
@@ -129,7 +139,7 @@ header#top #titulo #sombra{
 header#top #titulo h3{	
 	border-bottom: double 0.1em #FFF;
 	border-top: double 0.1em #FFF;
-	font-size: 2em;
+	font-size: 45px;
 	font-family: 'Montserrat', Arial, Helvetica;
 	text-transform: uppercase;
 	padding: 0.2em 0;
@@ -147,62 +157,41 @@ header#top #titulo h3{
 
 /*arreglos para la versión grande */
 @media only screen and (min-width: 1400px)  {
-	header#top #logo-menu  #datos{
-		margin: 2.5em 0 0;
-	}
-	header#top #logo-menu  nav#menu{
-		margin: 2.5em 0 0 0;
-	}	
-	header#top #titulo{			
-	}
-	header#top #titulo #sombra{		
-	}
-	header#top #titulo h3{	
-		font-size: 2.9em;		
-	}
 }
 
 /*arreglos para la versión grande */
-@media only screen and (max-width: 1350px)  {
+@media only screen and (max-width: 1270px)  {
 	body{
 		min-width: 960px;
-	}
+	}	
 	header#top{
-	}
-
-	header#top #logo-menu{
-		padding: 0 5%;
-	}
-	header#top #logo-menu  #logo{
-		width: 16%;
-	}
-	header#top #logo-menu  #logo img{
-		border-radius: 5px;
+		height: 270px;
 	}
 	header#top #logo-menu  #datos{
 		font-size: 0.9em;
-		margin: 1em 0 0;
-	}
-	header#top #logo-menu  #datos .dato{
-		margin: 0 1em;
-	}
-	header#top #logo-menu  #datos .dato img{
-		margin: 0 0.2em;
+		margin: 25px 0 0;
+		width: 71%;
 	}
 	header#top #logo-menu  nav#menu{
-		font-size: 0.9em;
-		margin: 2.4em 0 0 0;
-		float: right;
-		clear: right;
-		text-align: right;
-		width: 80%;
+		font-size: 1em;
+		margin: 2em 0 0 0;
+		width: 70%;
 	}
+
 	header#top #logo-menu  nav#menu a.opcion-menu{
 		font-size: 1em;
-		margin: 0em 0.5em;
-		float: right;
+		margin: 0em 5px;
 		padding: 0 0.5em;
 	}
+	header#top #logo-menu  nav#menu a.opcion-menu:hover{
+		background: rgba(203,040,033, .8);
+	}
+	header#top #logo-menu  a#menu-icono{
+		visibility: hidden;
+		width: 0;
+		height: 0;
+	}
+	
 	header#top #titulo{	
 	}
 	header#top #titulo #sombra{	
@@ -226,42 +215,27 @@ header#top #titulo h3{
 	}
 }
 /*celular */
-@media only screen and (max-width:800px) {
+@media only screen and (max-width:960px) {
 	body{
 		font-size: 1em;
-		min-width: 0px;
+		min-width: 320px;
 	}
 	header#top{
-		width: 100%;
-		float: left;
-		clear: both;
-		overflow: hidden;
 		background-size: auto 100%;
-		background-position: center center;
-		background-repeat: repeat;
-		height: auto;
+		height: 235px;
 	}
+
 	header#top #logo-menu{
-		float: left;
-		clear: both;
-		width: 100%;
-		margin: 0;	
 		padding: 0 1%;
-		clear: both;
-		background: rgba(0, 0, 0, .8);
-		overflow: hidden;
+		height: 120px;
 	}
 	header#top #logo-menu  #logo{
 		margin: 1em 5%;
 		float: left;
 		clear: left;
-		width: 40%;
 	}
 	header#top #logo-menu  #logo img{
-		width: 100%;
-		border-radius: 15px;
-		float: left;
-		clear: left;
+		width: 150px;
 	}
 	header#top #logo-menu  #datos{
 		display: none;
@@ -270,21 +244,20 @@ header#top #titulo h3{
 		display: none;
 	}
 	header#top #logo-menu  a#menu-icono{
-		background-size: 100%;
-		background-repeat: no-repeat;
-		width: 16%;
+		width: 20%;
 		margin-left: 15%;
-		margin-right: 10%;
-		margin-top: 2em;
+		margin-right: 0%;
+		margin-top: 38px;
 		float: right;
 		clear: right;
-		height: 7em;
 		visibility: visible;
+		color: #FFF;
+		font-size: 35px;
 	}
 	header#top #titulo h3{	
 		border-bottom: double 0.1em #FFF;
 		border-top: double 0.1em #FFF;
-		font-size: 1.4em;
+		font-size: 30px;
 		font-family: 'Montserrat', Arial, Helvetica;
 		text-transform: uppercase;
 		padding: 0.2em 0;
