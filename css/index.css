@@ -2,9 +2,9 @@
 header#top{
 	width: 100%;
 	background: url("../img/header.jpg");
-	background-size: 100%;
-    background-repeat: no-repeat;
-	height: 700px;
+	background-size: 105% auto;
+    background-repeat: repeat;
+	height: 680px;
 	float: left;
 	color: #EEE;
 	transition: background 1s linear;
@@ -18,26 +18,29 @@ header#top #logo-menu{
 	padding: 0 15%;
 	clear: both;
 	background: rgba(0, 0, 0, .8);
+	height: 150px;
+	overflow: hidden;
+	position: fixed;
 }
 header#top #logo-menu  #logo{
 	margin: 1em 0;
 	float: left;
 	clear: left;
-	width: 16%;
 }
 header#top #logo-menu  #logo img{
-	width: 100%;
+	width: 195px;
 	border-radius: 15px;
 	float: left;
 	clear: left;
+
 }
 header#top #logo-menu  #datos{
 	font-size: 1em;
-	margin: 2em 0 0;
+	margin: 25px 0 0;
 	float: right;
 	clear: right;
 	text-align: right;
-	width: 70%;
+	width: 80%;
 }
 header#top #logo-menu  #datos .dato{
 	margin: 0 1em;
@@ -79,7 +82,7 @@ header#top h1#nombre{
 	width: 100%;
 	text-align: center;
 	font-size: 3.2em;
-	margin-top: 2em;
+	margin-top: 200px;
 	float: left;
 	text-shadow: 2px 2px 2px #333;
 	font-weight: bold;
@@ -104,7 +107,7 @@ header#top h1#slogan2{
 	font-weight: bold;
 }
 header#top #cuadros{
-	margin-top: 6em;
+	margin-top: 90px;
 	float: left;	
 	text-align: center;
 	width: 100%;
@@ -136,16 +139,19 @@ section#menu-atajos{
 	text-align: center;
 	margin-top: 1em;
 	clear: both;
+	z-index: inherit;
+	width: 100%;
 }
 
 
 section#menu-atajos .opcion{
-	float: left;
-	text-align: center;
+	display: inline-block;
 	background-color: #FEEEFE;
 	min-height: 2em;
 	position: relative;
 	border-radius: 0.5em;
+	width: 600px;
+	max-width: 100%;
 }
 section#menu-atajos .opcion .pizza{
 	background: url("../img/header4.jpg");
@@ -180,6 +186,7 @@ section#menu-atajos .opcion .texto{
 	font-family: 'Montserrat', Arial, Helvetica;
 	text-shadow: 1px 1px 1px #333;
 	color: #EEE;
+	font-weight: 400;
 }
 
 
@@ -249,178 +256,36 @@ section#oferta img{
 
 /*arreglos para la versión grande */
 @media only screen and (min-width: 1400px)  {
-	header#top #logo-menu  #datos{
-		margin: 2.5em 0 0;
-	}
-	header#top #logo-menu  nav#menu{
-		margin: 2.5em 0 0 0;
-	}	
-	section#nosotros h4{
-		font-size: 1em;	
-		width: 80%;	
-	}	
-	section#oferta{
-		width: 20%;
-		float: right;	
-		text-align: center;
-		margin: 4.2em 0;
-		margin-right: 10%;
-	}
 }
 
 /* Version para netbook*/
-@media only screen and (max-width: 1350px)  {
+@media only screen and (max-width: 1200px)  {
 	
-	header#top{
-		height: 500px;
-	}
-
-	header#top #logo-menu{
-		padding: 0 5%;
-	}
-	header#top #logo-menu  #logo{
-		width: 16%;
-	}
-	header#top #logo-menu  #logo img{
-		border-radius: 5px;
-	}
-	header#top #logo-menu  #datos{
-		font-size: 0.9em;
-		margin: 1em 0 0;
-	}
-	header#top #logo-menu  #datos .dato{
-		margin: 0 1em;
-	}
-	header#top #logo-menu  #datos .dato img{
-		margin: 0 0.2em;
-	}
-	header#top #logo-menu  nav#menu{
-		font-size: 0.9em;
-		margin: 2.4em 0 0 0;
-		float: right;
-		clear: right;
-		text-align: right;
-		width: 80%;
-	}
-	header#top #logo-menu  nav#menu a.opcion-menu{
-		font-size: 1em;
-		margin: 0em 0.5em;
-		float: right;
-		padding: 0 0.5em;
-	}
-	
-	
-	header#top h1#nombre{
-		font-size: 2.5em;
-		margin-top: 1em;
-	}
-	header#top h1#slogan1{
-		font-size: 3em;
-		text-transform: uppercase;
-		float: left;
-		text-shadow: 1px 1px 1px #333;
-	}
-	header#top h1#slogan2{
-		font-size: 2.5em;
-	}
-	header#top #cuadros{
-		margin-top: 5em;
-	}
-	header#top #cuadros .cuadro{
-		font-size: 1em;
-	}
-		
-	section#nosotros{
-		width: 100%;
-	}
-	section#nosotros h3{
-		display: block-inline;	
-		background-image: url("../img/papel.png");
-		background-repeat: no-repeat;
-		background-position: center top;
-	}
-
-	section#nosotros h3 span h1{
-		font-family: 'Satisfy', Arial, Helvetica;
-		font-weight: normal;
-		color: #4C2882;
-	}
-	section#nosotros h3 span.sub{
-		font-family: 'Montserrat', Arial, Helvetica;
-		font-weight: normal;
-		text-transform: uppercase;
-	}
-	section#nosotros h4{
-		display: block-inline;	
-		background-color: #666;
-		padding-top: 0.5em;
-		padding-bottom: 0em;
-		width: 90%;
-		margin: 0 auto;
-		background-image: url("../img/fondo-gris.jpg");
-		font-family: 'Montserrat', Arial, Helvetica;
-		color: #DDD;
-		padding: 2em;
-		border-radius: 15px;
-		line-height: 2em;
-		font-weight: normal;
-		font-size: 0.9em;		
-	}
-	section#nosotros h4 p{
-		padding-bottom: 2em;	
-	}
-	section#nosotros h4 p.ultimo{
-		padding-bottom: 0em;	
-	}
-
-	section#oferta{
-		width: 50%;
-		float: right;	
-		text-align: center;
-		margin: 1em 25%;
-	}
-	section#oferta img{
-		width: 100%;
-		float: left;	
-		text-align: center;
-		margin: 2em 0;
-	}
-	
+header#top #logo-menu  nav#menu a.opcion-menu{
+	margin: 0em 0.5em;
+}	
 }
 /*celular */
-@media only screen and (max-width:800px) {
+@media only screen and (max-width: 960px) {
+	body{
+		min-width: 320px;
+	}
 	header#top{
-		width: 100%;
-		float: left;
-		clear: both;
-		overflow: hidden;
 		background-size: auto 100%;
-		background-position: center center;
-		background-repeat: repeat;
-		height: auto;
+		height: 460px;
 	}
 
 	header#top #logo-menu{
-		float: left;
-		clear: both;
-		width: 100%;
-		margin: 0;	
 		padding: 0 1%;
-		clear: both;
-		background: rgba(0, 0, 0, .8);
-		overflow: hidden;
+		height: 120px;
 	}
 	header#top #logo-menu  #logo{
 		margin: 1em 5%;
 		float: left;
 		clear: left;
-		width: 40%;
 	}
 	header#top #logo-menu  #logo img{
-		width: 100%;
-		border-radius: 15px;
-		float: left;
-		clear: left;
+		width: 150px;
 	}
 	header#top #logo-menu  #datos{
 		display: none;
@@ -429,75 +294,57 @@ section#oferta img{
 		display: none;
 	}
 	header#top #logo-menu  a#menu-icono{
-		background-image: url("../img/menu.png");
-		background-size: 100%;
-		background-repeat: no-repeat;
 		width: 20%;
 		margin-left: 15%;
 		margin-right: 5%;
-		margin-top: 1.5em;
+		margin-top: 38px;
 		float: right;
 		clear: right;
-		height: 6em;
 		visibility: visible;
+		color: #FFF;
+		font-size: 35px;
 	}
 	
 	header#top h1#nombre{
-		margin-top: 0.5em;
-		font-size: 1.8em;
+		margin-top: 140px;
+		font-size: 33px;
 	}
 	header#top h1#slogan1{
-		font-size: 1.7em;
+		font-size: 30px;
 	}
 	header#top h1#slogan2{
-		font-size: 1.8em;
+		font-size: 30px;
 	}
 	header#top #cuadros{
-		margin-top: 0.25em;
+		margin-top: 18px;
 		float: left;	
 		text-align: center;
 		width: 100%;
+		padding: 0 2%;
 	}
-	header#top .cuadros_celu{
+	header#top #cuadros .cuadro{
+		padding: 10px;
+		font-size: 15px;
+		margin-bottom: 10px;
 		display: inline-block;
 	}
-	header#top .cuadros_pc{
-		display: none;
+	header#top #cuadros .cuadro a{
+		text-decoration: none;
+		color: white;
 	}
-	header#top #cuadros .linea{
-		float: left;
-		clear: both;
-		width: 100%;
-	}	
-	header#top #cuadros .linea .cuadro{
-		float: left;
-		width: 45%;
-		margin: 0.6em 2.5%;
-		font-size: 1.1sem;
-		min-height: 4.2em;
-	}	
-	
 	
 	section#menu-atajos{
+		margin-top: 0px;
+		width: 100%;
 	}
-
 
 	section#menu-atajos .opcion{
 		width: 90%;
 		float: left;
 		margin: 0 5%;
-		margin-top: 1em;
+		margin-top: 20px;;
 	}
-		
-	section#menu-atajos .opcion .pizza{
-		background: url("../img/header4.jpg");
-	}
-	section#menu-atajos .opcion .milanesa{
-		background: url("../img/header6.jpg");
-	}
-	section#menu-atajos .opcion .empanada{
-		background: url("../img/header10.jpg");
-	}
+
 	section#menu-atajos .opcion .fondo{
 		background-position: center center;
 		background-size: 100% auto;
@@ -513,22 +360,26 @@ section#oferta img{
 		width: 100%;
 		float: left;
 		text-align: center;
-		margin: 1em 0;
+		margin: 0;
 	}
 	section#nosotros h3{
 		float: left;
 		background-size: 100%;
 		padding: 0.7em 10%;
 		padding-bottom: 0;
-		width: 95%;
-		margin: 0 2.5%;
+		width: 100%;
+		background-image: none;
 	}
 
 	section#nosotros h3 span h1{
-		font-size: 1.1em;	
+		font-size: 25px;	
+		text-align: center;
+		margin-bottom: 0;
 	}
 	section#nosotros h3 span.sub{
-		font-size: 0.6em;	
+		font-size: 15px;
+		text-align: center;	
+		margin-bottom: 10px;;
 	}
 	section#nosotros h4{
 		float: left;
@@ -537,7 +388,8 @@ section#oferta img{
 		margin: 0 2.5%;
 	}
 	section#nosotros h4 p{
-		padding-bottom: 2em;	
+		font-size: 14px;
+		padding-bottom: 10px;	
 	}
 	section#nosotros h4 p.ultimo{
 		padding-bottom: 0em;	
@@ -555,4 +407,19 @@ section#oferta img{
 		text-align: center;
 		margin: 2em 0;
 	}
+}
+
+
+/*celular */
+@media only screen and (max-width: 359px) {
+
+	header#top{
+		height: 480px;
+	}
+	
+	header#top h1#slogan1{
+		font-size: 28px;
+	}
+
+
 }

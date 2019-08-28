@@ -1,5 +1,5 @@
 <footer>
-	<nav id="menu-celu">
+	<nav id="menu-celu" class="d-lg-none">
 		   <a class="opcion-menu" href="./">Inicio</a>
 		   <a class="opcion-menu" href="faq.php">Preguntas Frecuentes</a>
 		   <a class="opcion-menu" href="menu.php">Men&uacute;</a>

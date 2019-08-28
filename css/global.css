@@ -33,12 +33,14 @@ body{
 	font-size: 1em;
 	min-width: 1300px;
 }
-
 header#top{
 	width: 100%;
+	background-size: 105% auto;
+    background-repeat: repeat;
+	height: 200px;
 	float: left;
 	color: #EEE;
-	overflow: hidden;
+	transition: background 1s linear;
 }
 
 header#top #logo-menu{
@@ -48,40 +50,34 @@ header#top #logo-menu{
 	margin: 0;	
 	padding: 0 15%;
 	clear: both;
-	background: rgba(20, 20, 20, .99);
+	background: rgba(0, 0, 0, .99);
+	height: 150px;
 }
 header#top #logo-menu  #logo{
 	margin: 1em 0;
 	float: left;
 	clear: left;
-	width: 16%;
 }
 header#top #logo-menu  #logo img{
-	width: 100%;
+	width: 195px;
 	border-radius: 15px;
 	float: left;
 	clear: left;
+
 }
 header#top #logo-menu  #datos{
 	font-size: 1em;
-	margin: 2em 0 0;
+	margin: 25px 0 0;
 	float: right;
 	clear: right;
 	text-align: right;
-	width: 70%;
+	width: 80%;
 }
 header#top #logo-menu  #datos .dato{
 	margin: 0 1em;
 }
 header#top #logo-menu  #datos .dato img{
 	margin: 0 0.2em;
-}
-header#top #logo-menu  #datos .dato a{
-	color: #fff;
-	font-size: 1.4em;
-}
-header#top #logo-menu  #datos .dato a:hover{
-	color: rgb(218, 132, 75);
 }
 header#top #logo-menu  nav#menu{
 	font-size: 1em;
@@ -274,7 +270,6 @@ header#top #titulo h3{
 		display: none;
 	}
 	header#top #logo-menu  a#menu-icono{
-		background-image: url("../img/menu.png");
 		background-size: 100%;
 		background-repeat: no-repeat;
 		width: 16%;

@@ -104,7 +104,7 @@ function avanzar(){
        <div id="logo-menu">
 			<div id="logo"><a href="./"><img src="img/logo.png" /></a></div>
 			<div id="datos">
-				<span class="dato">Encontranos en <strong>Sarmiento 906</strong></span>
+				<span class="dato"><span class="d-none d-xl-inline-block mr-2">Encontranos en </span><strong>Sarmiento 906</strong></span>
 				<span class="dato">Delivery al (0291) <strong>4526-024</strong></span>
 				<span class="dato">
 					<a href="https://www.facebook.com/pizzaalcuadrado" target="_blanck"><i class="fab fa-facebook-square ml-2"></i></a>
@@ -118,12 +118,12 @@ function avanzar(){
 				<a class="opcion-menu" href="faq.php">Preguntas Frecuentes</a>
 				<a class="opcion-menu" href="menu.php">Men&uacute;</a>
 			</nav>
-			<a href="#menu-celu" id="menu-icono"></a>
+			<a href="#menu-celu" id="menu-icono"><i class="fas fa-bars"></i></a>
 	   </div>
 	   <h1 id="nombre">Pizza al cuadrado</h1>
 	   <h1 id="slogan1">La pizza m&aacute;s grande</h1>
 	   <h1 id="slogan2">de Bah&iacute;a Blanca</h1>
-	   <div id="cuadros" class="cuadros_celu">
+	   <div id="cuadros" class="cuadros_celu d-none">
 			<div class="linea">
 				<h3 class="cuadro calendario"><i class="fas fa-calendar-alt mr-2"></i> Martes a Domingo</h3>
 				<h3 class="cuadro reloj"><i class="far fa-clock mr-2"></i>20hs a <br> 23hs</h3>
@@ -138,23 +138,35 @@ function avanzar(){
 				</h3>
 			</div>
 	   </div>
-	   <div id="cuadros" class="cuadros_pc">
+	   <div id="cuadros" class="cuadros_pc d-inline-block">
 			<h3 class="cuadro calendario"><i class="fas fa-calendar-alt mr-2"></i> Martes a Domingo</h3>
 			<h3 class="cuadro reloj"><i class="far fa-clock mr-2"></i>20hs a 23hs</h3>
 			<h3 class="cuadro lugar" onclick="siguiente()"><i class="fas fa-map-marked-alt mr-2"></i>Sarmiento al 906</h3>
-			<h3 class="cuadro persona"><i class="fas fa-phone mr-2"></i> 452-6024</h3>
-			<h3 class="cuadro persona"><i class="fab fa-whatsapp mr-2"></i> 291-4400810</h3>
+			<h3 class="cuadro persona">
+				<i class="fas fa-phone mr-2"></i> 
+				452-6024
+			</h3>
+			<h3 class="cuadro persona d-md-none">
+				<a href="http://instagram.com/pizaalcuadrado" target="_blanck"><i class="fab fa-instagram"></i></a>
+			</h3>
+			<h3 class="cuadro persona">
+				<i class="fab fa-whatsapp mr-2"></i>
+				<a href="https://api.whatsapp.com/send?phone=5492914400810" target="_blanck">Pedí por Whatsapp</a>
+			</h3>
+			<h3 class="cuadro persona d-md-none">
+				<a href="https://www.facebook.com/pizzaalcuadrado" target="_blanck"><i class="fab fa-facebook-square"></i></a>
+			</h3>
 	   </div>
     </header>
-	<!--<section id="menu-atajos" class="col-12">
+	<section id="menu-atajos" class="col-12">
 		<a href="menu.php#tag-pizza">
 		<div class="opcion">
 			<div class="pizza fondo"></div>
-			<div class="texto">Menu de Pizzas</div>
+			<div class="texto">Nuestras Pizzas</div>
 		</div>
 		</a>
 
-		<div class="col-0 col-lg-0 col-xl-2 float-left">&nbsp;</div>
+		<!-- <div class="col-0 col-lg-0 col-xl-2 float-left">&nbsp;</div>
 
 		<a href="menu.php#tag-milanesa">
 		<div class="opcion float-left col-12 col-lg-6 col-xl-4">
@@ -170,18 +182,18 @@ function avanzar(){
 			<div class="empanada fondo"></div>
 			<div class="texto">Menu de Empanadas</div>
 		</div>
-		</a>
+		</a> 
 
 		
-		<div class="col-0 col-lg-0 col-xl-2 float-left">&nbsp;</div>
-	</section>-->
+		<div class="col-0 col-lg-0 col-xl-2 float-left">&nbsp;</div>-->
+	</section>
 	
     <section id="nosotros">
 	  <h3 class="m-0 p-0 pt-4">
 		<span>
 			<h1>Pizzas de 43cm por 43cm</h1>
 		</span>
-		<span class="sub">Para 4 o 5 personas con 3 gustos</span>			
+		<span class="sub">Para <strong>4 o 5 personas</strong> con 4 gustos</span>			
 	  </h3>      
 	  <h4>
 	    <p>

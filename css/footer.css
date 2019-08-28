@@ -157,7 +157,7 @@ footer #firma a{
 	}	
 }
 /*celular */
-@media only screen and (max-width:800px) {
+@media only screen and (max-width: 960px) {
 	footer{
 		width: 100%;
 		float: left;
@@ -170,6 +170,7 @@ footer #firma a{
 		clear: both;	
 		visibility: visible;
 		height: auto;
+		padding-top: 120px;
 	}
 	footer nav#menu-celu a.opcion-menu{
 		width: 100%;
