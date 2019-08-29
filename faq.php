@@ -2,7 +2,7 @@
 <!DOCTYPE HTML> 
 <html> 
 <head>
-<title><?php echo $lugar; ?> | Pizza al cuadrado, Pizzas y Empanadas - Bah&iacute;a Blanca</title>
+<title><?php echo $lugar; ?> | Pizza al cuadrado - Bah&iacute;a Blanca</title>
 <meta charset="UTF-8" />
 <link rel="shortcut icon" href="img/icono.png" />
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">

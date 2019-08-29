@@ -2,7 +2,7 @@
 <!DOCTYPE HTML> 
 <html> 
 <head>
-<title><?php echo $lugar; ?> | Pizza al cuadrado, Pizzas y Empanadas - Bah�a Blanca</title>
+<title><?php echo $lugar; ?> | Pizza al cuadrado -  Bah&iacute;a Blanca</title>
 <meta charset="UTF-8" />
 <link rel="shortcut icon" href="img/icono.png" />
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -23,6 +23,15 @@ $(function() {
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
  
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.css" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.js"></script>
+
 <link rel="stylesheet" href="css/global.css" />
 <link rel="stylesheet" href="css/footer.css" />
 <link rel="stylesheet" href="css/galeria.css" />
@@ -37,13 +46,125 @@ $(function() {
 
   gtag('config', 'UA-144567784-1');
 </script>
+<script>
+	$('.portfolio-item').isotope({
+         	itemSelector: '.item',
+         	layoutMode: 'fitRows'
+		});
+		$('.portfolio-menu ul li').click(function(){
+		$('.portfolio-menu ul li').removeClass('active');
+		$(this).addClass('active');
+		
+		var selector = $(this).attr('data-filter');
+		$('.portfolio-item').isotope({
+			filter:selector
+		});
+		return  false;
+		});
+		$(document).ready(function() {
+		var popup_btn = $('.popup-btn');
+		popup_btn.magnificPopup({
+		type : 'image',
+		gallery : {
+		enabled : true
+		}
+		});
+	});
+</script>
 
 
 </head>
  
 <body>
 	<?php include_once 'bloques/header.php'; ?>
-	<?php 
+
+	<div class="container">
+         <div class="portfolio-menu mt-0 mb-4">
+            <ul>
+               <li class="btn btn-outline-dark active mt-2" data-filter="*">Todas las fotos</li>
+            </ul>
+         </div>
+         <div class="portfolio-item row">
+            <div class="item gts col-lg-3 col-md-4 col-6 col-sm">
+               <a href="galeria/2.jpg" class="fancylight popup-btn" data-fancybox-group="light"> 
+               <img class="img-fluid" src="galeria/2.jpg" alt="">
+               </a>
+            </div>
+            <div class="item selfie col-lg-3 col-md-4 col-6 col-sm">
+               <a href="galeria/3.jpg" class="fancylight popup-btn" data-fancybox-group="light">
+               <img class="img-fluid" src="galeria/3.jpg" alt="">
+               </a>
+            </div>
+            <div class="item gts col-lg-3 col-md-4 col-6 col-sm">
+               <a href="galeria/4.jpg" class="fancylight popup-btn" data-fancybox-group="light">
+               <img class="img-fluid" src="galeria/4.jpg" alt="">
+               </a>
+            </div>
+            <div class="item gts col-lg-3 col-md-4 col-6 col-sm">
+               <a href="galeria/5.jpg" class="fancylight popup-btn" data-fancybox-group="light">
+               <img class="img-fluid" src="galeria/5.jpg" alt="">
+               </a>
+            </div>
+            <div class="item gts col-lg-3 col-md-4 col-6 col-sm">
+               <a href="galeria/6.jpg" class="fancylight popup-btn" data-fancybox-group="light">
+               <img class="img-fluid" src="galeria/6.jpg" alt="">
+               </a>
+            </div>
+            <div class="item lap col-lg-3 col-md-4 col-6 col-sm">
+               <a href="galeria/8.jpg" class="fancylight popup-btn" data-fancybox-group="light">
+               <img class="img-fluid" src="galeria/8.jpg" alt="">
+               </a>
+            </div>
+            <div class="item gts col-lg-3 col-md-4 col-6 col-sm">
+               <a href="galeria/9.jpg" class="fancylight popup-btn" data-fancybox-group="light">
+               <img class="img-fluid" src="galeria/10.jpg" alt="">
+               </a>
+            </div>
+            <div class="item lap col-lg-3 col-md-4 col-6 col-sm">
+               <a href="galeria/11.jpg" class="fancylight popup-btn" data-fancybox-group="light">
+               <img class="img-fluid" src="galeria/11.jpg" alt="">
+               </a>
+            </div>
+            <div class="item gts col-lg-3 col-md-4 col-6 col-sm">
+               <a href="galeria/12.jpg" class="fancylight popup-btn" data-fancybox-group="light">
+               <img class="img-fluid" src="galeria/12.jpg" alt="">
+               </a>
+            </div>
+            <div class="item gts col-lg-3 col-md-4 col-6 col-sm">
+               <a href="galeria/13.jpg" class="fancylight popup-btn" data-fancybox-group="light">
+               <img class="img-fluid" src="galeria/13.jpg" alt="">
+               </a>
+            </div>
+            <div class="item gts col-lg-3 col-md-4 col-6 col-sm">
+               <a href="galeria/15.jpg" class="fancylight popup-btn" data-fancybox-group="light">
+               <img class="img-fluid" src="galeria/15.jpg" alt="">
+               </a>
+            </div>
+            <div class="item gts col-lg-3 col-md-4 col-6 col-sm">
+               <a href="galeria/16.jpg" class="fancylight popup-btn" data-fancybox-group="light">
+               <img class="img-fluid" src="galeria/16.jpg" alt="">
+               </a>
+            </div>
+            <div class="item selfie col-lg-3 col-md-4 col-6 col-sm">
+               <a href="galeria/1.jpg" class="fancylight popup-btn" data-fancybox-group="light"> 
+               <img class="img-fluid" src="galeria/1.jpg" alt="">
+               </a>
+            </div>
+            <div class="item lap col-lg-3 col-md-4 col-6 col-sm">
+               <a href="galeria/7.jpg" class="fancylight popup-btn" data-fancybox-group="light">
+               <img class="img-fluid" src="galeria/7.jpg" alt="">
+               </a>
+            </div>
+         </div>
+      </div>
+
+
+
+
+
+
+
+	<!-- <?php 
 		$arreglo = array(
 		'<iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2F1425058161135210%2Fposts%2F2094585820849104%2F&width=500&show_text=false&height=498&appId" width="500" height="498" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>',	
 		'<iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fpizzaalcuadrado%2Fposts%2F1595980414042983%3A0&width=500&show_text=false&height=375&appId" width="500" height="375" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>',
@@ -75,7 +196,7 @@ $(function() {
 				echo $arreglo[$i];				
 			}
 		?>
-	</section>	
+	</section>	 -->
 	<?php include_once 'bloques/footer.php'; ?>    
 </body>
 </html>

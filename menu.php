@@ -19,7 +19,7 @@ if(isset($_GET['id'])){
 <!DOCTYPE HTML> 
 <html> 
 <head>
-<title><?php echo $lugar; ?> | Pizza al cuadrado, Pizzas y Empanadas - Bah&iacute;a Blanca</title>
+<title><?php echo $lugar; ?> | Pizza al cuadrado - Bah&iacute;a Blanca</title>
 <meta charset="UTF-8" />
 
 <!-- Cambia de imagenes slider -->

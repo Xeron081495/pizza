@@ -3,7 +3,7 @@
 <!DOCTYPE HTML> 
 <html> 
 <head>
-<title>Pizza al cuadrado, Pizzas y Empanadas - Bah&iacute;a Blanca</title>
+<title>Pizza al cuadrado - Pizzas gigantes - Bah&iacute;a Blanca</title>
 <meta charset="UTF-8" />
 <meta name="theme-color" content="orange">
 <link rel="shortcut icon" href="img/icono.png" />
@@ -41,6 +41,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <link rel="stylesheet" href="css/global.css" />
 <link rel="stylesheet" href="css/footer.css" />
 <link rel="stylesheet" href="css/index.css" />
+<link rel="stylesheet" href="css/faq.css" />
 
 
 <script type="text/javascript">
@@ -115,8 +116,8 @@ function avanzar(){
 			<nav id="menu">
 				<a class="opcion-menu" href="contacto.php">Contacto</a>
 				<a class="opcion-menu" href="galeria.php">Galer&iacute;a</a>
-				<a class="opcion-menu" href="faq.php">Preguntas <span class="d-none d-xl-inline-block mr-2">Frecuentes</span></a>
 				<a class="opcion-menu" href="menu.php">Menú de Pizzas</a>
+				<a class="opcion-menu" href="nosotros.php">Nosotros</a>
 			</nav>
 			<a href="#menu-celu" id="menu-icono"><i class="fas fa-bars"></i></a>
 	   </div>
@@ -166,68 +167,62 @@ function avanzar(){
 		</div>
 		</a>
 
-		<a href="faq.php">
+		<a href="galeria.php">
 		<div class="opcion">
 			<div class="milanesa fondo"></div>
-			<div class="texto">¿Son las más grandes?</div>
+			<div class="texto">Galería de fotos</div>
 		</div>
 		</a>
-
-		<!-- <div class="col-0 col-lg-0 col-xl-2 float-left">&nbsp;</div>
-
-		<a href="menu.php#tag-milanesa">
-		<div class="opcion float-left col-12 col-lg-6 col-xl-4">
-			<div class="milanesa fondo"></div>
-			<div class="texto">Menu de Milanesas</div>
-		</div>
-		</a>
-		
-		<div class="col-0 col-lg-1 float-left">&nbsp;</div>
-
-		<a href="menu.php#tag-empanada">
-		<div class="opcion float-left col-12 col-lg-5 col-xl-4">
-			<div class="empanada fondo"></div>
-			<div class="texto">Menu de Empanadas</div>
-		</div>
-		</a> 
-
-		
-		<div class="col-0 col-lg-0 col-xl-2 float-left">&nbsp;</div>-->
 	</section>
-	
-    <section id="nosotros" class="mb-3 mb-lg-5">
-		<div class="mx-auto col-12 col-sm-10 col-xl-9 p-0 m-0 container">
-			<h3 class="m-0 p-0 pt-4">
-				<span>
-					<h1>Pizzas de 43cm por 43cm</h1>
-				</span>
-				<span class="sub">Para <strong>4 o 5 personas</strong> con 4 gustos</span>			
-			</h3>      
-			<h4>
-				<p>
-				Con un encanto especial, nos destaca la incomparable calidad de nuestros productos. 
-				Logramos conjugar armoniosamente el gran y extravagante tama&ntilde;o de nuestras pizzas 
-				junto a una variedad de sabores innovadores. Es ideal para disfrutar inolvidables 
-				momentos con amigos, en pareja o en familia, sorprendi&eacute;ndolos con una nueva manera 
-				de pedir una pizza y dejando de lado la forma tradicional.
-				</p>
-				<p>
-				Nuestras pizzas, empanadas y milanesas, elaboradas con la materia prima de mejor calidad, llegan 
-				a ser, hoy en d&iacute;a, una de las m&aacute;s exquisitas de la ciudad bahiense. Con recetas cl&aacute;sicas
-				o una selecta variedad de gustos especiales en nuestras pizzas y empanadas, y con 
-				tentadoras promociones, hemos hecho que sea un placer comer en casa.
-				</p>
-				<p class="ultimo">
-				&#191;Est&aacute;s c&oacute;modo en tu casa?, &#191;Se te complica acercarte a Sarmiento 906? Nosotros tenemos 
-				la soluci&oacute;n: &#161;ENTREGAMOS PEDIDOS POR MEDIO DE NUESTRO DELIVERY!, el cual se encuentra
-				disponible para gran parte de Bah&iacute;a Blanca. Recomendamos en &eacute;pocas de bajas temperaturas 
-				esperar la pizza con el horno precalentado e introducirla 3/4 minutos, para disfrutar de 
-				su m&aacute;ximo sabor. Antes de llamar al (0291) 4526024 para hacer tu pedido, consulta la 
-				secci&oacute;n preguntas frecuentes, y enterate como encargar nuestros productos.
-				</p>
-			</h4>
+
+	<section id="faq">   
+		<div class="mx-auto col-12 col-sm-10 col-xl-9 p-0 m-0 container">  
+			<div class="contenido col-12 col-md-6">
+				<h2 class="col-12 sub text-center mt-4 mb-3 float-left">Pizza completa</h2>  
+				<div class="lista mt-1 text-center ">
+					<!-- <img class="img_sab d-inline-block" src="img/faq_pizza1sab.jpg" width="150" alt="Pizza completa de un sabor"> -->
+					<img class="img_sab d-inline-block" src="img/faq_pizza2sab.jpg" width="150" alt="Pizza completa de dos sabores">
+					<img class="img_sab d-inline-block" src="img/faq_pizza3sab.jpg" width="150" alt="Pizza completa de tres sabores">
+					<img class="img_sab d-inline-block" src="img/faq_pizza4sab.jpg" width="150" alt="Pizza completa de cuatro sabores">
+					<p class="clearfix display-5 mt-3 text-center">Podes elegir hasta cuatro sabores por pizza. <strong>¡Mide 43x43cm!</strong> <br>Equivale a dos pizzas tradicionales: <strong>comen 4</strong>, pican 5.</p>
+				</div> 
+			</div>
+
+			<div class="contenido col-12 col-md-6">
+				<h2 class="col-12 sub text-center mt-4 mb-3 float-left">Media Pizza</h2>  
+				<div class="lista mt-1 text-center">
+					<img class="img_sab d-inline-block" src="img/faq_mediapizza.jpg" width="75" alt="Media pizza de uno o dos sabores.">    
+					<img class="img_sab d-inline-block" src="img/faq_mediapizza.jpg" width="75" alt="Media pizza de uno o dos sabores.">   
+					<p class="clearfix display-5 mt-3  text-center">Podes elegir hasta dos sabores por pizza. <strong>¡Mide 43x21cm!</strong> <br>Equivale a una pizza tradicional: <strong>comen 2</strong>.</p>
+				</div> 
+			</div>
+
+			<div class="clearfix"></div>
+			
+			<div class="contenido col-12 col-md-6">
+				<h2 class="col-12 sub text-center mt-4 mb-2 float-left">Pizza al paso</h2>  
+				<div class="lista mt-1 text-center">
+					<img class="img_sab d-inline-block" src="img/faq_pizzaporcion.jpg" height="70" alt="Media pizza de uno o dos sabores.">    
+					<p class="clearfix display-5 mt-3  text-center">Porción de pizza de un sabor <strong>para retirar</strong> en Sarmiento 906. <br><strong>Come uno</strong>.</p>
+				</div> 
+			</div>
+
+			<div class="contenido col-12 col-md-6">
+				<h2 class="col-12 sub text-center mt-4 mb-3 float-left">Zona de Delivery</h2>  
+				<div class="lista mt-1 text-center">
+					<i class="fas fa-motorcycle d-inline-block display-4"></i>
+					<p class="clearfix display-5 mt-3 text-center">
+						Tenemos una amplia cobertura de delivery para Bahía Blanca.<br>
+						Para saber si tu zona está incluida, mandanos un mensaje por 
+						<a href="https://api.whatsapp.com/send?phone=5492914400810" target="_blanck">Whatsapp</a> 
+						o llamanos al <a href="tel:02914526024">452-6024</a>.
+					</p>
+				</div> 
+			</div>
 		</div>
-	</section> 
+	</section>
+
+	
     <section id="oferta" class="d-none">
 		<img src="img/promocion.jpg" />
 	</section>	

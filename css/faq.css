@@ -14,7 +14,9 @@ section#faq .titulo{
 section#faq .contenido {
 	width: 1300px;
 	display: block-inline;
-	margin: 0 auto;
+	margin: 0;
+	padding: 0;
+	float: left
 }
 section#faq .contenido .img_sab{
 	border-radius: 5px;

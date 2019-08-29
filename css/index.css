@@ -144,8 +144,9 @@ section#menu-atajos{
 	clear: both;
 	z-index: inherit;
 	width: 100%;
-	background-image: url('../img/fondo-marron.jpg');	
 	border-bottom: solid rgba(211, 211, 211, 0.719) 1px;
+	border-top: solid rgba(211, 211, 211, 0.719) 1px;
+	background-color: #FEEEFE;
 }
 
 
