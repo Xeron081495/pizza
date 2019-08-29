@@ -73,7 +73,7 @@ header#top #logo-menu  #datos{
 	float: right;
 	clear: right;
 	text-align: right;
-	width: 78%;
+	width: 70%;
 }
 header#top #logo-menu  #datos .dato{
 	margin: 0 1em;
@@ -95,7 +95,7 @@ header#top #logo-menu  nav#menu{
 	float: right;
 	clear: right;
 	text-align: right;
-	width: 78%;
+	width: 70%;
 }
 
 header#top #logo-menu  nav#menu a.opcion-menu{
@@ -170,12 +170,12 @@ header#top #titulo h3{
 	header#top #logo-menu  #datos{
 		font-size: 0.9em;
 		margin: 25px 0 0;
-		width: 71%;
+		width: 60%;
 	}
 	header#top #logo-menu  nav#menu{
 		font-size: 1em;
 		margin: 2em 0 0 0;
-		width: 70%;
+		width: 60%;
 	}
 
 	header#top #logo-menu  nav#menu a.opcion-menu{
