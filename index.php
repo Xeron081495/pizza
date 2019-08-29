@@ -144,7 +144,7 @@ function avanzar(){
 			<h3 class="cuadro lugar" onclick="siguiente()"><i class="fas fa-map-marked-alt mr-2"></i>Sarmiento al 906</h3>
 			<h3 class="cuadro persona">
 				<i class="fas fa-phone mr-2"></i> 
-				452-6024
+				<a href="tel:02914526024">452-6024</a>
 			</h3>
 			<h3 class="cuadro persona d-sm-none">
 				<a href="http://instagram.com/pizaalcuadrado" target="_blanck"><i class="fab fa-instagram"></i></a>
