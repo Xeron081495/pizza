@@ -46,6 +46,14 @@ footer #top  #datos .dato{
 footer #top  #datos .dato img{
 	margin: 0 0.2em;
 }
+footer #top  #datos .dato a{
+	color:#EEE;
+	font-size: 20px;
+}
+footer #top  #datos .dato a:hover{
+	color:rgb(221, 58, 58);
+	font-size: 20px;
+}
 footer #top nav#menu{
 	font-size: 1em;
 	margin: 2em 0 0 0;

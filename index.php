@@ -195,7 +195,7 @@ function avanzar(){
 		<div class="col-0 col-lg-0 col-xl-2 float-left">&nbsp;</div>-->
 	</section>
 	
-    <section id="nosotros" class="mb-2">
+    <section id="nosotros" class="mb-3 mb-lg-5">
 		<div class="mx-auto col-12 col-sm-10 col-xl-9 p-0 m-0 container">
 			<h3 class="m-0 p-0 pt-4">
 				<span>

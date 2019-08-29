@@ -87,6 +87,17 @@ $(function() {
         <img class="img_sab d-inline-block" src="img/faq_pizzaporcion.jpg" height="70" alt="Media pizza de uno o dos sabores.">    
           <p class="clearfix display-5 mt-3  text-center">Porción de pizza de un sabor <strong>para retirar</strong> en Sarmiento 906. <br><strong>Come uno</strong>.</p>
         </div> 
+
+        
+        <h2 class="col-12 sub text-center mt-4 mb-3 float-left">Zona de Delivery</h2>  
+        <div class="lista mt-1 text-center">
+          <p class="clearfix display-5 mt-3 text-center">
+            Tenemos una amplia cobertura de delivery para Bahía Blanca.<br>
+            Para saber si tu zona está incluida, mandanos un mensaje por 
+            <a href="https://api.whatsapp.com/send?phone=5492914400810" target="_blanck">Whatsapp</a> 
+            o llamanos al <a href="tel:02914526024">452-6024</a>.
+          </p>
+        </div> 
       </div>
 
 		<h2 class="titulo d-none">Tamaños de pizzas y Delivery</h2>

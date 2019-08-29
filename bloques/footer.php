@@ -12,9 +12,9 @@
 		   <span class="dato">Encontranos en <strong>Sarmiento 906</strong></span>
 		   <span class="dato">Delivery al (0291) <strong>4526-024</strong></span>
 		   <span class="dato">
-				<a href="https://www.facebook.com/pizzaalcuadrado" target="_blanck"><img src="img/facebook.jpg" /></a>
-				<!--<a href="https://www.facebook.com/pizzaalcuadrado" target="_blanck"><img src="img/twitter.jpg" /></a>-->
-				<a href="http://instagram.com/pizaalcuadrado" target="_blanck"><img src="img/instagram.jpg" /></a>
+				<a href="https://www.facebook.com/pizzaalcuadrado" target="_blanck"><i class="fab fa-facebook-square ml-2"></i></a>
+				<a href="http://instagram.com/pizaalcuadrado" target="_blanck"><i class="fab fa-instagram ml-2"></i></a>
+				<a href="https://api.whatsapp.com/send?phone=5492914400810" target="_blanck"><i class="fab fa-whatsapp ml-2"></i></a>
 			<span>
 		 </div>
 		 <nav id="menu">

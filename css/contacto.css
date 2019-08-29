@@ -173,6 +173,8 @@ section#contacto #consulta #formulario #boton {
 		clear: right;
 	}
 	#cuadros .cuadro{
-		font-size: 13px; 
+		margin: 0 5px 0 0;
+		margin-bottom: 10px;
+		font-size: 13.5px; 
 	}
 }
