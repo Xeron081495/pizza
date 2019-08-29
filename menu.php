@@ -7,6 +7,14 @@ $lista = $menu->getMenuEspecial();
 $cantidad = floor(count($menu->getMenu())/3);
 $resto = count($menu->getMenu())%3;
 
+
+if(isset($_GET['id'])){
+	$sabor = urldecode($_GET['id']);
+	$menu_especial = $menu->getPosibilidades([$sabor]);
+	$cantidad = floor(count($menu_especial)/3);
+	$resto = count($menu_especial)%3;
+}
+
 ?>
 <!DOCTYPE HTML> 
 <html> 
@@ -56,9 +64,41 @@ $(function() {
  
 <body>
 	<?php include_once 'bloques/header.php'; ?>
-	<section id="menu">		
-		<h1 id="tag-pizza" class="titulo"><img src="img/linea-curva.png"> Pizzas <img src="img/linea-curva.png"></h1>
-		<div id="info"><i><strong>Cada pizza (43cm por 43cm) equivale a dos tradicionales</strong> y rinde para comer 4 o picar 5 personas. <!-- Media pizza (43cm por 21cm) equivale a una tradicional y rinde para comer 2 o picar 3 personas. --></i></div>
+	<section id="menu">	
+		<?php if(isset($_GET['id'])){ ?>
+	
+			<h1 class="titulo"><img class="d-none d-lg-inline-block" src="img/linea-curva.png">Pizzas con <br class="d-lg-none"> <?php echo $sabor; ?> <img  class="d-none d-lg-inline-block" src="img/linea-curva.png"></h1>
+				<div class="col">
+					<?php
+					$cantidad = $cantidad + $resto;
+					for($i=0;$i<$cantidad && $i<count($menu_especial);$i++){
+						echo '<div class="variedad"><div class="num">'.$menu_especial[$i]["id"].'</div><div class="pizza"></div>'.$menu_especial[$i]["nombre"].'</div>';
+					}
+					
+					?>
+				</div>
+				<div class="col">
+					<?php
+							for($i=$cantidad; $i<$cantidad*2 && $i<count($menu_especial);$i++){
+						echo '<div class="variedad"><div class="num">'.$menu_especial[$i]["id"].'</div><div class="pizza"></div>'.$menu_especial[$i]["nombre"].'</div>';
+					}
+					
+					?>
+				</div>
+				<div class="col">
+					<?php
+							for($i=$cantidad*2;$i<$cantidad*3 && $i<count($menu_especial);$i++){
+						echo '<div class="variedad"><div class="num">'.$menu_especial[$i]["id"].'</div><div class="pizza"></div>'.$menu_especial[$i]["nombre"].'</div>';
+					}
+					
+					?>
+				</div>	
+			<?php } ?>
+	
+	
+	
+	  <h1 id="tag-pizza" class="titulo"><img src="img/linea-curva.png"> Pizzas <img src="img/linea-curva.png"></h1>
+		<div id="info"><i><strong>¡Nuestras pizzas (43x43cm) equivalen a dos de las tradicionales!</strong> Comen 4, pican 5</i> <!-- Media pizza (43cm por 21cm) equivale a una tradicional y rinde para comer 2 o picar 3 personas. --></i></div>
 		<div id="info"><i><strong>Hace clic sobre cualquier gusto</strong> para ajustar la búsqueda a pizzas que contengan ese sabor.</i></div>
 		<div class="col">
 			<?php

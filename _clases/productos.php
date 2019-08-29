@@ -45,25 +45,25 @@ class Menu{
 	private function armarNombreEspecial($sabores){
 		$cantidad = count($sabores);
 		if($sabores==1)// tiene un sabor
-			return '<a href="menu_especial.php?id='.urlencode($sabores[0]).'">'.$sabores[0].'</a>';
+			return '<a href="menu.php?id='.urlencode($sabores[0]).'">'.$sabores[0].'</a>';
 		else{ // tiene 2 o mas 			
 			if($this->saborEspecial($sabores)===FALSE){
-				$nombre = '<a href="menu_especial.php?id='.urlencode($sabores[0]).'">'.$sabores[0].'</a>';
+				$nombre = '<a href="menu.php?id='.urlencode($sabores[0]).'">'.$sabores[0].'</a>';
 				for($i=1; $i<$cantidad;$i++){
 					if($i==$cantidad-1){
-						$nombre = $nombre.' y <a href="menu_especial.php?id='.urlencode($sabores[$i]).'">'.$sabores[$i].'</a>';
+						$nombre = $nombre.' y <a href="menu.php?id='.urlencode($sabores[$i]).'">'.$sabores[$i].'</a>';
 					}else{
-						$nombre = $nombre.', <a href="menu_especial.php?id='.urlencode($sabores[$i]).'">'.$sabores[$i].'</a>';
+						$nombre = $nombre.', <a href="menu.php?id='.urlencode($sabores[$i]).'">'.$sabores[$i].'</a>';
 					}
 				}
 			}else{
 				$sabores = $this->saborEspecial($sabores);
-				$nombre = '<i>'.$sabores[0].'</i> : <a href="menu_especial.php?id='.urlencode($sabores[1]).'">'.$sabores[1].'</a>';
+				$nombre = '<i>'.$sabores[0].'</i> : <a href="menu.php?id='.urlencode($sabores[1]).'">'.$sabores[1].'</a>';
 				for($i=2; $i<$cantidad;$i++){
 					if($i==$cantidad-1){
-						$nombre = $nombre.' y <a href="menu_especial.php?id='.urlencode($sabores[$i]).'">'.$sabores[$i].'</a>';
+						$nombre = $nombre.' y <a href="menu.php?id='.urlencode($sabores[$i]).'">'.$sabores[$i].'</a>';
 					}else{
-						$nombre = $nombre.', <a href="menu_especial.php?id='.urlencode($sabores[$i]).'">'.$sabores[$i].'</a>';
+						$nombre = $nombre.', <a href="menu.php?id='.urlencode($sabores[$i]).'">'.$sabores[$i].'</a>';
 					}
 				}	
 			}						
@@ -103,15 +103,15 @@ class Menu{
 	private function armarNombre($sabores){
 		$cantidad = count($sabores);
 		if($sabores==1)// tiene un sabor
-			return $sabores[0];
+			'<a href="menu.php?id='.urlencode($sabores[0]).'">'.$sabores[0].'</a>';
 		else{ // tiene 2 o mas 			
 			if($this->saborEspecial($sabores)===FALSE){
-				$nombre = $sabores[0]."";
+				$nombre = '<a href="menu.php?id='.urlencode($sabores[0]).'">'.$sabores[0].'</a>';
 				for($i=1; $i<$cantidad;$i++){
 					if($i==$cantidad-1){
-						$nombre = $nombre." y ".$sabores[$i]."";
+						$nombre = $nombre.' y <a href="menu.php?id='.urlencode($sabores[$i]).'">'.$sabores[$i].'</a>';
 					}else{
-						$nombre = $nombre.", ".$sabores[$i]."";
+						$nombre = $nombre.', <a href="menu.php?id='.urlencode($sabores[$i]).'">'.$sabores[$i].'</a>';
 					}
 				}
 			}else{
@@ -119,9 +119,9 @@ class Menu{
 				$nombre = "<i>".$sabores[0]."</i> : ".$sabores[1]."";
 				for($i=2; $i<$cantidad;$i++){
 					if($i==$cantidad-1){
-						$nombre = $nombre." y ".$sabores[$i]."";
+						$nombre = $nombre.' y <a href="menu.php?id='.urlencode($sabores[$i]).'">'.$sabores[$i].'</a>';
 					}else{
-						$nombre = $nombre.", ".$sabores[$i]."";
+						$nombre = $nombre.', <a href="menu.php?id='.urlencode($sabores[$i]).'">'.$sabores[$i].'</a>';
 					}
 				}	
 			}						

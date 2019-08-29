@@ -45,7 +45,7 @@ $(function() {
     <section id="faq">      
 		  <div class="mx-auto col-12 col-sm-10 col-xl-9 p-0 m-0 container">
         <h2 class="titulo mb-3">Las pizzas más grandes de Bahía Blanca</h2>
-        <div id="info" class="mb-3 mb-lg-5 display-5" ><i><strong>Nuestra pizza equivale a dos tradicionales</strong> y rinde para comer 4 o picar 5 personas</i></div>
+        <div id="info" class="mb-3 mb-lg-5 display-5" ><i><strong>¡Nuestras pizzas equivalen a dos de las tradicionales!</strong> Comen 4, pican 5</i></div>
         
         <div class="col-12 col-lg-5 float-left text-center">
           <h4 class="info pb-2 d-none d-lg-inline-block ">Una pizza de Pizza al Cuadrado</h4>
@@ -64,31 +64,29 @@ $(function() {
         <div class="clearfix"></div>
       </div>
 
-      <h2 class="titulo">Tamaños de pizzas y Delivery</h2>
       <div class="contenido">
-  
-        <ol class="lista mt-1">
-          <li><strong>Pizza Completa</strong>: podes elegir entre uno y cuatro gustos por pizza. ¡Mide 43x43cm! Equivale a dos pizzas tradicionales.</li>
-          <li><strong>Media Pizza</strong>: podes elegir entre uno y dos gustos por pizza. ¡Mide 43x21cm!</li>
-          <li><strong>Pizza al paso</strong>: porción de pizza para retirar en el negocio.</li>
-        </ol>
+        <h2 class="col-12 sub text-center mt-4 mb-3 float-left">Pizza completa</h2>  
+        <div class="lista mt-1 text-center">
+          <!-- <img class="img_sab d-inline-block" src="img/faq_pizza1sab.jpg" width="150" alt="Pizza completa de un sabor"> -->
+          <img class="img_sab d-inline-block" src="img/faq_pizza2sab.jpg" width="150" alt="Pizza completa de dos sabores">
+          <img class="img_sab d-inline-block" src="img/faq_pizza3sab.jpg" width="150" alt="Pizza completa de tres sabores">
+          <img class="img_sab d-inline-block" src="img/faq_pizza4sab.jpg" width="150" alt="Pizza completa de cuatro sabores">
+          <p class="clearfix display-5 mt-3 text-center">Podes elegir hasta cuatro sabores por pizza. <strong>¡Mide 43x43cm!</strong> <br>Equivale a dos pizzas tradicionales: <strong>comen 4</strong>, pican 5.</p>
+        </div> 
 
-        <img class="img_sab" src="img/faq_pizza2sab.jpg" height="115" alt="Pizza completa de dos sabores">
-        <img class="img_sab" src="img/faq_pizza3sab.jpg" height="115" alt="Pizza completa de tres sabores">
-        <img class="img_sab" src="img/faq_pizza3sab.jpg" height="115" alt="Pizza completa de tres sabores">
-        <img class="img_sab" src="img/faq_mediapizza.jpg"height="115" alt="Media pizza de uno o dos sabores.">    
-        <img class="img_sab" src="img/faq_mediapizza.jpg"height="115" alt="Media pizza de uno o dos sabores.">       
-        <img class="img_sab" src="img/faq_pizzactos.png" height="115" alt="Comen 4 o pican 5 personas">  
 
-     <!--  por Sarmiento 906 a retirar tu pedido. Preguntar por tel&eacute;fono o en el local por &aacute;rea de cobertura del delivery.</li>
-          <li>Elegir la cantidad de sabores que deseas en tu pizza y su tama&ntilde;o. Una<strong> pizza completa</strong> 
-      <em>(43cm x 43cm)</em> puede ser de una variedad, dos variedades o tres variedades. Una <strong>media pizza</strong><em>
-      (43cm x 22cm)</em> puede ser de una o dos variedades. <a class="link" href="https://www.facebook.com/pizzaalcuadrado/photos_all" target="_blank">(Te invitamos a ver nuestras pizzas)</a>.</li>
-          <li>Decidir que gustos queres, los cuales podes ver en:  <a href="menu.php" target="_blank" class="link">
-      pizzas y empanadas.</a></li>
-          <li>Llamarnos al  <a href="tel:02914526024" class="link">(0291) 4526024</a> para tener tu pedido 
-      en el confort de tu hogar</li>
-        </ol> -->
+        <h2 class="col-12 sub text-center mt-4 mb-2 float-left">Media Pizza</h2>  
+        <div class="lista mt-1 text-center">
+        <img class="img_sab d-inline-block" src="img/faq_mediapizza.jpg" width="75" alt="Media pizza de uno o dos sabores.">    
+        <img class="img_sab d-inline-block" src="img/faq_mediapizza.jpg" width="75" alt="Media pizza de uno o dos sabores.">   
+          <p class="clearfix display-5 mt-3  text-center">Podes elegir hasta dos sabores por pizza. <strong>¡Mide 43x21cm!</strong> <br>Equivale a una pizza tradicional: <strong>comen 2</strong>.</p>
+        </div> 
+        
+        <h2 class="col-12 sub text-center mt-4 mb-2 float-left">Pizza al paso</h2>  
+        <div class="lista mt-1 text-center">
+        <img class="img_sab d-inline-block" src="img/faq_pizzaporcion.jpg" height="70" alt="Media pizza de uno o dos sabores.">    
+          <p class="clearfix display-5 mt-3  text-center">Porción de pizza de un sabor <strong>para retirar</strong> en Sarmiento 906. <br><strong>Come uno</strong>.</p>
+        </div> 
       </div>
 
 		<h2 class="titulo d-none">Tamaños de pizzas y Delivery</h2>
@@ -96,7 +94,7 @@ $(function() {
 			<img class="img_sab" src="img/faq_pizza1sab.jpg" height="115" alt="Pizza completa de un sabor">
             <img class="img_sab" src="img/faq_pizza2sab.jpg" height="115" alt="Pizza completa de dos sabores">
             <img class="img_sab" src="img/faq_pizza3sab.jpg" height="115" alt="Pizza completa de tres sabores">
-            <img class="img_sab" src="img/faq_pizza3sab.jpg" height="115" alt="Pizza completa de tres sabores">
+            <img class="img_sab" src="img/faq_pizza4sab.jpg" height="115" alt="Pizza completa de cuatro sabores">
             <img class="img_sab" src="img/faq_mediapizza.jpg"height="115" alt="Media pizza de uno o dos sabores.">    
             <img class="img_sab" src="img/faq_mediapizza.jpg"height="115" alt="Media pizza de uno o dos sabores.">       
             <img class="img_sab" src="img/faq_pizzactos.png" height="115" alt="Comen 4 o pican 5 personas">  

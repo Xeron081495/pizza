@@ -52,7 +52,7 @@ $(function() {
 });*/
 
 
-var imagenes = ['header4.jpg', 'header.jpg'];
+var imagenes = ['header4.jpg','header1.jpg', 'header.jpg'];
 var texto1 = ['Pizza al cuadrado', 'La pizza m&aacute;s grande', 'de Bah&iacute;a Blanca'];
 var texto2 = ['Las m&aacute;s deliciosas', 'milanesas a la pizza', 'a partir del Lunes 4'];
 var texto3 = ['Las m&aacute;s deliciosas', 'milanesas a la pizza', 'est&aacute;n en pizza al cuadrado'];
@@ -116,7 +116,7 @@ function avanzar(){
 				<a class="opcion-menu" href="contacto.php">Contacto</a>
 				<a class="opcion-menu" href="galeria.php">Galer&iacute;a</a>
 				<a class="opcion-menu" href="faq.php">Preguntas <span class="d-none d-xl-inline-block mr-2">Frecuentes</span></a>
-				<a class="opcion-menu" href="menu.php">Nuestras pizzas</a>
+				<a class="opcion-menu" href="menu.php">Menú de Pizzas</a>
 			</nav>
 			<a href="#menu-celu" id="menu-icono"><i class="fas fa-bars"></i></a>
 	   </div>
@@ -159,7 +159,7 @@ function avanzar(){
 	   </div>
     </header>
 	<section id="menu-atajos" class="col-12">
-		<a href="menu.php?desde_inicio#tag-pizza">
+		<a href="menu.php?desde_inicio">
 		<div class="opcion mr-2">
 			<div class="pizza fondo"></div>
 			<div class="texto">Nuestras Pizzas</div>
@@ -195,7 +195,7 @@ function avanzar(){
 		<div class="col-0 col-lg-0 col-xl-2 float-left">&nbsp;</div>-->
 	</section>
 	
-    <section id="nosotros">
+    <section id="nosotros" class="mb-2">
 		<div class="mx-auto col-12 col-sm-10 col-xl-9 p-0 m-0 container">
 			<h3 class="m-0 p-0 pt-4">
 				<span>

@@ -16,7 +16,7 @@
 			<a class="opcion-menu" href="contacto.php">Contacto</a>
 			<a class="opcion-menu" href="galeria.php">Galer&iacute;a</a>
 			<a class="opcion-menu" href="faq.php">Preguntas <span class="d-none d-xl-inline-block mr-2"> Frecuentes</span></a>
-			<a class="opcion-menu" href="menu.php">Nuestras Pizzas</a>
+			<a class="opcion-menu" href="menu.php">Menú de Pizzas</a>
 		</nav>
 		<a href="#menu-celu" id="menu-icono"><i class="fas fa-bars"></i></a>
 	</div>

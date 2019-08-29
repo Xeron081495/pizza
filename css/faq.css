@@ -18,8 +18,9 @@ section#faq .contenido {
 }
 section#faq .contenido .img_sab{
 	border-radius: 5px;
-	border: solid 0.15em #111;
-	margin: 0.5em 1em;
+	border: solid 2px #111;
+	margin: 0.5em 5px;
+	max-width: 28%;
 }
 section#faq .contenido p{
 	margin: 2em 0 1em 0;
@@ -38,7 +39,7 @@ section#faq .contenido ol a{
 }
 
 
-/*arreglos para la versión grande */
+/*arreglos para la versiï¿½n grande */
 @media only screen and (min-width: 1400px)  {
 	
 }

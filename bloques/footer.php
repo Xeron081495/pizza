@@ -2,7 +2,7 @@
 	<nav id="menu-celu" class="d-lg-none">
 		   <a class="opcion-menu" href="./">Inicio</a>
 		   <a class="opcion-menu" href="faq.php">Preguntas Frecuentes</a>
-		   <a class="opcion-menu" href="menu.php">Men&uacute;</a>
+		   <a class="opcion-menu" href="menu.php">Menú de Pizzas</a>
 		   <a class="opcion-menu" href="galeria.php">Galer&iacute;a</a>
 		   <a class="opcion-menu" href="contacto.php">Contacto</a>		
 	</nav>
@@ -21,7 +21,7 @@
 		   <a class="opcion-menu" href="contacto.php">Contacto</a>
 		   <a class="opcion-menu" href="galeria.php">Galer&iacute;a</a>
 		   <a class="opcion-menu" href="faq.php">Preguntas Frecuentes</a>
-		   <a class="opcion-menu" href="menu.php">Nuestras Pizzas</a>
+		   <a class="opcion-menu" href="menu.php">Menú de Pizzas</a>
 		 </nav>
 	</div>
 	<div id="firma">Copyright <?php echo date('Y'); ?> &#169; Pizza al cuadrado | Todos los derechos reservados | Dise&ntilde;ado por <a href="http://xeronweb.com/" target="_black">>>Xeron!</a></div>
