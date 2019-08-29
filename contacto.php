@@ -2,6 +2,8 @@
 <!DOCTYPE HTML> 
 <html> 
 <head>
+<script type="text/javascript"> (function() { var css = document.createElement('link'); css.href = 'https://use.fontawesome.com/releases/v5.1.0/css/all.css'; css.rel = 'stylesheet'; css.type = 'text/css'; document.getElementsByTagName('head')[0].appendChild(css); })(); </script>
+
 <title><?php echo $lugar; ?> | Pizza al cuadrado, Pizzas y Empanadas - Bah�a Blanca</title>
 <meta charset="UTF-8" />
 <link rel="shortcut icon" href="img/icono.png" />
@@ -44,7 +46,28 @@ $(function() {
  
 <body>
 	<?php include_once 'bloques/header.php'; ?>
-	<section id="contacto">	
+	
+	<section id="contacto">
+	<div id="cuadros" class="cuadros_pc d-inline-block">
+		<h3 class="cuadro calendario"><i class="fas fa-calendar-alt mr-2"></i> Martes a Domingo</h3>
+		<h3 class="cuadro reloj"><i class="far fa-clock mr-2"></i>20hs a 23hs</h3>
+		<h3 class="cuadro lugar" onclick="siguiente()"><i class="fas fa-map-marked-alt mr-2"></i>Sarmiento al 906</h3>
+		<h3 class="cuadro persona">
+			<i class="fas fa-phone mr-2"></i> 
+				<a href="tel:02914526024">452-6024</a>
+		</h3>
+		<h3 class="cuadro persona d-sm-none">
+			<a href="http://instagram.com/pizaalcuadrado" target="_blanck"><i class="fab fa-instagram"></i></a>
+		</h3>
+		<h3 class="cuadro persona">
+			<i class="fab fa-whatsapp mr-2"></i>
+			<a href="https://api.whatsapp.com/send?phone=5492914400810" target="_blanck">Pedí por Whatsapp</a>
+		</h3>
+		<h3 class="cuadro persona d-sm-none">
+			<a href="https://www.facebook.com/pizzaalcuadrado" target="_blanck"><i class="fab fa-facebook-square"></i></a>
+		</h3>
+	</div>	
+
 	  <div id="consulta">
 	  
 		<?php 

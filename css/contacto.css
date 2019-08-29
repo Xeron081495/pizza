@@ -1,3 +1,27 @@
+
+#cuadros{
+	margin-top: 20px;
+	float: left;	
+	text-align: center;
+	width: 100%;
+	color: #FFF;
+}
+#cuadros .cuadro{
+	margin: 0 1em 0 0;
+	display: inline-block;
+	background: #b89472;
+	padding: 0.8em;
+	font-weight: normal;
+	background-repeat: no-repeat;
+	background-position: 0.2em center;
+	font-size: 18px; 
+	margin-bottom: 10px;
+}
+#cuadros .cuadro a{
+	text-decoration: none;
+	color: white;
+}
+
 section#contacto{
 	width: 100%;
 	float: left;
@@ -111,7 +135,7 @@ section#contacto #consulta #formulario #boton {
 	cursor: pointer;
 }
 
-/*arreglos para la versión grande */
+/*arreglos para la versiï¿½n grande */
 @media only screen and (min-width: 1400px)  {
 	
 }
@@ -126,7 +150,7 @@ section#contacto #consulta #formulario #boton {
 	
 }
 /*celular */
-@media only screen and (max-width:8000px) {
+@media only screen and (max-width:960px) {
 	section#contacto{
 		width: 100%;
 		float: left;
@@ -147,5 +171,8 @@ section#contacto #consulta #formulario #boton {
 		padding: 2em 1%;
 		float: right;
 		clear: right;
+	}
+	#cuadros .cuadro{
+		font-size: 13px; 
 	}
 }

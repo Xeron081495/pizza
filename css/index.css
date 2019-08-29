@@ -27,6 +27,7 @@ header#top #logo-menu  #logo{
 	margin: 1em 0;
 	float: left;
 	clear: left;
+	max-width: 22%;
 }
 header#top #logo-menu  #logo img{
 	width: 195px;
@@ -41,7 +42,7 @@ header#top #logo-menu  #datos{
 	float: right;
 	clear: right;
 	text-align: right;
-	width: 80%;
+	width: 78%;
 }
 header#top #logo-menu  #datos .dato{
 	margin: 0 1em;
@@ -55,7 +56,7 @@ header#top #logo-menu  nav#menu{
 	float: right;
 	clear: right;
 	text-align: right;
-	width: 80%;
+	width: 78%;
 }
 
 header#top #logo-menu  nav#menu a.opcion-menu{
