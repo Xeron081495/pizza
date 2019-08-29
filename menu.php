@@ -98,7 +98,7 @@ $(function() {
 	
 	
 	  <h1 id="tag-pizza" class="titulo"><img src="img/linea-curva.png"> Pizzas <img src="img/linea-curva.png"></h1>
-		<div id="info"><i><strong>¡Nuestras pizzas (43x43cm) equivalen a dos de las tradicionales!</strong> Comen 4, pican 5</i> <!-- Media pizza (43cm por 21cm) equivale a una tradicional y rinde para comer 2 o picar 3 personas. --></i></div>
+		<div id="info"><i><strong>¡Nuestras pizzas (43x43cm) equivalen a dos de las tradicionales!</strong> Comen 4, pican 5.</i> <br>En <a href="faq.php">Preguntas Frecuentes</a> podés saber más del tamaño de nuestras pizzas<!-- Media pizza (43cm por 21cm) equivale a una tradicional y rinde para comer 2 o picar 3 personas. --></i></div>
 		<div id="info"><i><strong>Hace clic sobre cualquier gusto</strong> para ajustar la búsqueda a pizzas que contengan ese sabor.</i></div>
 		<div class="col">
 			<?php
@@ -151,7 +151,7 @@ $(function() {
 		</div>
 		-->
 		
-		<!-- <h1 id="tag-empanada" class="titulo"><img src="img/linea-curva.png"> Adicionales <img src="img/linea-curva.png"></h1>
+		<h1 id="tag-empanada" class="titulo titulo_chico"><img src="img/linea-curva.png"> Adicionales <img src="img/linea-curva.png"></h1>
 		<div id="info"><i><strong>!Crea tu propia pizza agregandole cualquier sabor!</strong></i></div>
 		<div class="col">
 		   <div class="variedad"><div class="num">1</div><div class="pizza"></div>Carne</div>
@@ -165,7 +165,7 @@ $(function() {
 		</div>
 		<div class="col">
 		   <div class="variedad"><div class="num">12</div><div class="pizza"></div>Muzza, panceta y cebolla de verdeo</div>
-		</div> -->
+		</div>
 		
 	</section>	
 	<?php include_once 'bloques/footer.php'; ?>    

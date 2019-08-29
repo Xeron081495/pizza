@@ -172,4 +172,7 @@ section#contacto #consulta #formulario #boton {
 		float: right;
 		clear: right;
 	}
+	#cuadros .cuadro{
+		font-size: 13px; 
+	}
 }

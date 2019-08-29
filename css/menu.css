@@ -25,11 +25,11 @@ section#menu h1.titulo{
 }
 section#menu #info{
 	width: 100%;
-	font-size: 18px;
+	font-size: 15px;
 	font-family: 'Montserrat', Arial, Helvetica;
 	font-size: normal;
 	text-align: center;
-	margin-bottom: 25px;
+	margin-bottom: 23px;
 	float: left;
 	clear: both;
 	margin-top: 0;
@@ -92,12 +92,15 @@ section#menu .col .variedad a:hover{
 	}
 }
 /*celular */
-@media only screen and (max-width:800px) {	
+@media only screen and (max-width:960px) {	
 	section#menu{
 		width: 100%;
 	}
 	section#menu h1.titulo{
-		font-size: 2em;
+		font-size: 34px;
+	}
+	section#menu h1.titulo_chico{
+		font-size: 28px;
 	}
 	section#menu .col{
 		width: 100%;
