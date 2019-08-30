@@ -30,9 +30,9 @@ if(isset($_GET['id'])){
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
  
-<link rel="stylesheet" href="css/global.css" />
-<link rel="stylesheet" href="css/footer.css" />
-<link rel="stylesheet" href="css/menu.css" />
+<link rel="stylesheet" href="css/global.css?fecha=29l08l2019" />
+<link rel="stylesheet" href="css/footer.css?fecha=29l08l2019" />
+<link rel="stylesheet" href="css/menu.css?fecha=30l08l2019" />
 
 
 <link rel="shortcut icon" href="img/icono.png" />
@@ -98,7 +98,8 @@ $(function() {
 	
 	
 	  <h1 id="tag-pizza" class="titulo"><img src="img/linea-curva.png"> Pizzas <img src="img/linea-curva.png"></h1>
-		<div id="info"><i><strong>¡Nuestras pizzas (43x43cm) equivalen a dos de las tradicionales!</strong> Comen 4, pican 5.</i> <br>En <a href="faq.php">Preguntas Frecuentes</a> podés saber más del tamaño de nuestras pizzas<!-- Media pizza (43cm por 21cm) equivale a una tradicional y rinde para comer 2 o picar 3 personas. --></i></div>
+		<div id="info"><i><strong>¡Nuestras pizzas (43x43cm) equivalen a dos de las tradicionales!</strong> Comen 4, pican 5.</i> <br>
+			En <a href="faq.php">Información</a> podés saber más del tamaño de nuestras pizzas<!-- Media pizza (43cm por 21cm) equivale a una tradicional y rinde para comer 2 o picar 3 personas. --></i></div>
 		<div id="info"><i><strong>Hace clic sobre cualquier gusto</strong> para ajustar la búsqueda a pizzas que contengan ese sabor.</i></div>
 		<div class="col">
 			<?php
@@ -151,7 +152,7 @@ $(function() {
 		</div>
 		-->
 		
-		<h1 id="tag-empanada" class="titulo titulo_chico"><img src="img/linea-curva.png"> Adicionales <img src="img/linea-curva.png"></h1>
+		<!-- <h1 id="tag-empanada" class="titulo titulo_chico"><img src="img/linea-curva.png"> Adicionales <img src="img/linea-curva.png"></h1>
 		<div id="info"><i><strong>!Crea tu propia pizza agregandole cualquier sabor!</strong></i></div>
 		<div class="col">
 		   <div class="variedad"><div class="num">1</div><div class="pizza"></div>Carne</div>
@@ -165,7 +166,7 @@ $(function() {
 		</div>
 		<div class="col">
 		   <div class="variedad"><div class="num">12</div><div class="pizza"></div>Muzza, panceta y cebolla de verdeo</div>
-		</div>
+		</div> -->
 		
 	</section>	
 	<?php include_once 'bloques/footer.php'; ?>    

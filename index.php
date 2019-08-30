@@ -3,7 +3,7 @@
 <!DOCTYPE HTML> 
 <html> 
 <head>
-<title>Pizza al cuadrado - Pizzas gigantes - Bah&iacute;a Blanca</title>
+<title>Pizza al cuadrado - Las Pizzas más grande de Bah&iacute;a Blanca</title>
 <meta charset="UTF-8" />
 <meta name="theme-color" content="orange">
 <link rel="shortcut icon" href="img/icono.png" />
@@ -38,10 +38,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
  
-<link rel="stylesheet" href="css/global.css" />
-<link rel="stylesheet" href="css/footer.css" />
-<link rel="stylesheet" href="css/index.css" />
-<link rel="stylesheet" href="css/faq.css" />
+<link rel="stylesheet" href="css/global.css?fecha=29l08l2019" />
+<link rel="stylesheet" href="css/footer.css?fecha=29l08l2019" />
+<link rel="stylesheet" href="css/index.css?fecha=30l08l2019" />
+<link rel="stylesheet" href="css/faq.css?fecha=29l08l2019" />
 
 
 <script type="text/javascript">
@@ -130,7 +130,7 @@ function avanzar(){
 				<h3 class="cuadro reloj"><i class="far fa-clock mr-2"></i>20hs a <br> 23hs</h3>
 			</div>
 			<div class="linea">
-				<h3 class="cuadro lugar"><i class="fas fa-map-marked-alt mr-2"></i>Sarmiento <br> al 906</h3>
+				<h3 class="cuadro lugar"><i class="fas fa-map-marked-alt mr-2"></i>Sarmiento <br> 906</h3>
 				<h3 class="cuadro persona">
 					<i class="fas fa-phone mr-2"></i><a href="tel:02914526024">452-6024</a><br>	<br>					
 					<a href="https://api.whatsapp.com/send?phone=5492914400810" target="_blanck">
@@ -142,7 +142,7 @@ function avanzar(){
 	   <div id="cuadros" class="cuadros_pc d-inline-block">
 			<h3 class="cuadro calendario"><i class="fas fa-calendar-alt mr-2"></i> Martes a Domingo</h3>
 			<h3 class="cuadro reloj"><i class="far fa-clock mr-2"></i>20hs a 23hs</h3>
-			<h3 class="cuadro lugar" onclick="siguiente()"><i class="fas fa-map-marked-alt mr-2"></i>Sarmiento al 906</h3>
+			<h3 class="cuadro lugar" onclick="siguiente()"><i class="fas fa-map-marked-alt mr-2"></i>Sarmiento 906</h3>
 			<h3 class="cuadro persona">
 				<i class="fas fa-phone mr-2"></i> 
 				<a href="tel:02914526024">452-6024</a>
@@ -181,25 +181,25 @@ function avanzar(){
 				<h2 class="col-12 sub text-center mt-4 mb-3 float-left">Pizza completa</h2>  
 				<div class="lista mt-1 text-center ">
 					<!-- <img class="img_sab d-inline-block" src="img/faq_pizza1sab.jpg" width="150" alt="Pizza completa de un sabor"> -->
-					<img class="img_sab d-inline-block" src="img/faq_pizza2sab.jpg" width="150" alt="Pizza completa de dos sabores">
-					<img class="img_sab d-inline-block" src="img/faq_pizza3sab.jpg" width="150" alt="Pizza completa de tres sabores">
-					<img class="img_sab d-inline-block" src="img/faq_pizza4sab.jpg" width="150" alt="Pizza completa de cuatro sabores">
-					<p class="clearfix display-5 mt-3 text-center">Podes elegir hasta cuatro sabores por pizza. <strong>¡Mide 43x43cm!</strong> <br>Equivale a dos pizzas tradicionales: <strong>comen 4</strong>, pican 5.</p>
+					<img class="img_sab d-inline-block" src="img/faq_pizza1sab.jpg" width="150" alt="Pizza completa de dos sabores">
+					<img class="img_sab d-inline-block" src="img/faq_pizza2sab.jpg" width="150" alt="Pizza completa de tres sabores">
+					<img class="img_sab d-inline-block" src="img/faq_pizza3sab.jpg" width="150" alt="Pizza completa de cuatro sabores">
+					<p class="clearfix display-5 mt-3 text-center">Podes elegir hasta tres sabores por pizza. <strong>¡Mide 43x43cm!</strong> <br>Equivale a dos pizzas tradicionales: <strong>comen 4</strong>, pican 5.</p>
 				</div> 
 			</div>
 
 			<div class="contenido col-12 col-md-6">
 				<h2 class="col-12 sub text-center mt-4 mb-3 float-left">Media Pizza</h2>  
 				<div class="lista mt-1 text-center">
-					<img class="img_sab d-inline-block" src="img/faq_mediapizza.jpg" width="75" alt="Media pizza de uno o dos sabores.">    
-					<img class="img_sab d-inline-block" src="img/faq_mediapizza.jpg" width="75" alt="Media pizza de uno o dos sabores.">   
+<!-- 					<img class="img_sab d-inline-block" src="img/faq_mediapizza.jpg" width="75" alt="Media pizza de uno o dos sabores.">    
+ -->					<img class="img_sab d-inline-block" src="img/faq_mediapizza.jpg" width="75" alt="Media pizza de uno o dos sabores.">   
 					<p class="clearfix display-5 mt-3  text-center">Podes elegir hasta dos sabores por pizza. <strong>¡Mide 43x21cm!</strong> <br>Equivale a una pizza tradicional: <strong>comen 2</strong>.</p>
 				</div> 
 			</div>
 
 			<div class="clearfix"></div>
 			
-			<div class="contenido col-12 col-md-6">
+			<div class="contenido col-12 col-md-6 d-none">
 				<h2 class="col-12 sub text-center mt-4 mb-2 float-left">Pizza al paso</h2>  
 				<div class="lista mt-1 text-center">
 					<img class="img_sab d-inline-block" src="img/faq_pizzaporcion.jpg" height="70" alt="Media pizza de uno o dos sabores.">    
@@ -207,7 +207,7 @@ function avanzar(){
 				</div> 
 			</div>
 
-			<div class="contenido col-12 col-md-6">
+			<div class="contenido col-12 col-md-12 mt-4 d-inline-block">
 				<h2 class="col-12 sub text-center mt-4 mb-3 float-left">Zona de Delivery</h2>  
 				<div class="lista mt-1 text-center">
 					<i class="fas fa-motorcycle d-inline-block display-4"></i>

@@ -32,9 +32,9 @@ $(function() {
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.js"></script>
 
-<link rel="stylesheet" href="css/global.css" />
-<link rel="stylesheet" href="css/footer.css" />
-<link rel="stylesheet" href="css/galeria.css" />
+<link rel="stylesheet" href="css/global.css?fecha=29l08l2019" />
+<link rel="stylesheet" href="css/footer.css?fecha=29l08l2019" />
+<link rel="stylesheet" href="css/galeria.css?fecha=29l08l2019" />
 
 
 <!-- Global site tag (gtag.js) - Google Analytics -->

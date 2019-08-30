@@ -44,7 +44,7 @@ section#menu .col .variedad{
 	width: 100%;
 	padding: 0.5em 0;
 	float: left;
-	font-size: 1.1em;
+	font-size: 19px;
 	clear: both;
 }
 section#menu .col .variedad .num{
@@ -79,7 +79,7 @@ section#menu .col .variedad a:hover{
 		width: 100%;
 		padding: 0.5em 0;
 		float: left;
-		font-size: 1em;
+		font-size: 18px;
 		clear: both;
 	}
 	section#menu .col .variedad a{
@@ -109,6 +109,10 @@ section#menu .col .variedad a:hover{
 		width: 100%;
 		padding: 0em 1em; 
 		float: left;
+	}
+	section#menu .col .variedad{
+		font-size: 21px;
+		padding: 0.3em 0;
 	}
 	section#menu .col .variedad a{
 		text-decoration: none;
