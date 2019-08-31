@@ -30,9 +30,9 @@ if(isset($_GET['id'])){
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
  
-<link rel="stylesheet" href="css/global.css?fecha=29l08l2019" />
-<link rel="stylesheet" href="css/footer.css?fecha=29l08l2019" />
 <link rel="stylesheet" href="css/menu.css?fecha=30l08l2019" />
+<link rel="stylesheet" href="css/footer.css?fecha=29l08l2019" />
+<link rel="stylesheet" href="css/global.css?fecha=29l08l2019" />
 
 
 <link rel="shortcut icon" href="img/icono.png" />
@@ -42,10 +42,15 @@ if(isset($_GET['id'])){
 
 
 <script type="text/javascript">
+
+
 $(function() {
 	var imagenes = ['header.jpg', 'header2.jpg', 'header3.jpg', 'header4.jpg'];
   $('header#top #titulo').css({'background-image': 'url(img/' + imagenes[Math.floor(Math.random() * imagenes.length)] + ')'});
 });
+
+
+
 </script>
 
 
@@ -64,6 +69,14 @@ $(function() {
  
 <body>
 	<?php include_once 'bloques/header.php'; ?>
+
+
+	
+	<h3 class="cuadro persona">
+		<i class="fab fa-whatsapp mr-2"></i>
+		<a href="https://api.whatsapp.com/send?phone=5492914400810" target="_blanck">Pedí por Whatsapp</a>
+	</h3>
+
 	<section id="menu">	
 		<?php if(isset($_GET['id'])){ ?>
 	
