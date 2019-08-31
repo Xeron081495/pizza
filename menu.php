@@ -3,6 +3,7 @@
 //libreria
 include_once '_clases/productos.php';
 $menu = new Menu();
+$sabores = $menu->getSabores();
 $lista = $menu->getMenuEspecial();
 $cantidad = floor(count($menu->getMenu())/3);
 $resto = count($menu->getMenu())%3;
@@ -30,8 +31,8 @@ if(isset($_GET['id'])){
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
  
-<link rel="stylesheet" href="css/menu.css?fecha=30l08l2019" />
-<link rel="stylesheet" href="css/footer.css?fecha=29l08l2019" />
+<link rel="stylesheet" href="css/footer.css?fecha=30l08l2019" />
+<link rel="stylesheet" href="css/menu.css?fecha=31bl08l2019" />
 <link rel="stylesheet" href="css/global.css?fecha=29l08l2019" />
 
 
@@ -49,6 +50,10 @@ $(function() {
   $('header#top #titulo').css({'background-image': 'url(img/' + imagenes[Math.floor(Math.random() * imagenes.length)] + ')'});
 });
 
+
+function elegirSabor(sel){
+	window.location="menu.php?id="+sel.value;
+}
 
 
 </script>
@@ -77,6 +82,17 @@ $(function() {
 		<a href="https://api.whatsapp.com/send?phone=5492914400810" target="_blanck">Pedí por Whatsapp</a>
 	</h3>
 
+	<form class="btn-group">
+	<select id="sabor" class="selectpicker select"  onchange="elegirSabor(this);">
+		<option value="">Filtrar por sabor</option>
+		<?php 
+		foreach($sabores as $s){
+			echo '<option value="'.urlencode($s["nombre"]).'">'.$s["nombre"].'</option>';
+		}
+		?>
+	</select>
+
+	</form>
 	<section id="menu">	
 		<?php if(isset($_GET['id'])){ ?>
 	
