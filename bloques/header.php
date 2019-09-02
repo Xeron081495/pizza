@@ -1,3 +1,41 @@
+<script>
+
+	$(window).scroll(function(event) {
+		const altura = $(window).scrollTop();
+		const ancho = $(document).width();
+		console.log(altura);
+		
+		if(altura>0 && ancho<960){ 
+			$('#logo-menu').css("height","74px");
+			$('#top').css("height","189px");
+			$('header#top #logo-menu  #logo img').css("width","90px");	
+			$('header#top #logo-menu  #logo').css("margin-top","10px");	
+			$('header#top #titulo').css("margin-top","73px");	
+			$('header#top #logo-menu  a#menu-icono').css("margin-top","13px");
+		}
+
+	});
+
+
+	/*document.onscroll = function(){
+		//obtengo la altura
+		const altura = document.documentElement.scrollTop;
+
+		console.log(altura);
+
+		if(altura>200){
+			//$('header#top').hide();
+		}else if(altura<200){
+			//$('header#top').show();
+		}
+		
+	};*/
+
+	
+
+</script>
+
+
 <meta name="theme-color" content="orange">
 
 <header id="top">

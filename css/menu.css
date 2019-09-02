@@ -1,7 +1,7 @@
 body{
 	background-image: url('../img/fondo-marron.jpg');	
 }
-.cuadro{
+.cuadro, .select{
 	display: none;
 }
 section#menu{

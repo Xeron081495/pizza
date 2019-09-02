@@ -100,6 +100,22 @@ class Menu{
 		return $sabores;
 	}
 	
+	public function getSaboresComunes(){
+		$conn = new Conexion();
+		$sabores = array();
+		$sql = "SELECT * FROM sabores WHERE especial=0 ORDER BY nombre ASC";
+		if($resultado = $conn->getConexion()->query($sql))
+			while($dato = $resultado->fetch_assoc()){
+				if($dato['id']==5){
+					$sabores[count($sabores)] = $sabores[0];
+					$sabores[0] = array( "id"=>$dato['id'], "nombre"=> $dato['nombre'] ); //es muzza
+				}else
+					array_push($sabores,array( "id"=>$dato['id'], "nombre"=> $dato['nombre'] ));
+			}
+		$conn->close();
+		return $sabores;
+	}
+	
 	private function armarNombre($sabores){
 		$cantidad = count($sabores);
 		if($sabores==1)// tiene un sabor

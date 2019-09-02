@@ -3,7 +3,7 @@
 //libreria
 include_once '_clases/productos.php';
 $menu = new Menu();
-$sabores = $menu->getSabores();
+$sabores = $menu->getSaboresComunes();
 $lista = $menu->getMenuEspecial();
 $cantidad = floor(count($menu->getMenu())/3);
 $resto = count($menu->getMenu())%3;
@@ -84,7 +84,7 @@ function elegirSabor(sel){
 
 	<form class="btn-group">
 	<select id="sabor" class="selectpicker select"  onchange="elegirSabor(this);">
-		<option value="">Filtrar por sabor</option>
+		<option value="">Filtrar pizzas por sabor</option>
 		<?php 
 		foreach($sabores as $s){
 			echo '<option value="'.urlencode($s["nombre"]).'">'.$s["nombre"].'</option>';
@@ -132,14 +132,14 @@ function elegirSabor(sel){
 		<div id="info"><i><strong>Hace clic sobre cualquier gusto</strong> para ajustar la búsqueda a pizzas que contengan ese sabor.</i></div>
 		<div class="col">
 			<?php
-			for($i=0;$i<25 && $i<count($lista);$i++){
+			for($i=0;$i<34 && $i<count($lista);$i++){
 				echo '<div class="variedad"><div class="num">'.$lista[$i]["id"].'</div><div class="pizza"></div>'.$lista[$i]["nombre"].'</div>';
 			}			
 			?>
 		</div>
 		<div class="col">
 			<?php
-			for($i=25;$i<50 && $i<count($lista);$i++){
+			for($i=34;$i<69 && $i<count($lista);$i++){
 				echo '<div class="variedad"><div class="num">'.$lista[$i]["id"].'</div><div class="pizza"></div>'.$lista[$i]["nombre"].'</div>';
 			}
 			
@@ -147,7 +147,7 @@ function elegirSabor(sel){
 		</div>
 		<div class="col">
 			<?php
-			for($i=50;$i<100 && $i<count($lista);$i++){
+			for($i=69;$i<120 && $i<count($lista);$i++){
 				echo '<div class="variedad"><div class="num">'.$lista[$i]["id"].'</div><div class="pizza"></div>'.$lista[$i]["nombre"].'</div>';
 			}			
 			?>
