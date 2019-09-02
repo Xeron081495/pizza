@@ -76,23 +76,27 @@ function elegirSabor(sel){
 	<?php include_once 'bloques/header.php'; ?>
 
 
+
+	<div class="botones m-0 p-0">
+		<h3 class="cuadro persona col-12 d-sm-none m-0">
+			<i class="fab fa-whatsapp mr-2"></i>
+			<a href="https://api.whatsapp.com/send?phone=5492914400810" target="_blanck">Pedí por Whatsapp</a>
+		</h3>
+
+		<form class="btn-group col-12 m-0 p-0">
+			<select id="sabor" class="selectpicker select col-12"  onchange="elegirSabor(this);">
+				<option value="">Filtrar pizzas por sabor</option>
+				<?php 
+				foreach($sabores as $s){
+					echo '<option value="'.urlencode($s["nombre"]).'">'.$s["nombre"].'</option>';
+				}
+				?>
+			</select>
+		</form>	
+	</div>
 	
-	<h3 class="cuadro persona">
-		<i class="fab fa-whatsapp mr-2"></i>
-		<a href="https://api.whatsapp.com/send?phone=5492914400810" target="_blanck">Pedí por Whatsapp</a>
-	</h3>
 
-	<form class="btn-group">
-	<select id="sabor" class="selectpicker select"  onchange="elegirSabor(this);">
-		<option value="">Filtrar pizzas por sabor</option>
-		<?php 
-		foreach($sabores as $s){
-			echo '<option value="'.urlencode($s["nombre"]).'">'.$s["nombre"].'</option>';
-		}
-		?>
-	</select>
 
-	</form>
 	<section id="menu">	
 		<?php if(isset($_GET['id'])){ ?>
 	
