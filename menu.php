@@ -76,30 +76,7 @@ function elegirSabor(sel){
 <body>
 	<?php include_once 'bloques/header.php'; ?>
 
-
-
-	<div class="botones m-0 p-0">
-		<h3 class="cuadro persona col-12 d-sm-none m-0">
-			<i class="fab fa-whatsapp mr-2"></i>
-			<a href="https://api.whatsapp.com/send?phone=5492914400810" target="_blanck">Pedí por Whatsapp</a>
-		</h3>
-
-		<form class="btn-group col-12 m-0 p-0">
-			<select id="sabor" class="selectpicker select col-12"  onchange="elegirSabor(this);">
-				<option value="">Filtrar pizzas por sabor</option>
-				<?php 
-				foreach($sabores as $s){
-					echo '<option value="'.urlencode($s["nombre"]).'">'.$s["nombre"].'</option>';
-				}
-				?>
-			</select>
-		</form>	
-	</div>
-	
-
-
-	<section id="menu">	
-		
+	<section id="menu">		
 		<!-- menu personalizados -->
 		<?php if(isset($_GET['id'])){ ?>
 			<!-- pizza con sabor a ... -->
@@ -166,8 +143,28 @@ function elegirSabor(sel){
 		<!-- INFORMACION EXTRA DEL MENU COMPLETO -->
 		<div id="info"><i><strong>¡Nuestras pizzas (43x43cm) equivalen a dos de las tradicionales!</strong> Comen 4, pican 5.</i> <br>
 			En <a href="faq.php">Información</a> podés saber más del tamaño de nuestras pizzas<!-- Media pizza (43cm por 21cm) equivale a una tradicional y rinde para comer 2 o picar 3 personas. --></i></div>
-		<div id="info"><i><strong>Hace clic sobre cualquier gusto</strong> para ajustar la búsqueda a pizzas que contengan ese sabor.</i></div>
+		<!-- <div id="info"><i><strong>Hace clic sobre cualquier gusto</strong> para ajustar la búsqueda a pizzas que contengan ese sabor.</i></div> -->
 		
+		
+		<div class="botones m-0 p-0">
+			<h3 class="cuadro persona d-sm-none d-lg-inline-block m-0">
+				<i class="fab fa-whatsapp mr-2"></i>
+				<a href="https://api.whatsapp.com/send?phone=5492914400810" target="_blanck">Pedí por Whatsapp</a>
+			</h3>
+
+			<form class="btn-group m-0 p-0">
+				<select id="sabor" class="selectpicker select"  onchange="elegirSabor(this);">
+					<option value="">Filtrar pizzas por sabor</option>
+					<?php 
+					foreach($sabores as $s){
+						echo '<option value="'.urlencode($s["nombre"]).'">'.$s["nombre"].'</option>';
+					}
+					?>
+				</select>
+			</form>	
+		</div>
+		<div class="clearfix"></div>
+
 		<!-- imprimir columnas -->
 		<?php  
 			//tiene el valor donde empiezan la segunda y tercer columna
@@ -195,8 +192,8 @@ function elegirSabor(sel){
 									$sabor = $pizzas[$i]['sabores'][$j];  
 									if($j+1==$cantidad) $caracter = '.'; 
 									elseif($j+2==$cantidad) $caracter = ' y ';  
-									else $caracter = ','; 
-									echo '<a href="?id='.urlencode($sabor['nombre']).'">'.$sabor['nombre'].''.$caracter.' </a>';
+									else $caracter = ', '; 
+									echo '<a href="?id='.urlencode($sabor['nombre']).'">'.$sabor['nombre'].'</a>'.$caracter;
 								} 
 							?>
 							<!-- opcionales -->
@@ -207,8 +204,8 @@ function elegirSabor(sel){
 									$sabor = $pizzas[$i]['opcionales'][$j];  
 									if($j+1==$cantidad) $caracter = '.'; 
 									elseif($j+2==$cantidad) $caracter = ' o ';  
-									else $caracter = ','; 
-									echo '<a href="?id='.urlencode($sabor['nombre']).'">'.$sabor['nombre'].''.$caracter.' </a>';
+									else $caracter = ', '; 
+									echo '<a href="?id='.urlencode($sabor['nombre']).'">'.$sabor['nombre'].'</a>'.$caracter;
 								} 
 							?>
 						</div>

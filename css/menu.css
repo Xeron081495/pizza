@@ -1,9 +1,71 @@
 body{
 	background-image: url('../img/fondo-marron.jpg');	
 }
-.cuadro, .select{
+
+.botones{
+	width: 100%;
+	position: relative;
+	float: left;
+	clear: both;
+	z-index: 0; 
+	text-align: center;
+}
+.botones .btn-group{
+	display: inline-block;
+	text-align: center;
+}
+.botones .btn-group .select:focus{		
+	 outline: 0;
+}
+.botones .btn-group .select{
+	border-radius: 5px;
+	display: inline-block;
+	background: #c9b59bad;
+	padding: 8.5px 0px;
+	font-weight: normal;
+	background-repeat: no-repeat;
+	background-position: 0.2em center;
+	font-size: 18px; 
+	z-index: 1000;
+	color: rgb(36, 36, 36);
+	text-align: center;
+	border: 0px; 
+	-webkit-appearance: none;
+	-moz-appearance: none;      
+	appearance: none;
+	text-align-last:center; 
+}
+.botones .btn-group .select::-ms-expand {
 	display: none;
 }
+.botones .btn-group .select option{
+	text-align: center;
+	width: 100%;
+}
+.botones .cuadro a{
+	text-decoration: none;
+	color: white;
+}
+
+.botones .cuadro{
+	border-radius: 5px;
+	margin: 0;
+	display: inline-block;
+	background: #b89472b9;
+	padding: 11px 22px;
+	height: 44px;
+	font-weight: normal;
+	background-repeat: no-repeat;
+	background-position: 0.2em center;
+	font-size: 17px; 
+	color: rgb(41, 41, 41);
+	text-align: center;
+}
+.botones .cuadro a{
+	text-decoration: none;
+	color: rgb(41, 41, 41);
+}
+
 section#menu{
 	width: 100%;
 	max-width: 1300px;
@@ -105,14 +167,16 @@ section#menu .col .variedad a:hover{
 		margin: 0;
 		z-index: 1000;
 	}
-
-
-	.btn-group{
+	.botones .btn-group{
+		width: 100%;
+		border-radius: 0;
 	}
-	.select:focus{		
+	.botones .btn-group .select:focus{		
  		outline: 0;
 	}
-	.select{
+	.botones .btn-group .select{
+		border-radius: 0;
+		width: 100%;
 		display: inline-block;
 		background: #000000f5;
 		padding: 10px 10%;
@@ -129,20 +193,17 @@ section#menu .col .variedad a:hover{
 		appearance: none;
 		text-align-last:center; 
 	}
-	.select::-ms-expand {
+	.botones .btn-group .select::-ms-expand {
 		display: none;
 	}
-	.select option{
+	.botones .btn-group .select option{
 		text-align: center;
 		width: 100%;
 	}
 
-	.cuadro a{
-		text-decoration: none;
-		color: white;
-	}
-
-	.cuadro{
+	.botones .cuadro{
+		width: 100%;
+		border-radius: 0;
 		margin: 0;
 		display: inline-block;
 		background: #b89472ec;
@@ -155,7 +216,7 @@ section#menu .col .variedad a:hover{
 		color: white;
 		text-align: center;
 	}
-	.cuadro a{
+	.botones .cuadro a{
 		text-decoration: none;
 		color: white;
 	}
