@@ -174,13 +174,14 @@ function elegirSabor(sel){
 
 			foreach($intervalos as $intervalo){ ?>			
 		
-				<div class="col col-12 col-md-6 col-xl-6 m-0">
+				<div class="col col-12 col-md-6 col-xl-6 m-0 pr-4 pl-4">
 					<?php for($i=$intervalo[0];$i<$intervalo[1]  && $i<count($pizzas);$i++){ ?>
 						<div class="variedad">
 							<!-- numeros -->
 							<div class="num">
 								<?php echo $pizzas[$i]['comida']['id']; ?>
 							</div>
+							<div class="pizza float-left">
 							<!-- nombre -->
 							<?php if($pizzas[$i]['comida']['nombre']!=null){ ?>
 								<i><?php echo $pizzas[$i]['comida']['nombre']; ?>: </i>
@@ -208,6 +209,7 @@ function elegirSabor(sel){
 									echo '<a href="?id='.urlencode($sabor['nombre']).'">'.$sabor['nombre'].'</a>'.$caracter;
 								} 
 							?>
+							</div>
 						</div>
 					<?php }	?>
 				</div>

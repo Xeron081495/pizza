@@ -7,7 +7,7 @@ class Conexion{
 	//constructor
 	public function __construct(){
 		// Create connection
-		$this->conexion = new mysqli("localhost","pizzacua_user","Pizza1520!","pizzacua_bd");
+		$this->conexion = new mysqli("localhost","pizzacua_user","Pizza1520!","pizzacua_base");
 		
 		// Check connection
 		if ($this->conexion->connect_error){
