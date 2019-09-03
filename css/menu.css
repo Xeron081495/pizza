@@ -39,8 +39,8 @@ section#menu #info{
 	text-align: center;
 }
 section#menu .col{
-	width: 33%;
-	padding: 1em 1em; 
+	padding: 1em 0em;
+	width: 50%; 
 	float: left;
 }
 section#menu .col .variedad{

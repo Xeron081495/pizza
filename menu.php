@@ -3,18 +3,19 @@
 //libreria
 include_once '_clases/productos.php';
 $menu = new Menu();
-$sabores = $menu->getSaboresComunes();
-$lista = $menu->getMenuEspecial();
-$cantidad = floor(count($menu->getMenu())/3);
-$resto = count($menu->getMenu())%3;
-
+$carta = $menu->getCarta();
+$pizzas = $carta['Pizzas'];
+$sabores = $menu->getSabores();
+$cantidad = floor(count($pizzas)/2);
+$resto = count($pizzas)%2;
 
 if(isset($_GET['id'])){
 	$sabor = urldecode($_GET['id']);
-	$menu_especial = $menu->getPosibilidades([$sabor]);
-	$cantidad = floor(count($menu_especial)/3);
-	$resto = count($menu_especial)%3;
+	$pizzas_f = $menu->getPosibilidades([$sabor]);
+	$cantidad_f = floor(count($pizzas_f)/2);
+	$resto_f = count($pizzas_f)%2;
 }
+
 
 ?>
 <!DOCTYPE HTML> 
@@ -98,64 +99,123 @@ function elegirSabor(sel){
 
 
 	<section id="menu">	
+		
+		<!-- menu personalizados -->
 		<?php if(isset($_GET['id'])){ ?>
-	
-			<h1 class="titulo"><img class="d-none d-lg-inline-block" src="img/linea-curva.png">Pizzas con <br class="d-lg-none"> <?php echo $sabor; ?> <img  class="d-none d-lg-inline-block" src="img/linea-curva.png"></h1>
+			<!-- pizza con sabor a ... -->
+			<h1 class="titulo">
+				<img class="d-none d-lg-inline-block" src="img/linea-curva.png">
+				Pizzas con <br class="d-lg-none"> <?php echo $sabor; ?> 
+				<img  class="d-none d-lg-inline-block" src="img/linea-curva.png">
+			</h1>
+			<!-- imprimir columnas -->
+			<?php  
+			//tiene el valor donde empiezan la segunda y tercer columna
+			$cantidad_f = $cantidad_f+$resto_f;
+			$intervalos_f = [[0,$cantidad_f],[$cantidad_f,($cantidad_f)*2]];
+
+			foreach($intervalos_f as $intervalo_f){ ?>			
+		
 				<div class="col">
-					<?php
-					$cantidad = $cantidad + $resto;
-					for($i=0;$i<$cantidad && $i<count($menu_especial);$i++){
-						echo '<div class="variedad"><div class="num">'.$menu_especial[$i]["id"].'</div><div class="pizza"></div>'.$menu_especial[$i]["nombre"].'</div>';
-					}
-					
-					?>
+					<?php for($i=$intervalo_f[0]; $i<$intervalo_f[1] && $i<count($pizzas_f); $i++){ ?>
+						<div class="variedad">
+							<!-- numeros -->
+							<div class="num">
+								<?php echo $pizzas_f[$i]['comida']['id']; ?>
+							</div>
+							<!-- nombre -->
+							<?php if($pizzas_f[$i]['comida']['nombre']!=null){ ?>
+								<i><?php echo $pizzas_f[$i]['comida']['nombre']; ?>: </i>
+							<?php } ?>
+							<!-- sabores -->
+							<?php 
+								$cant =  count($pizzas_f[$i]['sabores']);
+								for($j=0; $j<$cant; $j++){
+									$sabor = $pizzas_f[$i]['sabores'][$j];  
+									if($j+1==$cant) $caracter = '.'; 
+									elseif($j+2==$cant) $caracter = ' y ';  
+									else $caracter = ','; 
+									echo '<a href="?id='.urlencode($sabor['nombre']).'">'.$sabor['nombre'].''.$caracter.' </a>';
+								} 
+							?>
+							<!-- opcionales -->
+							<?php 
+								$cant =  count($pizzas_f[$i]['opcionales']);
+								if($cant>0) echo '(<i>Opcional: </i> '  ;
+								for($j=0; $j<$cant; $j++){
+									$sabor = $pizzas_f[$i]['opcionales'][$j];  
+									if($j+1==$cant) $caracter = '.'; 
+									elseif($j+2==$cant) $caracter = ' o ';  
+									else $caracter = ','; 
+									echo '<a href="?id='.urlencode($sabor['nombre']).'">'.$sabor['nombre'].''.$caracter.' </a>';
+								} 
+							?>
+						</div>
+					<?php }	?>
 				</div>
-				<div class="col">
-					<?php
-							for($i=$cantidad; $i<$cantidad*2 && $i<count($menu_especial);$i++){
-						echo '<div class="variedad"><div class="num">'.$menu_especial[$i]["id"].'</div><div class="pizza"></div>'.$menu_especial[$i]["nombre"].'</div>';
-					}
-					
-					?>
-				</div>
-				<div class="col">
-					<?php
-							for($i=$cantidad*2;$i<$cantidad*3 && $i<count($menu_especial);$i++){
-						echo '<div class="variedad"><div class="num">'.$menu_especial[$i]["id"].'</div><div class="pizza"></div>'.$menu_especial[$i]["nombre"].'</div>';
-					}
-					
-					?>
-				</div>	
-			<?php } ?>
+			<?php } ?> 
+		<?php } ?> 
 	
 	
-	
-	  <h1 id="tag-pizza" class="titulo"><img src="img/linea-curva.png"> Pizzas <img src="img/linea-curva.png"></h1>
+		<!-- MENU COMPLETO -->
+	  	<h1 id="tag-pizza" class="titulo">
+			  <img src="img/linea-curva.png">
+			  Pizzas
+			  <img src="img/linea-curva.png">
+		</h1>
+		<!-- INFORMACION EXTRA DEL MENU COMPLETO -->
 		<div id="info"><i><strong>¡Nuestras pizzas (43x43cm) equivalen a dos de las tradicionales!</strong> Comen 4, pican 5.</i> <br>
 			En <a href="faq.php">Información</a> podés saber más del tamaño de nuestras pizzas<!-- Media pizza (43cm por 21cm) equivale a una tradicional y rinde para comer 2 o picar 3 personas. --></i></div>
 		<div id="info"><i><strong>Hace clic sobre cualquier gusto</strong> para ajustar la búsqueda a pizzas que contengan ese sabor.</i></div>
-		<div class="col">
-			<?php
-			for($i=0;$i<34 && $i<count($lista);$i++){
-				echo '<div class="variedad"><div class="num">'.$lista[$i]["id"].'</div><div class="pizza"></div>'.$lista[$i]["nombre"].'</div>';
-			}			
-			?>
-		</div>
-		<div class="col">
-			<?php
-			for($i=34;$i<69 && $i<count($lista);$i++){
-				echo '<div class="variedad"><div class="num">'.$lista[$i]["id"].'</div><div class="pizza"></div>'.$lista[$i]["nombre"].'</div>';
-			}
-			
-			?>
-		</div>
-		<div class="col">
-			<?php
-			for($i=69;$i<120 && $i<count($lista);$i++){
-				echo '<div class="variedad"><div class="num">'.$lista[$i]["id"].'</div><div class="pizza"></div>'.$lista[$i]["nombre"].'</div>';
-			}			
-			?>
-		</div>
+		
+		<!-- imprimir columnas -->
+		<?php  
+			//tiene el valor donde empiezan la segunda y tercer columna
+			$cantidad = $cantidad+$resto*2;
+			//$intervalos = [[0,$cantidad],[$cantidad,($cantidad)*2],[$cantidad*2,$cantidad*3]];
+			$intervalos = [[0,$cantidad],[$cantidad+1,$cantidad*4]];
+
+			foreach($intervalos as $intervalo){ ?>			
+		
+				<div class="col col-12 col-md-6 col-xl-6 m-0">
+					<?php for($i=$intervalo[0];$i<$intervalo[1]  && $i<count($pizzas);$i++){ ?>
+						<div class="variedad">
+							<!-- numeros -->
+							<div class="num">
+								<?php echo $pizzas[$i]['comida']['id']; ?>
+							</div>
+							<!-- nombre -->
+							<?php if($pizzas[$i]['comida']['nombre']!=null){ ?>
+								<i><?php echo $pizzas[$i]['comida']['nombre']; ?>: </i>
+							<?php } ?>
+							<!-- sabores -->
+							<?php 
+								$cantidad =  count($pizzas[$i]['sabores']);
+								for($j=0; $j<$cantidad; $j++){
+									$sabor = $pizzas[$i]['sabores'][$j];  
+									if($j+1==$cantidad) $caracter = '.'; 
+									elseif($j+2==$cantidad) $caracter = ' y ';  
+									else $caracter = ','; 
+									echo '<a href="?id='.urlencode($sabor['nombre']).'">'.$sabor['nombre'].''.$caracter.' </a>';
+								} 
+							?>
+							<!-- opcionales -->
+							<?php 
+								$cantidad =  count($pizzas[$i]['opcionales']);
+								if($cantidad>0) echo '(<i>Opcional:</i> ';
+								for($j=0; $j<$cantidad; $j++){
+									$sabor = $pizzas[$i]['opcionales'][$j];  
+									if($j+1==$cantidad) $caracter = '.'; 
+									elseif($j+2==$cantidad) $caracter = ' o ';  
+									else $caracter = ','; 
+									echo '<a href="?id='.urlencode($sabor['nombre']).'">'.$sabor['nombre'].''.$caracter.' </a>';
+								} 
+							?>
+						</div>
+					<?php }	?>
+				</div>
+			<?php } ?> 
+
 		
 		<!--<h1 id="tag-milanesa" class="titulo"><img src="img/linea-curva.png"> Milanesas a la pizza <img src="img/linea-curva.png"></h1>
 		<div id="info"><i>

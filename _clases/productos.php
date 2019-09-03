@@ -3,83 +3,104 @@
 include_once 'conexion.php';
 
 class Menu{
-	
-	//retorna una lista del tipo [[N,Nombre,[Productos]],...,[N,Nombre,[Productos]]]
-	public function getMenu(){
-		$menu = array();
-		$lista = $this->getMenuAux();
-		foreach($lista as $producto){
-			$sabores = array();
-			foreach($producto["sabores"] as $sabor){
-				$s = $this->getSabor($sabor);
-				if($s=="Muzza" && count($sabores)>0){
-					array_push($sabores,$sabores[0]);
-					$sabores[0] = $s;
-				}else
-					array_push($sabores,$this->getSabor($sabor));
-			}
-			$aux = ["id" => $producto["id"], "nombre" => $this->armarNombre($sabores), "sabores" => $sabores];
-			array_push($menu,$aux);
-		}		
-		return $menu;
-	}
 
-	public function getMenuEspecial(){
-		$menu = array();
-		$lista = $this->getMenuAux();
-		foreach($lista as $producto){
-			$sabores = array();
-			foreach($producto["sabores"] as $sabor){
-				$s = $this->getSabor($sabor);
-				if($s=="Muzza" && count($sabores)>0){
-					array_push($sabores,$sabores[0]);
-					$sabores[0] = $s;
-				}else
-					array_push($sabores,$this->getSabor($sabor));
+	//retorna una lista de tipo [categoria, comidas]
+	//	categoria es un string
+	// 	comidas es una lista de tipo [comida,sabores,opcionales]
+	//		comida es una lista con el id de la comida y un string con el nombre que puede ser nulo
+	//		sabores es una lista de tipo [id sabor, nombre del sabor]
+	//		opcionales es una lista de tipo [id sabor, nombre del sabor]
+	public function getCarta(){
+		//creo la carta
+		$carta = array();
+		
+		//obtengo las categorias
+		$categorias = $this->getCategorias();
+		
+		//recorro las categorias y busco sus comidas
+		foreach($categorias as $categoria){
+			//busco comidas
+			$comidas = $this->getComidas($categoria);
+			//creo array para guardar comidas de categoria	
+			$carta[$categoria] = array();
+			//recorro cada comida
+			foreach($comidas as $comida){
+
+				//buscar sabores
+				$sabores = $this->getSaboresComida($comida['id'],false);
+
+				//buscar opcionales
+				$opcionales = $this->getSaboresComida($comida['id'],true);
+
+				$c = array(
+					"comida" => $comida,
+					"sabores" => $sabores,
+					"opcionales" => $opcionales
+				);
+
+				array_push($carta[$categoria], $c); 
 			}
-			$aux = ["id" => $producto["id"], "nombre" => $this->armarNombreEspecial($sabores), "sabores" => $sabores];
-			array_push($menu,$aux);
-		}		
-		return $menu;
-	}
-	private function armarNombreEspecial($sabores){
-		$cantidad = count($sabores);
-		if($sabores==1)// tiene un sabor
-			return '<a href="menu.php?id='.urlencode($sabores[0]).'">'.$sabores[0].'</a>';
-		else{ // tiene 2 o mas 			
-			if($this->saborEspecial($sabores)===FALSE){
-				$nombre = '<a href="menu.php?id='.urlencode($sabores[0]).'">'.$sabores[0].'</a>';
-				for($i=1; $i<$cantidad;$i++){
-					if($i==$cantidad-1){
-						$nombre = $nombre.' y <a href="menu.php?id='.urlencode($sabores[$i]).'">'.$sabores[$i].'</a>';
-					}else{
-						$nombre = $nombre.', <a href="menu.php?id='.urlencode($sabores[$i]).'">'.$sabores[$i].'</a>';
-					}
-				}
-			}else{
-				$sabores = $this->saborEspecial($sabores);
-				$nombre = '<i>'.$sabores[0].'</i> : <a href="menu.php?id='.urlencode($sabores[1]).'">'.$sabores[1].'</a>';
-				for($i=2; $i<$cantidad;$i++){
-					if($i==$cantidad-1){
-						$nombre = $nombre.' y <a href="menu.php?id='.urlencode($sabores[$i]).'">'.$sabores[$i].'</a>';
-					}else{
-						$nombre = $nombre.', <a href="menu.php?id='.urlencode($sabores[$i]).'">'.$sabores[$i].'</a>';
-					}
-				}	
-			}						
 		}
-		return $nombre;
-	}
-	
+		return $carta;
 
+	}
+
+	private function getSaboresComida($id_comida,$opcional=false){
+
+		$conn = new Conexion();
+		$sabores = array();
+		$sql = "SELECT cs.id_sabor as id_sabor, s.nombre as nombre FROM comidas_sabores as cs, sabores as s 
+				WHERE cs.id_comida='".$id_comida."' 
+				  AND cs.opcional='$opcional' 
+				  AND cs.id_sabor = s.id
+				  ORDER BY s.prioridad DESC";
+
+		if($resultado = $conn->getConexion()->query($sql))
+			while($dato = $resultado->fetch_assoc()){
+				array_push($sabores,array(
+								"id" => $dato['id_sabor'],
+								"nombre" => $dato['nombre']
+							)
+						);
+			}
+		return $sabores;
+
+	}
+
+	private function getComidas($categoria){
+		$conn = new Conexion();
+		$comidas = array();
+		$sql = "SELECT * FROM comidas WHERE categoria='".$categoria."' ORDER BY id ASC";
+		if($resultado = $conn->getConexion()->query($sql))
+			while($dato = $resultado->fetch_assoc()){
+				$comidas[$dato['id']] = array(
+					"id" => $dato['id'],
+					"nombre" => $dato['nombre']
+				);
+			}
+		return $comidas;
+
+	}
+
+	//retorna una lista de sabores
+	private function getCategorias(){
+		$conn = new Conexion();
+		$categorias = array();
+		$sql = "SELECT * FROM categorias ORDER BY prioridad DESC";
+		if($resultado = $conn->getConexion()->query($sql))
+			while($dato = $resultado->fetch_assoc()){
+				$categorias[$dato['nombre']] = $dato['nombre'];
+			}
+		return $categorias;
+	}
 	
 	//recibe un array con sabores y devuelve las opciones
 	public function getPosibilidades($sabores){
-		$menu = $this->getMenu();
+		$pizzas = $this->getCarta()['Pizzas'];
 		$pos = array();
-		foreach($menu as $producto){
-			if($this->pertenece($sabores,$producto["sabores"]))
-				array_push($pos,$producto);
+		foreach($pizzas as $pizza){
+			if($this->pertenece($sabores,array_merge($pizza['sabores'],$pizza['opcionales'])))
+				array_push($pos,$pizza);
 		}
 		return $pos;
 	}
@@ -116,60 +137,6 @@ class Menu{
 		return $sabores;
 	}
 	
-	private function armarNombre($sabores){
-		$cantidad = count($sabores);
-		if($sabores==1)// tiene un sabor
-			'<a href="menu.php?id='.urlencode($sabores[0]).'">'.$sabores[0].'</a>';
-		else{ // tiene 2 o mas 			
-			if($this->saborEspecial($sabores)===FALSE){
-				$nombre = '<a href="menu.php?id='.urlencode($sabores[0]).'">'.$sabores[0].'</a>';
-				for($i=1; $i<$cantidad;$i++){
-					if($i==$cantidad-1){
-						$nombre = $nombre.' y <a href="menu.php?id='.urlencode($sabores[$i]).'">'.$sabores[$i].'</a>';
-					}else{
-						$nombre = $nombre.', <a href="menu.php?id='.urlencode($sabores[$i]).'">'.$sabores[$i].'</a>';
-					}
-				}
-			}else{
-				$sabores = $this->saborEspecial($sabores);
-				$nombre = "<i>".$sabores[0]."</i> : ".$sabores[1]."";
-				for($i=2; $i<$cantidad;$i++){
-					if($i==$cantidad-1){
-						$nombre = $nombre.' y <a href="menu.php?id='.urlencode($sabores[$i]).'">'.$sabores[$i].'</a>';
-					}else{
-						$nombre = $nombre.', <a href="menu.php?id='.urlencode($sabores[$i]).'">'.$sabores[$i].'</a>';
-					}
-				}	
-			}						
-		}
-		return $nombre;
-	}
-	
-	private function saborEspecial($sabores){
-		$especiales = $this->getSaboresEspeciales(); 
-		for($i=0; $i<count($sabores);$i++){
-			if(in_array($sabores[$i],$especiales)){
-				$aux = $sabores[$i];
-				$sabores[$i] = $sabores[0];
-				$sabores[0] = $aux;
-				return $sabores;
-			}
-		}			
-		return false;
-	}
-	
-	private function getSaboresEspeciales(){
-		$conn = new Conexion();
-		$lista = array();
-		$sql = "SELECT * FROM sabores WHERE especial='1' ORDER BY id ASC";
-		if($resultado = $conn->getConexion()->query($sql))
-			while($dato = $resultado->fetch_assoc()){
-				array_push($lista,$dato['nombre']);			
-			}	
-		$conn->close();		
-		return $lista;
-	}
-	
 	
 	//agregar sabor a la lista de sabores
 	public function agregarSabor($sabor){
@@ -184,19 +151,43 @@ class Menu{
 	}
 	
 	//agregar sabor a la lista de sabores
-	public function agregarProducto($id,$sabores){		
-		$sabores = json_encode($sabores);
+	public function agregarProducto($id,$nombre,$categoria,$sabores,$opcionales){		
+		//conexion
 		$conn = new Conexion();
-		$sql = "INSERT INTO menu (id,sabores) VALUES ('$id','".$sabores."')";
+
+		//crear comida
+		if($nombre==null)
+			$sql = "INSERT INTO comidas (id,categoria) VALUES ('$id','".$categoria."')";
+		else
+			$sql = "INSERT INTO comidas (id,categoria,nombre) VALUES ('$id','".$categoria."','".$nombre."')";		
 		if($conn->getConexion()->query($sql) === false)
 			throw new Exception('Error al subir producto. (Error: '.$conn->getConexion()->error.')');
+
+		//agregar sabores
+		foreach($sabores as $sabor){
+			$sql = "INSERT INTO comidas_sabores (id_comida,id_sabor,opcional) VALUES ('".$id."','".$sabor."','0')";		
+			if($conn->getConexion()->query($sql) === false)
+				throw new Exception('Error al subir producto. (Error: '.$conn->getConexion()->error.')');
+		}
+		
+		//agregar opcionales
+		if(!is_null($opcionales))
+			foreach($opcionales as $opcional){
+				$sql = "INSERT INTO comidas_sabores (id_comida,id_sabor,opcional) VALUES ('".$id."','".$opcional."','1')";		
+				if($conn->getConexion()->query($sql) === false)
+					throw new Exception('Error al subir producto. (Error: '.$conn->getConexion()->error.')');
+			}
+
 	}
 	
 	//verifica si los elementos de array1 estan en array2
-	private function pertenece($array1, $array2){
-		foreach($array1 as $valor){
-			if(!in_array($valor,$array2))
-				return false;
+	private function pertenece($sabores, $sabores_pizza){
+		foreach($sabores as $sabor){
+			$esta = false;
+			for($i=0; $i<count($sabores_pizza) && !$esta; $i++){
+				$esta = $sabores_pizza[$i]['nombre']==$sabor;
+			}
+			if(!$esta) return false;
 		}
 		return true;		
 	}	
