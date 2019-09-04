@@ -17,7 +17,11 @@ body{
 .botones .btn-group .select:focus{		
 	 outline: 0;
 }
+.botones .btn-group .select:hover,.botones .cuadro:hover{
+	background: #b89472b9;	
+}
 .botones .btn-group .select{
+	cursor: pointer;
 	border-radius: 5px;
 	display: inline-block;
 	background: #c9b59bad;
@@ -51,7 +55,7 @@ body{
 	border-radius: 5px;
 	margin: 0;
 	display: inline-block;
-	background: #b89472b9;
+	background: #c9b59bad;
 	padding: 11px 22px;
 	height: 44px;
 	font-weight: normal;
