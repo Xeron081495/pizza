@@ -1,0 +1,100 @@
+/*! http://responsiveslides.com v1.54 by @viljamis */
+
+.rslides {
+	position: relative;
+	list-style: none;
+	overflow: hidden;
+	width: 100%;
+	padding: 0;
+	margin-top: 0;
+	margin-right: 0;
+	margin-bottom: 0;
+	margin-left: 0;
+  }
+
+.rslides li {
+  -webkit-backface-visibility: hidden;
+  position: absolute;
+  display: none;
+  width: 100%;
+  left: 0;
+  top: 0;
+  }
+
+.rslides li:first-child {
+  position: relative;
+  display: block;
+  float: left;
+  }
+
+.rslides img {
+	display: block;
+	height: auto;
+	float: left;
+  }
+.imagen       {
+	border: 2px solid #000;
+	border-radius: 5px 5px 5px 5px;
+}
+
+.atras {
+	position: absolute;
+	top: 250px;
+	z-index: 10;
+	left: 403px;
+}
+.siguiente {
+	position: absolute;
+	top: 250px;
+	z-index: 10;
+	right: -50px;
+}
+.siguiente:hover {
+	position: absolute;
+	top: 250px;
+	z-index: 10;
+	right: -50px;
+	background-image: url(../activos/siguientephover.png);
+}
+atras:hover {
+	position: absolute;
+	top: 250px;
+	z-index: 10;
+	right: -50px;
+	background-image: url(../activos/atrasphover.png);
+}
+.caption {
+	position: absolute;
+	color: #FFF;
+	width: 390px;
+	height: 517px;
+	margin-top: 5px;
+	font-size: 16px;
+	padding-right: 30px;
+	padding-left: 30px;
+	padding-top: 10px;
+	top: 36px;
+	right: 0px;
+}
+#section #slider {
+	width: 904px;
+}
+
+
+.titulo      {
+	font-size: 40px;
+	font-family: "Century Gothic", Arial, sans-serif;
+	text-align: center;
+	text-transform: uppercase;
+	color: #CCC;
+	margin-bottom: 20px;
+}
+
+ol {
+	list-style-type: decimal;
+}
+#section #slider .callbacks_container #slider4 li .caption .menu {
+	list-style-type: decimal;
+	height: 28px;
+	font-size: 13px;
+}

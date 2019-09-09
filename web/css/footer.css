@@ -1,0 +1,230 @@
+footer{
+	width: 100%;
+	float: left;
+	clear: both;
+}
+
+footer nav#menu-celu{
+	width: 0;
+	float: left;
+	clear: both;	
+	visibility: hidden;
+	height: 0;
+}
+
+footer #top{
+	height: 150px;
+	width: 100%;
+	display: block-inline;
+	padding: 0 10%;
+	background-color: #2e2e2e;	
+}
+footer #top #logo{
+	margin: 1.2em 0; 
+	width: 18%;
+	float: left;
+	clear: left;
+}
+footer #top #logo img{
+	width: 100%;
+	float: left;
+	clear: both;
+	border-radius: 15px;
+}
+footer #top  #datos{
+	font-size: 1em;
+	margin: 2em 0 0;
+	float: right;
+	clear: right;
+	color: #FFF;
+	text-align: right;
+	width: 70%;
+}
+footer #top  #datos .dato{
+	margin: 0 1em;
+}
+footer #top  #datos .dato img{
+	margin: 0 0.2em;
+}
+footer #top  #datos .dato a{
+	color:#EEE;
+	font-size: 20px;
+}
+footer #top  #datos .dato a:hover{
+	color:rgb(221, 58, 58);
+	font-size: 20px;
+}
+footer #top nav#menu{
+	font-size: 1em;
+	margin: 2em 0 0 0;
+	float: right;
+	clear: right;
+	text-align: right;
+	width: 80%;
+}
+footer #top nav#menu a.opcion-menu{
+	font-size: 1em;
+	margin: 0em 1em;
+	float: right;
+	text-align: right;
+	text-decoration: none;
+	color: #FFF;
+	text-transform: uppercase;
+	padding: 0 0.5em;
+}
+footer #top  nav#menu a.opcion-menu:hover{
+	background: rgba(203,040,033, .8);
+}
+
+footer #firma{
+	height: 50px;
+	width: 100%;
+	display: block-inline;
+	padding: 1em 10%;
+	background-color: #1f1f1f;
+	color: #DDD;
+	text-align: right;	
+}
+footer #firma a{
+	color: #DDD;	
+}
+
+/*arreglos para la versión grande */
+@media only screen and (min-width: 1400px)  {
+	footer #top #logo{
+		margin: 1.2em 0; 
+		width: 12%;
+		float: left;
+		clear: left;
+	}	
+}
+
+/*arreglos para la versión grande */
+@media only screen and (max-width: 1350px)  {
+	footer{
+	}
+
+	footer #top{
+		height: 150px;	
+	}
+	footer #top #logo{
+		margin: 1.2em 0; 
+		width: 20%;
+		float: left;
+		clear: left;
+	}
+	footer #top #logo img{
+		border-radius: 5px;
+	}
+	footer #top  #datos{
+		font-size: 0.9em;
+		margin: 2em 0 0;
+		float: right;
+		clear: right;
+		color: #FFF;
+		text-align: right;
+		width: 65%;
+	}
+	footer #top  #datos .dato{
+		margin: 0 0.5em;
+	}
+	footer #top  #datos .dato img{
+		margin: 0 0.2em;
+	}
+	footer #top nav#menu{
+		font-size: 0.9em;
+		margin: 2em 0 0 0;
+		width: 65%;
+	}
+	footer #top nav#menu a.opcion-menu{
+		font-size: 0.88em;
+		margin: 1em 0.1em;
+		float: right;
+		text-align: right;
+		text-decoration: none;
+		color: #FFF;
+		text-transform: uppercase;
+		padding: 0 0.5em;
+	}
+	footer #top  nav#menu a.opcion-menu:hover{
+		background: rgba(203,040,033, .8);
+	}
+
+	footer #firma{
+		height: 50px;
+		width: 100%;
+		display: block-inline;
+		padding: 1.5em 10%;
+		background-color: #1f1f1f;
+		color: #DDD;
+		text-align: right;	
+		font-size:0.8em;
+	}
+	footer #firma a{
+		color: #DDD;	
+	}	
+}
+/*celular */
+@media only screen and (max-width: 960px) {
+	footer{
+		width: 100%;
+		float: left;
+		clear: both;
+	}
+	footer nav#menu-celu{
+		width: 100%;
+		background-color: #1f1f1f;	
+		float: left;
+		clear: both;	
+		visibility: visible;
+		height: auto;
+		padding-top: 120px;
+	}
+	footer nav#menu-celu a.opcion-menu{
+		width: 100%;
+		padding: 0.5em 5%;
+		float: left;
+		clear: both;
+		font-size: 2em;		
+		color: #DDD;
+		text-decoration: none;
+		text-align: center;
+		border-bottom: solid 0.01em #DDD;
+	}
+	footer #top{
+		width: 100%;
+		float: left;
+		height: auto;
+		padding: 0 10%;
+	}
+	footer #top #logo{
+		margin: 1.2em 25%; 
+		width: 50%;
+		float: left;
+		clear: both;
+	}
+	footer #top #logo img{
+		width: 100%;
+		float: left;
+		clear: both;
+		border-radius: 15px;
+	}
+	footer #top  #datos{
+		display: none;
+	}
+	footer #top nav#menu{
+		display: none;
+	}
+	footer #firma{
+		width: 100%;
+		float: left;
+		padding: 2em 10%;
+		text-align: center;	
+		height: auto;
+		font-size: 0.8em;
+	}
+	footer #firma a{
+		color: #DDD;	
+	}
+	
+}

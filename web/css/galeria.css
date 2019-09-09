@@ -1,0 +1,77 @@
+
+body{
+	margin:0;
+	padding:0;
+}
+.portfolio-menu{
+	text-align:center;
+	visibility: hidden;
+}
+.portfolio-menu ul li{
+	display:inline-block;
+	margin:0;
+	list-style:none;
+	padding:10px 15px;
+	cursor:pointer;
+	-webkit-transition:all 05s ease;
+	-moz-transition:all 05s ease;
+	-ms-transition:all 05s ease;
+	-o-transition:all 05s ease;
+	transition:all .5s ease;
+}
+
+.portfolio-item{
+	margin-bottom: 20px;
+}
+.portfolio-item .item{
+	/*width:303px;*/
+	float:left;
+	margin-bottom: 10px;
+}
+
+section#facebook{
+	max-width: 1300px;
+	margin: 0 auto;
+	display: block-inline;
+}
+
+section#facebook iframe{
+	width: 30%;
+	float: left;
+	height: 450px;
+	margin: 1em 1.6%;
+}
+
+/*arreglos para la versión grande */
+@media only screen and (min-width: 1400px)  {
+	section#facebook{
+	}
+	section#facebook iframe{
+		height: 425px;
+	}	
+}
+
+/* Version para netbook*/
+@media only screen and (max-width: 1350px)  {
+	section#facebook{
+		max-width: 960px;
+	}
+	section#facebook iframe{
+		height: 400px;
+	}		
+}
+/*celular */
+@media only screen and (max-width:1024px) {
+	section#facebook{
+		max-width: auto;
+		width: 100%;
+	}
+	section#facebook iframe{
+		display: block-inline;
+		float: none;
+		clear: none;
+		width: 90%;
+		margin: 1em 5%;
+		height: 25em;
+	}
+}

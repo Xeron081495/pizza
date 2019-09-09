@@ -1,0 +1,342 @@
+*{
+	margin : 0;
+	padding: 0;
+	box-sizing: border-box;
+	z-index: 5;
+	scroll-behavior: smooth;
+}
+
+@font-face{
+	font-family: "Chalet";
+	src: url("../fonts/Chalet.eot");
+	src: url("../fonts/Chalet.eot#iefix") format("embedded-opentype"),
+		 url("../fonts/Chalet.woff") format("woff"),
+		 url("../fonts/Chalet.ttf") format("truetype"),
+		 url("../fonts/Chalet.svg#Chalet") format("svg");
+	font-weight: normal;
+	font-style: normal;
+	
+}
+@font-face{
+	font-family: "Karla";
+	src: url("../fonts/Karla.eot");
+	src: url("../fonts/Karla.eot#iefix") format("embedded-opentype"),
+		 url("../fonts/Karla.woff") format("woff"),
+		 url("../fonts/Karla.ttf") format("truetype"),
+		 url("../fonts/Karla.svg#Karla") format("svg");
+	font-weight: normal;
+	font-style: normal;
+	
+}
+
+body{
+	font-family: "Karla", Arial, Helvetica;
+	font-size: 1em;
+	min-width: 1300px;
+}
+header#top{
+	width: 100%;
+	background-size: 105% auto;
+    background-repeat: repeat;
+	height: 320px;
+	float: left;
+	color: #EEE;
+	overflow: hidden;
+	transition: background 0.5s linear;
+	z-index: 10;
+}
+
+header#top #logo-menu{
+	float: left;
+	clear: both;
+	width: 100%;
+	margin: 0;	
+	padding: 0 15%;
+	clear: both;
+	background: rgba(0, 0, 0, .95);
+	height: 150px;
+	position: fixed;
+	z-index: 20;
+}
+header#top #logo-menu  #logo{
+	margin: 1em 0;
+	float: left;
+	clear: left;
+	max-width: 22%;
+}
+header#top #logo-menu  #logo img{
+	width: 195px;
+	border-radius: 15px;
+	float: left;
+	clear: left;
+
+}
+header#top #logo-menu  #datos{
+	font-size: 1em;
+	margin: 25px 0 0;
+	float: right;
+	clear: right;
+	text-align: right;
+	width: 78%;
+}
+header#top #logo-menu  #datos .dato{
+	margin: 0 1em;
+}
+header#top #logo-menu  #datos .dato img{
+	margin: 0 0.2em;
+}
+header#top #logo-menu  #datos .dato a{
+	color:#EEE;
+	font-size: 20px;
+}
+header#top #logo-menu  #datos .dato a:hover{
+	color:rgb(221, 58, 58);
+	font-size: 20px;
+}
+header#top #logo-menu  nav#menu{
+	font-size: 1em;
+	margin: 2em 0 0 0;
+	float: right;
+	clear: right;
+	text-align: right;
+	width: 78%;
+}
+
+header#top #logo-menu  nav#menu a.opcion-menu{
+	font-size: 1em;
+	margin: 0em 1em;
+	float: right;
+	text-align: right;
+	text-decoration: none;
+	color: #FFF;
+	text-transform: uppercase;
+	padding: 0 0.5em;
+}
+header#top #logo-menu  nav#menu a.opcion-menu:hover{
+	background: rgba(203,040,033, .8);
+}
+header#top #logo-menu  a#menu-icono{
+	visibility: hidden;
+	width: 0;
+	height: 0;
+}
+
+header#top #titulo{	
+	background-image: url("../img/header.jpg");
+	background-size: 100%;
+    background-repeat: no-repeat;
+	background-position: center center;
+	width: 100%;
+	float: left;
+	clear: both;
+	text-align: center;	
+	margin-top: 150px; 
+}
+header#top #titulo #sombra{	
+	background-color: rgba(0, 0, 0, .30);
+	width: 100%;
+	float: left;
+	clear: both;
+	text-align: center;
+	
+	
+}
+header#top #titulo h3{	
+	border-bottom: double 0.1em #FFF;
+	border-top: double 0.1em #FFF;
+	font-size: 45px;
+	font-family: 'Montserrat', Arial, Helvetica;
+	text-transform: uppercase;
+	padding: 0.2em 0;
+	margin: 1em;
+	width: 50%;
+	margin: 1em auto;
+	display: block-inline;
+	-webkit-transform: rotate(-2deg);
+	-o-transform: rotate(-2deg);
+	-ms-transform: rotate(-2deg);
+	-moz-transform: rotate(-2deg);
+	transform: rotate(-2deg);	
+}
+
+
+/*arreglos para la versión grande */
+@media only screen and (min-width: 1400px)  {
+}
+
+/*arreglos para la versión grande */
+@media only screen and (max-width: 1270px)  {
+	body{
+		min-width: 960px;
+	}	
+	header#top{
+		height: 270px;
+	}
+	header#top #logo-menu #logo{		
+		max-width: 30%;
+	}
+	header#top #logo-menu  #datos{
+		font-size: 0.9em;
+		margin: 25px 0 0;
+		width: 70%;
+	}
+	header#top #logo-menu  nav#menu{
+		font-size: 1em;
+		margin: 2em 0 0 0;
+		width: 70%;
+	}
+
+	header#top #logo-menu  nav#menu a.opcion-menu{
+		font-size: 1em;
+		margin: 0em 5px;
+		padding: 0 0.5em;
+	}
+	header#top #logo-menu  nav#menu a.opcion-menu:hover{
+		background: rgba(203,040,033, .8);
+	}
+	header#top #logo-menu  a#menu-icono{
+		visibility: hidden;
+		width: 0;
+		height: 0;
+	}
+	
+	header#top #titulo{	
+	}
+	header#top #titulo #sombra{	
+	}
+	header#top #titulo h3{	
+		border-bottom: double 0.1em #FFF;
+		border-top: double 0.1em #FFF;
+		font-size: 1.8em;
+		font-family: 'Montserrat', Arial, Helvetica;
+		text-transform: uppercase;
+		padding: 0.2em 0;
+		margin: 1em;
+		width: 50%;
+		margin: 1em auto;
+		display: block-inline;
+		-webkit-transform: rotate(-2deg);
+		-o-transform: rotate(-2deg);
+		-ms-transform: rotate(-2deg);
+		-moz-transform: rotate(-2deg);
+		transform: rotate(-2deg);	
+	}
+}
+/*celular */
+@media only screen and (max-width:960px) {
+	body{
+		font-size: 1em;
+		min-width: 320px;
+	}
+	header#top{
+		background-size: auto 100%;
+		height: 235px;
+	}
+	header#top #logo-menu{
+		padding: 0 1%;
+		height: 120px;
+	}
+	header#top #logo-menu  #logo{
+		margin: 1em 5%;
+		float: left;
+		clear: left;
+	}
+	header#top #logo-menu  #logo img{
+		width: 150px;
+	}
+	header#top #logo-menu  #datos{
+		display: none;
+	}
+	header#top #logo-menu  nav#menu{
+		display: none;
+	}
+	header#top #logo-menu  a#menu-icono{
+		width: 20%;
+		margin-left: 15%;
+		margin-right: 0%;
+		margin-top: 38px;
+		float: right;
+		clear: right;
+		visibility: visible;
+		color: #FFF;
+		font-size: 35px;
+	}
+	header#top #titulo {
+		margin-top: 120px;
+
+	}
+	header#top #titulo h3{	
+		border-bottom: double 0.1em #FFF;
+		border-top: double 0.1em #FFF;
+		font-size: 30px;
+		font-family: 'Montserrat', Arial, Helvetica;
+		text-transform: uppercase;
+		padding: 0.2em 0;
+		margin: 1em;
+		width: 90%;
+		margin: 1em auto;
+		display: block-inline;
+		-webkit-transform: rotate(-2deg);
+		-o-transform: rotate(-2deg);
+		-ms-transform: rotate(-2deg);
+		-moz-transform: rotate(-2deg);
+		transform: rotate(-2deg);	
+	}
+
+	header#scroll{
+		background-size: auto 100%;
+		height: 195px;
+	}
+	header#scroll #logo-menu{
+		padding: 0 1%;
+		height: 80px;
+	}
+	header#scroll #logo-menu  #logo{
+		margin: 1em 5%;
+		float: left;
+		clear: left;
+	}
+	header#scroll #logo-menu  #logo img{
+		width: 100px;
+	}
+	header#scroll #logo-menu  #datos{
+		display: none;
+	}
+	header#scroll #logo-menu  nav#menu{
+		display: none;
+	}
+	header#scroll #logo-menu  a#menu-icono{
+		width: 20%;
+		margin-left: 15%;
+		margin-right: 0%;
+		margin-top: 38px;
+		float: right;
+		clear: right;
+		visibility: visible;
+		color: #FFF;
+		font-size: 35px;
+	}
+	header#scroll #titulo {
+		margin-top: 120px;
+
+	}
+	header#scroll #titulo h3{	
+		border-bottom: double 0.1em #FFF;
+		border-top: double 0.1em #FFF;
+		font-size: 30px;
+		font-family: 'Montserrat', Arial, Helvetica;
+		text-transform: uppercase;
+		padding: 0.2em 0;
+		margin: 1em;
+		width: 90%;
+		margin: 1em auto;
+		display: block-inline;
+		-webkit-transform: rotate(-2deg);
+		-o-transform: rotate(-2deg);
+		-ms-transform: rotate(-2deg);
+		-moz-transform: rotate(-2deg);
+		transform: rotate(-2deg);	
+	}
+
+
+}
