@@ -3,7 +3,7 @@
 <!DOCTYPE HTML> 
 <html> 
 <head>
-<title>Pizza al cuadrado - Las Pizzas más grande de Bah&iacute;a Blanca</title>
+<title>Pizza al cuadrado - Las Pizzas más grandes de Bah&iacute;a Blanca</title>
 <meta charset="UTF-8" />
 <meta name="theme-color" content="orange">
 <link rel="shortcut icon" href="img/icono.png" />
