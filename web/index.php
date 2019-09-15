@@ -9,7 +9,7 @@
 <link rel="shortcut icon" href="img/icono.png" />
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <link href="https://fonts.googleapis.com/css?family=Montserrat|Satisfy" rel="stylesheet">
-<meta name="description" content="Con recetas cl�sicas o una selecta variedad de gustos especiales en nuestras pizzas y empanadas, y con tentadoras promociones, hemos hecho que sea un placer comer en las casas bahienses." />
+<meta name="description" content="Con recetas cl&aacute;sicas o una selecta variedad de gustos especiales en nuestras pizzas, y con tentadoras promociones, hemos hecho que sea un placer comer en las casas bahienses." />
 
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-144567784-1"></script>
@@ -180,11 +180,14 @@ function avanzar(){
 			<div class="contenido col-12 col-md-6">
 				<h2 class="col-12 sub text-center mt-4 mb-3 float-left">Pizza completa</h2>  
 				<div class="lista mt-1 text-center ">
-					<!-- <img class="img_sab d-inline-block" src="img/faq_pizza1sab.jpg" width="150" alt="Pizza completa de un sabor"> -->
-					<img class="img_sab d-inline-block" src="img/faq_pizza1sab.jpg" width="150" alt="Pizza completa de dos sabores">
-					<img class="img_sab d-inline-block" src="img/faq_pizza2sab.jpg" width="150" alt="Pizza completa de tres sabores">
-					<img class="img_sab d-inline-block" src="img/faq_pizza3sab.jpg" width="150" alt="Pizza completa de cuatro sabores">
-					<p class="clearfix display-5 mt-3 text-center">Podes elegir hasta tres sabores por pizza. <strong>¡Mide 43x43cm!</strong> <br>Equivale a dos pizzas tradicionales: <strong>comen 4</strong>, pican 5.</p>
+					<!-- <img class="img_sab d-inline-block" src="img/faq_pizza1sab.jpg" width="150" alt="Pizza completa de un sabor">
+					<img class="img_sab d-inline-block" src="img/faq_pizza2sab.jpg" width="150" alt="Pizza completa de dos sabores">
+					<img class="img_sab d-inline-block" src="img/faq_pizza3sab.jpg" width="150" alt="Pizza completa de tres sabores"> -->
+					<img class="img_sab d-inline-block" src="img/faq_pizza4sab.jpg" width="150" alt="Pizza completa de cuatro sabores">
+					<p class="clearfix display-5 mt-1 text-center p-4 pt-0 pb-0">
+						Podes elegir hasta cuatro sabores por pizza. <strong>¡Mide 43x43cm!</strong> 
+						Equivale a dos pizzas tradicionales: <strong>comen 4</strong>, pican 5.
+					</p>
 				</div> 
 			</div>
 
@@ -193,41 +196,140 @@ function avanzar(){
 				<div class="lista mt-1 text-center">
 <!-- 					<img class="img_sab d-inline-block" src="img/faq_mediapizza.jpg" width="75" alt="Media pizza de uno o dos sabores.">    
  -->					<img class="img_sab d-inline-block" src="img/faq_mediapizza.jpg" width="75" alt="Media pizza de uno o dos sabores.">   
-					<p class="clearfix display-5 mt-3  text-center">Podes elegir hasta dos sabores por pizza. <strong>¡Mide 43x21cm!</strong> <br>Equivale a una pizza tradicional: <strong>comen 2</strong>.</p>
+					<p class="clearfix display-5 mt-1 text-center p-4 pt-0 pb-0">
+						Podes elegir hasta dos sabores por pizza. <strong>¡Mide 43x21cm!</strong>
+						Equivale a una pizza tradicional: <strong>comen 2</strong>.
+					</p>
 				</div> 
 			</div>
 
 			<div class="clearfix"></div>
 			
-			<div class="contenido col-12 col-md-6 d-none">
+			<div class="contenido col-12 col-md-6">
 				<h2 class="col-12 sub text-center mt-4 mb-2 float-left">Pizza al paso</h2>  
 				<div class="lista mt-1 text-center">
 					<img class="img_sab d-inline-block" src="img/faq_pizzaporcion.jpg" height="70" alt="Media pizza de uno o dos sabores.">    
-					<p class="clearfix display-5 mt-3  text-center">Porción de pizza de un sabor <strong>para retirar</strong> en Sarmiento 906. <br><strong>Come uno</strong>.</p>
+					<p class="clearfix display-5 mt-1 text-center p-4 pt-0 pb-0">
+						Porción de pizza de un sabor <strong>para retirar</strong> en Sarmiento 906. 
+						<strong>Come uno</strong>.
+					</p>
 				</div> 
 			</div>
 
-			<div class="contenido col-12 col-md-12 mt-4 d-inline-block">
+			<div class="contenido col-12 col-md-6 d-inline-block">
 				<h2 class="col-12 sub text-center mt-4 mb-3 float-left">Zona de Delivery</h2>  
 				<div class="lista mt-1 text-center">
-					<i class="fas fa-motorcycle d-inline-block display-4"></i>
-					<p class="clearfix display-5 mt-3 text-center">
-						Tenemos una amplia cobertura de delivery para Bahía Blanca.<br>
-						Para saber si tu zona está incluida, mandanos un mensaje por 
-						<a href="https://api.whatsapp.com/send?phone=5492914400810" target="_blanck">Whatsapp</a> 
-						o llamanos al <a href="tel:02914526024">452-6024</a>.
+					<i class="fas fa-motorcycle d-inline-block display-3"></i>
+					<p class="clearfix display-5 mt-1 text-center p-4 pt-0 pb-0">
+						Tenemos una amplia cobertura de delivery para Bahía Blanca.
+						Mandanos un <a href="https://api.whatsapp.com/send?phone=5492914400810" target="_blanck">Whatsapp</a> 
+						o llamanos al <a href="tel:02914526024">452-6024</a> para saber si tu zona está incluida.
 					</p>
 				</div> 
 			</div>
 		</div>
 	</section>
 
+	<section class="opiniones">
+		<div class="transparencia h-100 pt-5">
+			<div class="mx-auto col-12 col-sm-10 col-xl-9 p-0 m-0 container">  
+				<h1 class="col-12 text-center">Pizza al Cuadrado</h1>
+				<h5 class="col-12 text-center">Opiniones</h5>
+
+				<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+					<ol class="carousel-indicators">
+						<li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+						<li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+						<li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+						<li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+					</ol>
+					<div class="carousel-inner mt-5">
+						<!-- opinion 1 -->
+						<div class="carousel-item active">
+							<div class="opinion">
+								<i class="frase col-12">
+									"Buen nivel de pizzas exquisitas, buena relación precio-producto"
+								</i>
+								<div class="autor col-12 mt-4 pb-5 pb-md-1">
+									<img  width="23px" src="https://lh6.ggpht.com/-K0ZmaXvO6L0/AAAAAAAAAAI/AAAAAAAAAAA/50_QeAi89wo/s40-c0x00000000-cc-rp-mo-ba3/photo.jpg" />
+									<span class="nombre mt-1 ml-2 mr-2">Horacio Urbano Colman</span>
+									<span class="separador mt-1 mr-2 d-none d-md-inline-block">-</span>
+									<span class="clearfix d-md-none"></span>
+									<span class="lugar mt-1 d-none d-md-inline-block">Google</span>
+								</div>
+							</div>
+						</div>
+						<!-- opinion 2 -->
+						<div class="carousel-item">
+							<div class="opinion">
+								<i class="frase col-12">
+									"Muchisimas variedades y combinaciones de sabores! Me gustó mucho."
+								</i>
+								<div class="autor col-12 mt-4 pb-5 pb-md-1">
+									<img  width="23px" src="https://lh6.ggpht.com/-0Krrf7BQXz0/AAAAAAAAAAI/AAAAAAAAAAA/QqH-eC8iFKM/s40-c0x00000000-cc-rp-mo-ba3/photo.jpg" />
+									<span class="nombre mt-1 ml-2 mr-2">Ivan Cretton</span>
+									<span class="separador mt-1 mr-2 d-none d-md-inline-block">-</span>
+									<span class="clearfix d-md-none"></span>
+									<span class="lugar mt-1  d-none d-md-inline-block">Google</span>
+								</div>
+							</div>
+						</div>
+						<!-- opinion 3 -->
+						<div class="carousel-item">
+							<div class="opinion">
+								<i class="frase col-12">
+									"Lejos las mejores de bahía y rinden un monton. Si te pones a comparar precio y tamaño, conviene mucho más."
+								</i>
+								<div class="autor col-12 mt-4 pb-5 pb-md-1">
+									<img class="imagen" width="23px" src="https://scontent.fbhi1-1.fna.fbcdn.net/v/t1.0-9/49140295_10216926421568412_7400550408482979840_n.jpg?_nc_cat=103&_nc_oc=AQkP-G9OzQA9Wm9X3tPEcMAzUycwuM-kY7e6bbFqplrtCFAcpZcM5eDJOS5MJdNZzfU&_nc_ht=scontent.fbhi1-1.fna&oh=3e9d3120015b4778e6a21d7fb5efca3a&oe=5E3D2D79" />
+									<span class="nombre mt-1 ml-2 mr-2">Gisela Pallotti</span>
+									<span class="separador mt-1 mr-2 d-none d-md-inline-block">-</span>
+									<span class="clearfix d-md-none"></span>
+									<span class="lugar mt-1  d-none d-md-inline-block">Facebook</span>
+								</div>
+							</div>
+						</div>
+						<!-- opinion 4 -->
+						<div class="carousel-item">
+							<div class="opinion">
+								<i class="frase col-12">
+									"Nos gusta la calidad del producto, la masa es exquisita. La atención es muy buena y tiene rapidez en la entrega."
+								</i>
+								<div class="autor col-12 mt-4 pb-5 pb-md-1">
+									<img class="imagen" width="23px" src="https://scontent.fbhi1-1.fna.fbcdn.net/v/t1.0-9/35800756_1993198474058592_2612478522819608576_n.jpg?_nc_cat=109&_nc_oc=AQnBCD66aXADmuIP0Ve-JO8GrRIyPp3yRFZ4Bclpkw7gTgL7KVqpCjUchkL3M-EKHTg&_nc_ht=scontent.fbhi1-1.fna&oh=5ad8207784010deb8861deafd9adc323&oe=5DF527F6" />
+									<span class="nombre mt-1 ml-2 mr-2">Luisa Nélida Pérez Gruppi </span>
+									<span class="separador mt-1 mr-2 d-none d-md-inline-block">-</span>
+									<span class="clearfix d-md-none"></span>
+									<span class="lugar mt-1 d-none d-md-inline-block">Facebook</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<a class="carousel-control-prev d-none" href="#carouselExampleIndicators" role="button" data-slide="prev">
+						<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+						<span class="sr-only">Previous</span>
+					</a>
+					<a class="carousel-control-next d-none" href="#carouselExampleIndicators" role="button" data-slide="next">
+						<span class="carousel-control-next-icon" aria-hidden="true"></span>
+						<span class="sr-only">Next</span>
+					</a>
+					</div>
+
+			</div>
+		</div>	
+	</section>
 	
     <section id="oferta" class="d-none">
 		<img src="img/promocion.jpg" />
 	</section>	
 	<?php include_once 'bloques/footer.php'; ?>
 </body>
+<script>
+	$('.carousel').carousel({
+		interval: 5000
+	});
+</script>
+
 
 <!-- Latest compiled and minified CSS 
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">

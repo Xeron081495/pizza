@@ -20,7 +20,6 @@ header#top #logo-menu{
 	background: rgba(0, 0, 0, .8);
 	height: 150px;
 	overflow: hidden;
-	position: fixed;
 	z-index: 10;
 }
 header#top #logo-menu  #logo{
@@ -266,6 +265,59 @@ section#oferta img{
 	margin: 2em 0;
 }
 
+section.opiniones{
+	position: relative;
+	float:left;
+	width: 100%;
+}
+section.opiniones::before{
+	content: "";
+	position: absolute;
+	top: 0; left: 0;
+	width: 100%; height: 100%;
+	background: url("../img/header1.jpg");
+	filter: grayscale(0%);
+}
+.transparencia{
+	position: relative;
+	background-color: rgba(51, 51, 51, 0.822);
+}
+section.opiniones h1{
+	color: #d69b1c;
+	font-size: 45px;
+	font-family: 'Satisfy', Arial, Helvetica;
+}
+section.opiniones h5{
+	color: #ffffff;
+	font-size: 21px;
+	text-transform: uppercase;
+	font-family: 'Montserrat', Arial, Helvetica;
+}
+
+section.opiniones .opinion{
+	min-height: 200px;
+	text-align: center;
+	color: rgb(236, 236, 236);
+	font-size: 23px;
+}
+
+section.opiniones .opinion .autor{
+	font-size: 15px;
+}
+section.opiniones .opinion .autor .imagen{
+	border-radius: 50px;
+}
+section.opiniones .opinion .autor .nombre{
+	font-weight: normal;
+}
+section.opiniones .opinion .autor .lugar{
+	font-weight: normal;
+}
+
+.carousel-control-prev, .carousel-control-next{
+	z-index: 10000;
+}
+
 /*arreglos para la versión grande */
 @media only screen and (min-width: 1400px)  {
 }
@@ -431,6 +483,20 @@ section#oferta img{
 		float: left;	
 		text-align: center;
 		margin: 2em 0;
+	}
+
+	section.opiniones h1{
+		font-size: 40px;
+	}
+	section.opiniones h5{
+		font-size: 18px;
+	}
+	
+	section.opiniones .opinion{
+		font-size: 20px;
+	}
+	section.opiniones .opinion .autor{
+		margin-bottom: 30px;
 	}
 }
 

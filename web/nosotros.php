@@ -7,7 +7,7 @@
 <link rel="shortcut icon" href="img/icono.png" />
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <link href="https://fonts.googleapis.com/css?family=Montserrat|Satisfy" rel="stylesheet">
-<meta name="description" content="Con recetas clásicas o una selecta variedad de gustos especiales en nuestras pizzas, y con tentadoras promociones, hemos hecho que sea un placer comer en las casas bahienses." />
+<meta name="description" content="Con recetas cl&aacute;sicas o una selecta variedad de gustos especiales en nuestras pizzas, y con tentadoras promociones, hemos hecho que sea un placer comer en las casas bahienses." />
 <script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.4.3/jquery.min.js'></script> 
 <script type="text/javascript">
 $(function() {
@@ -61,9 +61,9 @@ $(function() {
 				</p>
 				<p>
 				Nuestras pizzas elaboradas con la materia prima de mejor calidad, llegan 
-				a ser, hoy en d&iacute;a, una de las m&aacute;s exquisitas de la ciudad bahiense. Con recetas cl&aacute;sicas
-				o una selecta variedad de gustos especiales en nuestras pizzas, y con 
-				tentadoras promociones, hemos hecho que sea un placer comer en casa.
+				a ser, hoy en d&iacute;a, una de las m&aacute;s exquisitas de la ciudad bahiense. 
+				Con recetas cl&aacute;sicas o una selecta variedad de gustos especiales en nuestras
+				pizzas, y con tentadoras promociones, hemos hecho que sea un placer comer en casa.
 				</p>
 				<p class="ultimo">
 				&#191;Est&aacute;s c&oacute;modo en tu casa?, &#191;Se te complica acercarte a Sarmiento 906? Nosotros tenemos 
@@ -71,7 +71,7 @@ $(function() {
 				disponible para gran parte de Bah&iacute;a Blanca. Recomendamos en &eacute;pocas de bajas temperaturas 
 				esperar la pizza con el horno precalentado e introducirla 3/4 minutos, para disfrutar de 
 				su m&aacute;ximo sabor. Antes de llamar al (0291) 4526024 para hacer tu pedido, consulta la 
-				secci&oacute;n preguntas frecuentes, y enterate como encargar nuestros productos.
+				secci&oacute;n de <a href="faq.php">información útil</a>, y enterate como encargar nuestros productos.
 				</p>
 			</h4>
 		</div>

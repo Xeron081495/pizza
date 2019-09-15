@@ -7,7 +7,7 @@
 <link rel="shortcut icon" href="img/icono.png" />
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <link href="https://fonts.googleapis.com/css?family=Montserrat|Satisfy" rel="stylesheet">
-<meta name="description" content="Con recetas cl�sicas o una selecta variedad de gustos especiales en nuestras pizzas y empanadas, y con tentadoras promociones, hemos hecho que sea un placer comer en las casas bahienses." />
+<meta name="description" content="Con recetas cl&aacute;sicas o una selecta variedad de gustos especiales en nuestras pizzas, y con tentadoras promociones, hemos hecho que sea un placer comer en las casas bahienses." />
 <script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.4.3/jquery.min.js'></script> 
 <script type="text/javascript">
 $(function() {
