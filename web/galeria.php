@@ -86,73 +86,73 @@ $(function() {
          </div>
          <div class="portfolio-item row">
             <div class="item gts col-lg-3 col-md-4 col-6 col-sm">
-               <a href="galeria/2.jpg" class="fancylight popup-btn" data-fancybox-group="light"> 
-               <img class="img-fluid" src="galeria/2.jpg" alt="">
+               <a href="fotos/2.jpg" class="fancylight popup-btn" data-fancybox-group="light"> 
+               <img class="img-fluid" src="fotos/2.jpg" alt="">
                </a>
             </div>
             <div class="item selfie col-lg-3 col-md-4 col-6 col-sm">
-               <a href="galeria/3.jpg" class="fancylight popup-btn" data-fancybox-group="light">
-               <img class="img-fluid" src="galeria/3.jpg" alt="">
+               <a href="fotos/3.jpg" class="fancylight popup-btn" data-fancybox-group="light">
+               <img class="img-fluid" src="fotos/3.jpg" alt="">
                </a>
             </div>
             <div class="item gts col-lg-3 col-md-4 col-6 col-sm">
-               <a href="galeria/4.jpg" class="fancylight popup-btn" data-fancybox-group="light">
-               <img class="img-fluid" src="galeria/4.jpg" alt="">
+               <a href="fotos/4.jpg" class="fancylight popup-btn" data-fancybox-group="light">
+               <img class="img-fluid" src="fotos/4.jpg" alt="">
                </a>
             </div>
             <div class="item gts col-lg-3 col-md-4 col-6 col-sm">
-               <a href="galeria/5.jpg" class="fancylight popup-btn" data-fancybox-group="light">
-               <img class="img-fluid" src="galeria/5.jpg" alt="">
+               <a href="fotos/5.jpg" class="fancylight popup-btn" data-fancybox-group="light">
+               <img class="img-fluid" src="fotos/5.jpg" alt="">
                </a>
             </div>
             <div class="item gts col-lg-3 col-md-4 col-6 col-sm">
-               <a href="galeria/6.jpg" class="fancylight popup-btn" data-fancybox-group="light">
-               <img class="img-fluid" src="galeria/6.jpg" alt="">
+               <a href="fotos/6.jpg" class="fancylight popup-btn" data-fancybox-group="light">
+               <img class="img-fluid" src="fotos/6.jpg" alt="">
                </a>
             </div>
             <div class="item lap col-lg-3 col-md-4 col-6 col-sm">
-               <a href="galeria/8.jpg" class="fancylight popup-btn" data-fancybox-group="light">
-               <img class="img-fluid" src="galeria/8.jpg" alt="">
+               <a href="fotos/8.jpg" class="fancylight popup-btn" data-fancybox-group="light">
+               <img class="img-fluid" src="fotos/8.jpg" alt="">
                </a>
             </div>
             <div class="item gts col-lg-3 col-md-4 col-6 col-sm">
-               <a href="galeria/9.jpg" class="fancylight popup-btn" data-fancybox-group="light">
-               <img class="img-fluid" src="galeria/10.jpg" alt="">
+               <a href="fotos/9.jpg" class="fancylight popup-btn" data-fancybox-group="light">
+               <img class="img-fluid" src="fotos/10.jpg" alt="">
                </a>
             </div>
             <div class="item lap col-lg-3 col-md-4 col-6 col-sm">
-               <a href="galeria/11.jpg" class="fancylight popup-btn" data-fancybox-group="light">
-               <img class="img-fluid" src="galeria/11.jpg" alt="">
+               <a href="fotos/11.jpg" class="fancylight popup-btn" data-fancybox-group="light">
+               <img class="img-fluid" src="fotos/11.jpg" alt="">
                </a>
             </div>
             <div class="item gts col-lg-3 col-md-4 col-6 col-sm">
-               <a href="galeria/12.jpg" class="fancylight popup-btn" data-fancybox-group="light">
-               <img class="img-fluid" src="galeria/12.jpg" alt="">
+               <a href="fotos/12.jpg" class="fancylight popup-btn" data-fancybox-group="light">
+               <img class="img-fluid" src="fotos/12.jpg" alt="">
                </a>
             </div>
             <div class="item gts col-lg-3 col-md-4 col-6 col-sm">
-               <a href="galeria/13.jpg" class="fancylight popup-btn" data-fancybox-group="light">
-               <img class="img-fluid" src="galeria/13.jpg" alt="">
+               <a href="fotos/13.jpg" class="fancylight popup-btn" data-fancybox-group="light">
+               <img class="img-fluid" src="fotos/13.jpg" alt="">
                </a>
             </div>
             <div class="item gts col-lg-3 col-md-4 col-6 col-sm">
-               <a href="galeria/15.jpg" class="fancylight popup-btn" data-fancybox-group="light">
-               <img class="img-fluid" src="galeria/15.jpg" alt="">
+               <a href="fotos/15.jpg" class="fancylight popup-btn" data-fancybox-group="light">
+               <img class="img-fluid" src="fotos/15.jpg" alt="">
                </a>
             </div>
             <div class="item gts col-lg-3 col-md-4 col-6 col-sm">
-               <a href="galeria/16.jpg" class="fancylight popup-btn" data-fancybox-group="light">
-               <img class="img-fluid" src="galeria/16.jpg" alt="">
+               <a href="fotos/16.jpg" class="fancylight popup-btn" data-fancybox-group="light">
+               <img class="img-fluid" src="fotos/16.jpg" alt="">
                </a>
             </div>
             <div class="item selfie col-lg-3 col-md-4 col-6 col-sm">
-               <a href="galeria/1.jpg" class="fancylight popup-btn" data-fancybox-group="light"> 
-               <img class="img-fluid" src="galeria/1.jpg" alt="">
+               <a href="fotos/1.jpg" class="fancylight popup-btn" data-fancybox-group="light"> 
+               <img class="img-fluid" src="fotos/1.jpg" alt="">
                </a>
             </div>
             <div class="item lap col-lg-3 col-md-4 col-6 col-sm">
-               <a href="galeria/7.jpg" class="fancylight popup-btn" data-fancybox-group="light">
-               <img class="img-fluid" src="galeria/7.jpg" alt="">
+               <a href="fotos/7.jpg" class="fancylight popup-btn" data-fancybox-group="light">
+               <img class="img-fluid" src="fotos/7.jpg" alt="">
                </a>
             </div>
          </div>
