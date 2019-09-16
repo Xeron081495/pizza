@@ -114,10 +114,10 @@ function avanzar(){
 				<span>
 			</div>
 			<nav id="menu">
-				<a class="opcion-menu" href="contacto.php">Contacto</a>
-				<a class="opcion-menu" href="galeria.php">Galer&iacute;a</a>
-				<a class="opcion-menu" href="menu.php">Menú de Pizzas</a>
-				<a class="opcion-menu" href="nosotros.php">Nosotros</a>
+				<a class="opcion-menu" href="contacto">Contacto</a>
+				<a class="opcion-menu" href="galeria">Galer&iacute;a</a>
+				<a class="opcion-menu" href="menu">Menú de Pizzas</a>
+				<a class="opcion-menu" href="nosotros">Nosotros</a>
 			</nav>
 			<a href="#menu-celu" id="menu-icono"><i class="fas fa-bars"></i></a>
 	   </div>
@@ -160,14 +160,14 @@ function avanzar(){
 	   </div>
     </header>
 	<section id="menu-atajos" class="col-12">
-		<a href="menu.php?desde_inicio">
+		<a href="menu?desde_inicio">
 		<div class="opcion mr-2">
 			<div class="pizza fondo"></div>
 			<div class="texto">Nuestras Pizzas</div>
 		</div>
 		</a>
 
-		<a href="galeria.php">
+		<a href="galeria">
 		<div class="opcion">
 			<div class="milanesa fondo"></div>
 			<div class="texto">Galería de fotos</div>
@@ -237,7 +237,7 @@ function avanzar(){
 				<h5 class="col-12 text-center">Opiniones</h5>
 
 				<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-					<ol class="carousel-indicators">
+					<ol class="carousel-indicators d-none">
 						<li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
 						<li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
 						<li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
@@ -245,7 +245,7 @@ function avanzar(){
 					</ol>
 					<div class="carousel-inner mt-5">
 						<!-- opinion 1 -->
-						<div class="carousel-item active">
+						<div class="carousel-item">
 							<div class="opinion">
 								<i class="frase col-12">
 									"Buen nivel de pizzas exquisitas, buena relación precio-producto"
@@ -256,6 +256,9 @@ function avanzar(){
 									<span class="separador mt-1 mr-2 d-none d-md-inline-block">-</span>
 									<span class="clearfix d-md-none"></span>
 									<span class="lugar mt-1 d-none d-md-inline-block">Google</span>
+									<a href="https://www.google.com/search?q=pizza+al+cuadrado&oq=pizza+a%C3%B1+&aqs=chrome.1.69i57j0l5.5927j0j4&sourceid=chrome&ie=UTF-8#lrd=0x95eda35421b0579f:0xc6e0b58a6c04d1a6,3,,," target="_blank" class="col-12 mt-5 pt-2 float-left text-center">
+										Dejanos tu comentario
+									</a>
 								</div>
 							</div>
 						</div>
@@ -271,6 +274,9 @@ function avanzar(){
 									<span class="separador mt-1 mr-2 d-none d-md-inline-block">-</span>
 									<span class="clearfix d-md-none"></span>
 									<span class="lugar mt-1  d-none d-md-inline-block">Google</span>
+									<a href="https://www.google.com/search?q=pizza+al+cuadrado&oq=pizza+a%C3%B1+&aqs=chrome.1.69i57j0l5.5927j0j4&sourceid=chrome&ie=UTF-8#lrd=0x95eda35421b0579f:0xc6e0b58a6c04d1a6,3,,," target="_blank" class="col-12 mt-5 pt-2 float-left text-center">
+										Dejanos tu comentario
+									</a>
 								</div>
 							</div>
 						</div>
@@ -286,11 +292,15 @@ function avanzar(){
 									<span class="separador mt-1 mr-2 d-none d-md-inline-block">-</span>
 									<span class="clearfix d-md-none"></span>
 									<span class="lugar mt-1  d-none d-md-inline-block">Facebook</span>
+									<a href="https://www.facebook.com/pg/pizzaalcuadrado/reviews/" target="_blank" class="col-12 mt-5 pt-2 float-left text-center">
+										Dejanos tu comentario
+									</a>
+				
 								</div>
 							</div>
 						</div>
 						<!-- opinion 4 -->
-						<div class="carousel-item">
+						<div class="carousel-item active">
 							<div class="opinion">
 								<i class="frase col-12">
 									"Nos gusta la calidad del producto, la masa es exquisita. La atención es muy buena y tiene rapidez en la entrega."
@@ -301,20 +311,22 @@ function avanzar(){
 									<span class="separador mt-1 mr-2 d-none d-md-inline-block">-</span>
 									<span class="clearfix d-md-none"></span>
 									<span class="lugar mt-1 d-none d-md-inline-block">Facebook</span>
+									<a href="https://www.facebook.com/pg/pizzaalcuadrado/reviews/" target="_blank" class="col-12 mt-5 pt-2 float-left text-center">
+										Dejanos tu comentario
+									</a>
 								</div>
 							</div>
 						</div>
 					</div>
-					<a class="carousel-control-prev d-none" href="#carouselExampleIndicators" role="button" data-slide="prev">
+					<a class="carousel-control-prev carousel-control" href="#carouselExampleIndicators" role="button" data-slide="prev">
 						<span class="carousel-control-prev-icon" aria-hidden="true"></span>
 						<span class="sr-only">Previous</span>
 					</a>
-					<a class="carousel-control-next d-none" href="#carouselExampleIndicators" role="button" data-slide="next">
+					<a class="carousel-control-next carousel-control" href="#carouselExampleIndicators" role="button" data-slide="next">
 						<span class="carousel-control-next-icon" aria-hidden="true"></span>
 						<span class="sr-only">Next</span>
 					</a>
-					</div>
-
+				</div>
 			</div>
 		</div>	
 	</section>
@@ -326,7 +338,7 @@ function avanzar(){
 </body>
 <script>
 	$('.carousel').carousel({
-		interval: 5000
+		interval: 6000
 	});
 </script>
 

@@ -1,10 +1,10 @@
 <footer>
 	<nav id="menu-celu" class="d-lg-none">
 		   <a class="opcion-menu" href="./">Inicio</a>
-		   <a class="opcion-menu" href="menu.php">Menú de Pizzas</a>
-		   <a class="opcion-menu" href="nosotros.php">Nosotros</a>
-		   <a class="opcion-menu" href="galeria.php">Galer&iacute;a</a>
-		   <a class="opcion-menu" href="contacto.php">Contacto</a>		
+		   <a class="opcion-menu" href="menu">Menú de Pizzas</a>
+		   <a class="opcion-menu" href="nosotros">Nosotros</a>
+		   <a class="opcion-menu" href="galeria">Galer&iacute;a</a>
+		   <a class="opcion-menu" href="contacto">Contacto</a>		
 	</nav>
 	<div id="top">
 		<div id="logo"><a href="./"><img src="img/logo.png" /></a></div>
@@ -18,10 +18,10 @@
 			<span>
 		 </div>
 		 <nav id="menu">
-		   <a class="opcion-menu" href="contacto.php">Contacto</a>
-		   <a class="opcion-menu" href="galeria.php">Galer&iacute;a</a>
-		   <a class="opcion-menu" href="menu.php">Menú de Pizzas</a>
-		   <a class="opcion-menu" href="nosotros.php">Nosotros</a>
+		   <a class="opcion-menu" href="contacto">Contacto</a>
+		   <a class="opcion-menu" href="galeria">Galer&iacute;a</a>
+		   <a class="opcion-menu" href="menu">Menú de Pizzas</a>
+		   <a class="opcion-menu" href="nosotros">Nosotros</a>
 		 </nav>
 	</div>
 	<div id="firma">Copyright <?php echo date('Y'); ?> &#169; Pizza al cuadrado | Todos los derechos reservados | Dise&ntilde;ado por <a href="http://xeronweb.com/" target="_black">>>Xeron!</a></div>

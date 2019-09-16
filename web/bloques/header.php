@@ -51,10 +51,10 @@
 			<span>
 		</div>
 		<nav id="menu">
-			<a class="opcion-menu" href="contacto.php">Contacto</a>
-			<a class="opcion-menu" href="galeria.php">Galer&iacute;a</a>
-			<a class="opcion-menu" href="menu.php">Menú de Pizzas</a>
-			<a class="opcion-menu" href="nosotros.php">Nosotros</a>
+			<a class="opcion-menu" href="contacto">Contacto</a>
+			<a class="opcion-menu" href="galeria">Galer&iacute;a</a>
+			<a class="opcion-menu" href="menu">Menú de Pizzas</a>
+			<a class="opcion-menu" href="nosotros">Nosotros</a>
 		</nav>
 		<a href="#menu-celu" id="menu-icono"><i class="fas fa-bars"></i></a>
 	</div>
