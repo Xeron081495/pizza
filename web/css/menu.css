@@ -231,21 +231,26 @@ section#menu .col .variedad a:hover{
 	}
 	section#menu h1.titulo{
 		font-size: 34px;
+		margin-top: 20px;
+		padding-bottom: 10px;
 	}
 	section#menu #info{
-		font-size: 15px;
+		font-size: 13px;
 	}
 	section#menu h1.titulo_chico{
 		font-size: 28px;
 	}
 	section#menu .col{
 		width: 100%;
-		padding: 0em 1em; 
+		padding: 0; 
 		float: left;
 	}
 	section#menu .col .variedad{
-		font-size: 19px;
-		padding: 0.25em 0;
+		font-size: 17px;
+		padding: 0.25em 15px;
+	}
+	section#menu .col .sombreado{
+		background-color: rgba(0, 0, 0, 0.061);
 	}
 	section#menu .col .variedad a{
 		text-decoration: none;
@@ -254,6 +259,12 @@ section#menu .col .variedad a:hover{
 	section#menu .col .variedad a:hover{
 		text-decoration: underline;
 		color: orange;
+	}
+	section#menu .col .variedad .num{
+		width: 10%;
+		padding: 0em 0;
+		float: left;
+		font-weight: bold;
 	}
 	
 }

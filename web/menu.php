@@ -95,7 +95,7 @@ function elegirSabor(sel){
 		
 				<div class="col">
 					<?php for($i=$intervalo_f[0]; $i<$intervalo_f[1] && $i<count($pizzas_f); $i++){ ?>
-						<div class="variedad">
+						<div class="variedad <?php if($i%2!=0) echo 'sombreado'; ?>">
 							<!-- numeros -->
 							<div class="num">
 								<?php echo $pizzas_f[$i]['comida']['id']; ?>
@@ -174,9 +174,9 @@ function elegirSabor(sel){
 
 			foreach($intervalos as $intervalo){ ?>			
 		
-				<div class="col col-12 col-md-6 col-xl-6 m-0 pr-4 pl-4">
+				<div class="col col-12 col-md-6 col-xl-6 m-0 pr-0 pl-0 pr-lg-4 pl-lg-4">
 					<?php for($i=$intervalo[0];$i<$intervalo[1]  && $i<count($pizzas);$i++){ ?>
-						<div class="variedad">
+						<div class="variedad <?php if($i%2!=0) echo 'sombreado'; ?>">
 							<!-- numeros -->
 							<div class="num">
 								<?php echo $pizzas[$i]['comida']['id']; ?>

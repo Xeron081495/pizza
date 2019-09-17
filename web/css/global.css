@@ -1,3 +1,7 @@
+html, body {
+	height: 100%;
+}
+  
 *{
 	margin : 0;
 	padding: 0;
@@ -44,6 +48,7 @@ header#top{
 	overflow: hidden;
 	transition: background 0.5s linear;
 	z-index: 10;
+	background-position: center;
 }
 
 header#top #logo-menu{
@@ -65,8 +70,7 @@ header#top #logo-menu  #logo{
 	max-width: 22%;
 }
 header#top #logo-menu  #logo img{
-	width: 195px;
-	border-radius: 15px;
+	width: 92px;
 	float: left;
 	clear: left;
 
@@ -230,19 +234,19 @@ header#top #titulo h3{
 	}
 	header#top{
 		background-size: auto 100%;
-		height: 235px;
+		height: 204px;
 	}
 	header#top #logo-menu{
-		padding: 0 1%;
-		height: 120px;
+		padding: 0;
+		height: 90px;
 	}
 	header#top #logo-menu  #logo{
-		margin: 1em 5%;
+		margin: 12px 10%;
 		float: left;
 		clear: left;
 	}
 	header#top #logo-menu  #logo img{
-		width: 150px;
+		width: 50px;
 	}
 	header#top #logo-menu  #datos{
 		display: none;
@@ -252,17 +256,18 @@ header#top #titulo h3{
 	}
 	header#top #logo-menu  a#menu-icono{
 		width: 20%;
+		text-align: right;
 		margin-left: 15%;
-		margin-right: 0%;
-		margin-top: 38px;
+		margin-right: 10%;
+		margin-top: 24px;
 		float: right;
 		clear: right;
 		visibility: visible;
-		color: #FFF;
-		font-size: 35px;
+		color: rgb(233, 233, 233);
+		font-size: 30px;
 	}
 	header#top #titulo {
-		margin-top: 120px;
+		margin-top: 90px;
 
 	}
 	header#top #titulo h3{	

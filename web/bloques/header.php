@@ -1,6 +1,6 @@
 <script>
 
-	$(window).scroll(function(event) {
+	/*$(window).scroll(function(event) {
 		const altura = $(window).scrollTop();
 		const ancho = $(document).width();
 		console.log(altura);
@@ -14,7 +14,7 @@
 			$('header#top #logo-menu  a#menu-icono').css("margin-top","13px");
 		}
 
-	});
+	});*/
 
 
 	/*document.onscroll = function(){

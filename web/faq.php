@@ -62,35 +62,35 @@ $(function() {
         </div>
 
         <div class="clearfix"></div>
-      </div>
 
-      <div class="contenido">
+      <div class="contenido col-12">
         <h2 class="col-12 sub text-center mt-4 mb-3 float-left">Pizza completa</h2>  
         <div class="lista mt-1 text-center">
-          <!-- <img class="img_sab d-inline-block" src="img/faq_pizza1sab.jpg" width="150" alt="Pizza completa de un sabor"> -->
+          <!-- <img class="img_sab d-inline-block" src="img/faq_pizza1sab.jpg" width="150" alt="Pizza completa de un sabor"> 
           <img class="img_sab d-inline-block" src="img/faq_pizza1sab.jpg" width="150" alt="Pizza completa de dos sabores">
-          <img class="img_sab d-inline-block" src="img/faq_pizza2sab.jpg" width="150" alt="Pizza completa de tres sabores">
-          <img class="img_sab d-inline-block" src="img/faq_pizza3sab.jpg" width="150" alt="Pizza completa de cuatro sabores">
+          <img class="img_sab d-inline-block" src="img/faq_pizza2sab.jpg" width="150" alt="Pizza completa de tres sabores">-->
+          <img class="img_sab d-inline-block" src="img/faq_pizza4sab.jpg" width="150" alt="Pizza completa de cuatro sabores">
           <p class="clearfix display-5 mt-3 text-center">Podes elegir hasta tres sabores por pizza. <strong>¡Mide 43x43cm!</strong> <br>Equivale a dos pizzas tradicionales: <strong>comen 4</strong>, pican 5.</p>
         </div> 
 
 
         <h2 class="col-12 sub text-center mt-4 mb-2 float-left">Media Pizza</h2>  
         <div class="lista mt-1 text-center">
-<!--         <img class="img_sab d-inline-block" src="img/faq_mediapizza.jpg" width="75" alt="Media pizza de uno o dos sabores.">    
+<!--        <img class="img_sab d-inline-block" src="img/faq_mediapizza.jpg" width="75" alt="Media pizza de uno o dos sabores.">    
  -->        <img class="img_sab d-inline-block" src="img/faq_mediapizza.jpg" width="75" alt="Media pizza de uno o dos sabores.">   
           <p class="clearfix display-5 mt-3  text-center">Podes elegir hasta dos sabores por pizza. <strong>¡Mide 43x21cm!</strong> <br>Equivale a una pizza tradicional: <strong>comen 2</strong>.</p>
         </div> 
         
-        <!-- <h2 class="col-12 sub text-center mt-4 mb-2 float-left">Pizza al paso</h2>  
+        <h2 class="col-12 sub text-center mt-4 mb-2 float-left">Pizza al paso</h2>  
         <div class="lista mt-1 text-center">
         <img class="img_sab d-inline-block" src="img/faq_pizzaporcion.jpg" height="70" alt="Media pizza de uno o dos sabores.">    
           <p class="clearfix display-5 mt-3  text-center">Porción de pizza de un sabor <strong>para retirar</strong> en Sarmiento 906. <br><strong>Come uno</strong>.</p>
         </div> 
- -->
+
         
         <h2 class="col-12 sub text-center mt-4 mb-3 float-left">Zona de Delivery</h2>  
         <div class="lista mt-1 text-center">
+					<i class="fas fa-motorcycle d-inline-block display-3"></i>
           <p class="clearfix display-5 mt-3 text-center">
             Tenemos una amplia cobertura de delivery para Bahía Blanca.<br>
             Para saber si tu zona está incluida, mandanos un mensaje por 
@@ -122,7 +122,7 @@ $(function() {
           <li>Llamarnos al  <a href="tel:02914526024" class="link">(0291) 4526024</a> para tener tu pedido 
 		  en el confort de tu hogar</li>
         </ol>
-      </div>
+    </div>
 	</section>
 	<?php include_once 'bloques/footer.php'; ?>   
 </body>

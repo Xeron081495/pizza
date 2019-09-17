@@ -3,7 +3,7 @@
 <!DOCTYPE HTML> 
 <html> 
 <head>
-<title>Pizza al cuadrado - Las Pizzas más grandes de Bah&iacute;a Blanca</title>
+<title>Pizza al Cuadrado - Las Pizzas más grandes de Bah&iacute;a Blanca</title>
 <meta charset="UTF-8" />
 <meta name="theme-color" content="orange">
 <link rel="shortcut icon" href="img/icono.png" />
@@ -54,9 +54,9 @@ $(function() {
 
 
 var imagenes = ['header4.jpg','header1.jpg', 'header.jpg'];
-var texto1 = ['Pizza al cuadrado', 'La pizza m&aacute;s grande', 'de Bah&iacute;a Blanca'];
+var texto1 = ['Pizza al Cuadrado', 'La <span class="d-none d-lg-inline-block">pizza</span> m&aacute;s grande', 'de Bah&iacute;a Blanca'];
 var texto2 = ['Las m&aacute;s deliciosas', 'milanesas a la pizza', 'a partir del Lunes 4'];
-var texto3 = ['Las m&aacute;s deliciosas', 'milanesas a la pizza', 'est&aacute;n en pizza al cuadrado'];
+var texto3 = ['Las m&aacute;s deliciosas', 'milanesas a la pizza', 'est&aacute;n en pizza al Cuadrado'];
 var texto = [texto1,texto1,texto1,texto1];
 
 var actual = 0;
@@ -108,8 +108,8 @@ function avanzar(){
 				<span class="dato"><span class="d-none d-xl-inline-block mr-2">Encontranos en </span><strong>Sarmiento 906</strong></span>
 				<span class="dato"><span class="d-none d-xl-inline-block mr-2">Delivery al</span> (0291) <strong>4526-024</strong></span>
 				<span class="dato">
-					<a href="https://www.facebook.com/pizzaalcuadrado" target="_blanck"><i class="fab fa-facebook-square ml-2"></i></a>
-					<a href="http://instagram.com/pizaalcuadrado" target="_blanck"><i class="fab fa-instagram ml-2"></i></a>
+					<a href="https://www.facebook.com/pizzaalCuadrado" target="_blanck"><i class="fab fa-facebook-square ml-2"></i></a>
+					<a href="http://instagram.com/pizaalCuadrado" target="_blanck"><i class="fab fa-instagram ml-2"></i></a>
 					<a href="https://api.whatsapp.com/send?phone=5492914400810" target="_blanck"><i class="fab fa-whatsapp ml-2"></i></a>
 				<span>
 			</div>
@@ -121,8 +121,8 @@ function avanzar(){
 			</nav>
 			<a href="#menu-celu" id="menu-icono"><i class="fas fa-bars"></i></a>
 	   </div>
-	   <h1 id="nombre">Pizza al cuadrado</h1>
-	   <h1 id="slogan1">La pizza m&aacute;s grande</h1>
+	   <h1 id="nombre">Pizza al Cuadrado</h1>
+	   <h1 id="slogan1">La <span class="d-none d-lg-inline-block">pizza</span> m&aacute;s grande</h1>
 	   <h1 id="slogan2">de Bah&iacute;a Blanca</h1>
 	   <div id="cuadros" class="cuadros_celu d-none">
 			<div class="linea">
@@ -142,40 +142,54 @@ function avanzar(){
 	   <div id="cuadros" class="cuadros_pc d-inline-block">
 			<h3 class="cuadro calendario"><i class="fas fa-calendar-alt mr-2"></i> Martes a Domingo</h3>
 			<h3 class="cuadro reloj"><i class="far fa-clock mr-2"></i>20hs a 23hs</h3>
-			<h3 class="cuadro lugar" onclick="siguiente()"><i class="fas fa-map-marked-alt mr-2"></i>Sarmiento 906</h3>
+			<h3 class="cuadro lugar" onclick="siguiente()">
+				<a href="contacto">
+					<i class="fas fa-map-marked-alt mr-2"></i>
+					Sarmiento 906
+				</a>
+			</h3>
 			<h3 class="cuadro persona">
 				<i class="fas fa-phone mr-2"></i> 
 				<a href="tel:02914526024">452-6024</a>
 			</h3>
 			<h3 class="cuadro persona d-sm-none">
-				<a href="http://instagram.com/pizaalcuadrado" target="_blanck"><i class="fab fa-instagram"></i></a>
+				<a href="http://instagram.com/pizaalCuadrado" target="_blanck"><i class="fab fa-instagram"></i></a>
 			</h3>
 			<h3 class="cuadro persona">
 				<i class="fab fa-whatsapp mr-2"></i>
 				<a href="https://api.whatsapp.com/send?phone=5492914400810" target="_blanck">Pedí por Whatsapp</a>
 			</h3>
 			<h3 class="cuadro persona d-sm-none">
-				<a href="https://www.facebook.com/pizzaalcuadrado" target="_blanck"><i class="fab fa-facebook-square"></i></a>
+				<a href="https://www.facebook.com/pizzaalCuadrado" target="_blanck"><i class="fab fa-facebook-square"></i></a>
 			</h3>
-	   </div>
+	   	</div>	   
+		<section class="menu-atajos col-12">
+			<div class="transparencia">
+				<div class="mx-auto col-12 col-sm-10 col-xl-9 p-0 m-0 container">
+					<a class="opcion opcion-header d-none d-lg-inline-block" href="faq">
+						<div class="texto">Información</div>
+					</a>
+					<a class="opcion opcion-header" href="menu?desde_inicio">
+						<div class="texto">Nuestras Pizzas</div>
+					</a>
+					<a class="opcion opcion-header d-none d-lg-inline-block" href="#opiniones">
+						<div class="texto">Opiniones</div>
+					</a>
+				</div>
+			</div>
+		</section>
     </header>
-	<section id="menu-atajos" class="col-12">
-		<a href="menu?desde_inicio">
-		<div class="opcion mr-2">
-			<div class="pizza fondo"></div>
-			<div class="texto">Nuestras Pizzas</div>
+	<section class="menu-atajos col-12 d-lg-none position-relative">
+		<div class="transparencia">
+			<div class="mx-auto col-12 col-sm-10 col-xl-9 p-0 m-0 container">
+				<a class="opcion" href="#opiniones">
+					<div class="texto">Opiniones</div>
+				</a>
+			</div>
 		</div>
-		</a>
-
-		<a href="galeria">
-		<div class="opcion">
-			<div class="milanesa fondo"></div>
-			<div class="texto">Galería de fotos</div>
-		</div>
-		</a>
 	</section>
 
-	<section id="faq">   
+	<section id="faq" class="pt-5">   
 		<div class="mx-auto col-12 col-sm-10 col-xl-9 p-0 m-0 container">  
 			<div class="contenido col-12 col-md-6">
 				<h2 class="col-12 sub text-center mt-4 mb-3 float-left">Pizza completa</h2>  
@@ -226,6 +240,7 @@ function avanzar(){
 						o llamanos al <a href="tel:02914526024">452-6024</a> para saber si tu zona está incluida.
 					</p>
 				</div> 
+				<div id="opiniones" class="mt-4 pt-5"></div>
 			</div>
 		</div>
 	</section>
@@ -253,10 +268,10 @@ function avanzar(){
 								<div class="autor col-12 mt-4 pb-5 pb-md-1">
 									<img  width="23px" src="https://lh6.ggpht.com/-K0ZmaXvO6L0/AAAAAAAAAAI/AAAAAAAAAAA/50_QeAi89wo/s40-c0x00000000-cc-rp-mo-ba3/photo.jpg" />
 									<span class="nombre mt-1 ml-2 mr-2">Horacio Urbano Colman</span>
-									<span class="separador mt-1 mr-2 d-none d-md-inline-block">-</span>
-									<span class="clearfix d-md-none"></span>
-									<span class="lugar mt-1 d-none d-md-inline-block">Google</span>
-									<a href="https://www.google.com/search?q=pizza+al+cuadrado&oq=pizza+a%C3%B1+&aqs=chrome.1.69i57j0l5.5927j0j4&sourceid=chrome&ie=UTF-8#lrd=0x95eda35421b0579f:0xc6e0b58a6c04d1a6,3,,," target="_blank" class="col-12 mt-5 pt-2 float-left text-center">
+									<span class="separador mt-1 mr-2 d-none d-lg-inline-block">-</span>
+									<span class="clearfix d-lg-none"></span>
+									<span class="lugar mt-1 d-none d-lg-inline-block">Google</span>
+									<a href="https://www.google.com/search?q=pizza+al+Cuadrado&oq=pizza+a%C3%B1+&aqs=chrome.1.69i57j0l5.5927j0j4&sourceid=chrome&ie=UTF-8#lrd=0x95eda35421b0579f:0xc6e0b58a6c04d1a6,3,,," target="_blank" class="col-12 mt-5 pt-2 float-left text-center">
 										Dejanos tu comentario
 									</a>
 								</div>
@@ -271,10 +286,10 @@ function avanzar(){
 								<div class="autor col-12 mt-4 pb-5 pb-md-1">
 									<img  width="23px" src="https://lh6.ggpht.com/-0Krrf7BQXz0/AAAAAAAAAAI/AAAAAAAAAAA/QqH-eC8iFKM/s40-c0x00000000-cc-rp-mo-ba3/photo.jpg" />
 									<span class="nombre mt-1 ml-2 mr-2">Ivan Cretton</span>
-									<span class="separador mt-1 mr-2 d-none d-md-inline-block">-</span>
-									<span class="clearfix d-md-none"></span>
-									<span class="lugar mt-1  d-none d-md-inline-block">Google</span>
-									<a href="https://www.google.com/search?q=pizza+al+cuadrado&oq=pizza+a%C3%B1+&aqs=chrome.1.69i57j0l5.5927j0j4&sourceid=chrome&ie=UTF-8#lrd=0x95eda35421b0579f:0xc6e0b58a6c04d1a6,3,,," target="_blank" class="col-12 mt-5 pt-2 float-left text-center">
+									<span class="separador mt-1 mr-2 d-none d-lg-inline-block">-</span>
+									<span class="clearfix d-lg-none"></span>
+									<span class="lugar mt-1  d-none d-lg-inline-block">Google</span>
+									<a href="https://www.google.com/search?q=pizza+al+Cuadrado&oq=pizza+a%C3%B1+&aqs=chrome.1.69i57j0l5.5927j0j4&sourceid=chrome&ie=UTF-8#lrd=0x95eda35421b0579f:0xc6e0b58a6c04d1a6,3,,," target="_blank" class="col-12 mt-5 pt-2 float-left text-center">
 										Dejanos tu comentario
 									</a>
 								</div>
@@ -289,10 +304,10 @@ function avanzar(){
 								<div class="autor col-12 mt-4 pb-5 pb-md-1">
 									<img class="imagen" width="23px" src="https://scontent.fbhi1-1.fna.fbcdn.net/v/t1.0-9/49140295_10216926421568412_7400550408482979840_n.jpg?_nc_cat=103&_nc_oc=AQkP-G9OzQA9Wm9X3tPEcMAzUycwuM-kY7e6bbFqplrtCFAcpZcM5eDJOS5MJdNZzfU&_nc_ht=scontent.fbhi1-1.fna&oh=3e9d3120015b4778e6a21d7fb5efca3a&oe=5E3D2D79" />
 									<span class="nombre mt-1 ml-2 mr-2">Gisela Pallotti</span>
-									<span class="separador mt-1 mr-2 d-none d-md-inline-block">-</span>
-									<span class="clearfix d-md-none"></span>
-									<span class="lugar mt-1  d-none d-md-inline-block">Facebook</span>
-									<a href="https://www.facebook.com/pg/pizzaalcuadrado/reviews/" target="_blank" class="col-12 mt-5 pt-2 float-left text-center">
+									<span class="separador mt-1 mr-2 d-none d-lg-inline-block">-</span>
+									<span class="clearfix d-lg-none"></span>
+									<span class="lugar mt-1  d-none d-lg-inline-block">Facebook</span>
+									<a href="https://www.facebook.com/pg/pizzaalCuadrado/reviews/" target="_blank" class="col-12 mt-5 pt-2 float-left text-center">
 										Dejanos tu comentario
 									</a>
 				
@@ -308,10 +323,10 @@ function avanzar(){
 								<div class="autor col-12 mt-4 pb-5 pb-md-1">
 									<img class="imagen" width="23px" src="https://scontent.fbhi1-1.fna.fbcdn.net/v/t1.0-9/35800756_1993198474058592_2612478522819608576_n.jpg?_nc_cat=109&_nc_oc=AQnBCD66aXADmuIP0Ve-JO8GrRIyPp3yRFZ4Bclpkw7gTgL7KVqpCjUchkL3M-EKHTg&_nc_ht=scontent.fbhi1-1.fna&oh=5ad8207784010deb8861deafd9adc323&oe=5DF527F6" />
 									<span class="nombre mt-1 ml-2 mr-2">Luisa Nélida Pérez Gruppi </span>
-									<span class="separador mt-1 mr-2 d-none d-md-inline-block">-</span>
-									<span class="clearfix d-md-none"></span>
-									<span class="lugar mt-1 d-none d-md-inline-block">Facebook</span>
-									<a href="https://www.facebook.com/pg/pizzaalcuadrado/reviews/" target="_blank" class="col-12 mt-5 pt-2 float-left text-center">
+									<span class="separador mt-1 mr-2 d-none d-lg-inline-block">-</span>
+									<span class="clearfix d-lg-none"></span>
+									<span class="lugar mt-1 d-none d-lg-inline-block">Facebook</span>
+									<a href="https://www.facebook.com/pg/pizzaalCuadrado/reviews/" target="_blank" class="col-12 mt-5 pt-2 float-left text-center">
 										Dejanos tu comentario
 									</a>
 								</div>

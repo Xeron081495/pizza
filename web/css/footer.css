@@ -21,12 +21,11 @@ footer #top{
 }
 footer #top #logo{
 	margin: 1.2em 0; 
-	width: 18%;
 	float: left;
 	clear: left;
 }
 footer #top #logo img{
-	width: 100%;
+	width: 90px;
 	float: left;
 	clear: both;
 	border-radius: 15px;
@@ -178,7 +177,7 @@ footer #firma a{
 		clear: both;	
 		visibility: visible;
 		height: auto;
-		padding-top: 120px;
+		padding-top: 90px;
 	}
 	footer nav#menu-celu a.opcion-menu{
 		width: 100%;
@@ -198,16 +197,18 @@ footer #firma a{
 		padding: 0 10%;
 	}
 	footer #top #logo{
-		margin: 1.2em 25%; 
-		width: 50%;
-		float: left;
-		clear: both;
-	}
-	footer #top #logo img{
+		margin: 1.2em 0%; 
 		width: 100%;
 		float: left;
 		clear: both;
-		border-radius: 15px;
+		text-align: center;
+	}
+	footer #top #logo img{
+		width: 80px;
+		float: none;
+		clear: none;
+		display: inline-block;
+		border-radius: 0px;
 	}
 	footer #top  #datos{
 		display: none;
