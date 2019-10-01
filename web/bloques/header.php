@@ -47,8 +47,8 @@
 			<span class="dato">
 				<a href="https://www.facebook.com/pizzaalcuadrado" target="_blanck"><i class="fab fa-facebook-square ml-2"></i></a>
 				<a href="http://instagram.com/pizaalcuadrado" target="_blanck"><i class="fab fa-instagram ml-2"></i></a>
-				<a href="https://api.whatsapp.com/send?phone=5492914400810" target="_blanck"><i class="fab fa-whatsapp ml-2"></i></a>
-			<span>
+				<a href="https://wa.me/5492914400810" target="_blanck"><i class="fab fa-whatsapp ml-2"></i></a>
+			</span>
 		</div>
 		<nav id="menu">
 			<a class="opcion-menu" href="contacto">Contacto</a>
@@ -56,7 +56,12 @@
 			<a class="opcion-menu" href="menu">Menú de Pizzas</a>
 			<a class="opcion-menu" href="nosotros">Nosotros</a>
 		</nav>
-		<a href="#menu-celu" id="menu-icono"><i class="fas fa-bars"></i></a>
+		<a href="#menucel" id="menu-icono"><i class="fas fa-bars"></i></a>
+		<span class="redes d-md-none">
+			<a href="https://www.facebook.com/pizzaalcuadrado" target="_blanck"><i class="fab fa-facebook-square ml-2"></i></a>
+			<a href="http://instagram.com/pizaalcuadrado" target="_blanck"><i class="fab fa-instagram ml-2"></i></a>
+			<a href="https://wa.me/5492914400810" target="_blanck"><i class="fab fa-whatsapp ml-2"></i></a>
+		</span>
 	</div>
 	<div id="titulo">
 		<div id="sombra"><h3><?php echo $lugar; ?></h3></div>

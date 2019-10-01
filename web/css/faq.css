@@ -21,10 +21,12 @@ section#faq .contenido .img_sab{
 	border-radius: 5px;
 	border: solid 2px #111;
 	margin: 0.5em 5px;
-	max-width: 28%;
+}
+section#faq .contenido .sin-borde{
+	border: solid 0px #111;
 }
 section#faq .contenido p{
-	margin: 2em 0 1em 0;
+	margin: 1em 0 1em 0;
 	font-size: 1.2em;
 	line-height: 1.9em;
 	text-align: left;

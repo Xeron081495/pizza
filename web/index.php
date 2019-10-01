@@ -119,7 +119,12 @@ function avanzar(){
 				<a class="opcion-menu" href="menu">Menú de Pizzas</a>
 				<a class="opcion-menu" href="nosotros">Nosotros</a>
 			</nav>
-			<a href="#menu-celu" id="menu-icono"><i class="fas fa-bars"></i></a>
+			<a href="#menucel" id="menu-icono"><i class="fas fa-bars"></i></a>
+			<span class="redes d-md-none">
+				<a href="https://www.facebook.com/pizzaalcuadrado" target="_blanck"><i class="fab fa-facebook-square ml-2"></i></a>
+				<a href="http://instagram.com/pizaalcuadrado" target="_blanck"><i class="fab fa-instagram ml-2"></i></a>
+				<a href="https://wa.me/5492914400810" target="_blanck"><i class="fab fa-whatsapp ml-2"></i></a>
+			</span>
 	   </div>
 	   <h1 id="nombre">Pizza al Cuadrado</h1>
 	   <h1 id="slogan1">La <span class="d-none d-lg-inline-block">pizza</span> m&aacute;s grande</h1>
@@ -152,14 +157,14 @@ function avanzar(){
 				<i class="fas fa-phone mr-2"></i> 
 				<a href="tel:02914526024">452-6024</a>
 			</h3>
-			<h3 class="cuadro persona d-sm-none">
+			<h3 class="cuadro persona d-none">
 				<a href="http://instagram.com/pizaalCuadrado" target="_blanck"><i class="fab fa-instagram"></i></a>
 			</h3>
-			<h3 class="cuadro persona">
+			<h3 class="cuadro persona d-none d-sm-inline-block">
 				<i class="fab fa-whatsapp mr-2"></i>
 				<a href="https://api.whatsapp.com/send?phone=5492914400810" target="_blanck">Pedí por Whatsapp</a>
 			</h3>
-			<h3 class="cuadro persona d-sm-none">
+			<h3 class="cuadro persona d-none">
 				<a href="https://www.facebook.com/pizzaalCuadrado" target="_blanck"><i class="fab fa-facebook-square"></i></a>
 			</h3>
 	   	</div>	   
@@ -167,13 +172,13 @@ function avanzar(){
 			<div class="transparencia">
 				<div class="mx-auto col-12 col-sm-10 col-xl-9 p-0 m-0 container">
 					<a class="opcion opcion-header d-none d-lg-inline-block" href="faq">
-						<div class="texto">Información</div>
+						<div class="texto"><i class="fas fa-info-circle mr-2"></i>Información</div>
 					</a>
-					<a class="opcion opcion-header" href="menu?desde_inicio">
-						<div class="texto">Nuestras Pizzas</div>
+					<a class="opcion opcion-header d-none d-lg-inline-block" href="menu?desde_inicio">
+						<div class="texto"><i class="fas fa-pizza-slice mr-2"></i>Nuestras Pizzas</div>
 					</a>
 					<a class="opcion opcion-header d-none d-lg-inline-block" href="#opiniones">
-						<div class="texto">Opiniones</div>
+						<div class="texto"><i class="fas fa-comment mr-2"></i>Opiniones</div>
 					</a>
 				</div>
 			</div>
@@ -182,23 +187,35 @@ function avanzar(){
 	<section class="menu-atajos col-12 d-lg-none position-relative">
 		<div class="transparencia">
 			<div class="mx-auto col-12 col-sm-10 col-xl-9 p-0 m-0 container">
-				<a class="opcion" href="#opiniones">
-					<div class="texto">Opiniones</div>
+				<a class="opcion dif" href="menu?desde_inicio">
+					<div class="texto"><i class="fas fa-pizza-slice mr-2"></i>Nuestras Pizzas</div>
+				</a>
+				<a class="opcion" href="https://api.whatsapp.com/send?phone=5492914400810">
+					<div class="texto"><i class="fab fa-whatsapp mr-2"></i>Pedí por Whatsapp</div>
+				</a>
+				<a class="opcion d-none" href="#opiniones">
+					<div class="texto"><i class="fas fa-comment mr-2"></i>Opiniones</div>
+				</a>
+				<a class="opcion d-none" href="faq">
+					<div class="texto"><i class="fas fa-info-circle mr-2"></i>Información</div>
+				</a>
+				<a class="opcion dif d-none" href="galeria">
+					<div class="texto"><i class="fas fa-info-circle mr-2"></i>Galería</div>
 				</a>
 			</div>
 		</div>
 	</section>
 
-	<section id="faq" class="pt-5">   
+	<section id="faq" class="pt-4 pt-md-5">   
 		<div class="mx-auto col-12 col-sm-10 col-xl-9 p-0 m-0 container">  
 			<div class="contenido col-12 col-md-6">
-				<h2 class="col-12 sub text-center mt-4 mb-3 float-left">Pizza completa</h2>  
+				<h2 class="col-12 sub text-center mt-1 mt-md-4 mb-2 float-left">Pizza completa</h2>  
 				<div class="lista mt-1 text-center ">
 					<!-- <img class="img_sab d-inline-block" src="img/faq_pizza1sab.jpg" width="150" alt="Pizza completa de un sabor">
 					<img class="img_sab d-inline-block" src="img/faq_pizza2sab.jpg" width="150" alt="Pizza completa de dos sabores">
 					<img class="img_sab d-inline-block" src="img/faq_pizza3sab.jpg" width="150" alt="Pizza completa de tres sabores"> -->
-					<img class="img_sab d-inline-block" src="img/faq_pizza4sab.jpg" width="150" alt="Pizza completa de cuatro sabores">
-					<p class="clearfix display-5 mt-1 text-center p-4 pt-0 pb-0">
+					<img class="img_sab sin-borde d-inline-block" src="img/pizza-completa.png" height="200px" alt="Pizza completa de cuatro sabores">
+					<p class="clearfix display-5 mt-0 text-center p-4 pt-0 pb-0">
 						Podes elegir hasta cuatro sabores por pizza. <strong>¡Mide 43x43cm!</strong> 
 						Equivale a dos pizzas tradicionales: <strong>comen 4</strong>, pican 5.
 					</p>
@@ -206,11 +223,11 @@ function avanzar(){
 			</div>
 
 			<div class="contenido col-12 col-md-6">
-				<h2 class="col-12 sub text-center mt-4 mb-3 float-left">Media Pizza</h2>  
+				<h2 class="col-12 sub text-center mt-4 mb-2 float-left">Media Pizza</h2>  
 				<div class="lista mt-1 text-center">
 <!-- 					<img class="img_sab d-inline-block" src="img/faq_mediapizza.jpg" width="75" alt="Media pizza de uno o dos sabores.">    
- -->					<img class="img_sab d-inline-block" src="img/faq_mediapizza.jpg" width="75" alt="Media pizza de uno o dos sabores.">   
-					<p class="clearfix display-5 mt-1 text-center p-4 pt-0 pb-0">
+ -->					<img class="img_sab sin-borde d-inline-block" src="img/pizza-media.png" height="200px" alt="Media pizza de uno o dos sabores.">   
+					<p class="clearfix display-5 mt-0 text-center p-4 pt-0 pb-0">
 						Podes elegir hasta dos sabores por pizza. <strong>¡Mide 43x21cm!</strong>
 						Equivale a una pizza tradicional: <strong>comen 2</strong>.
 					</p>
@@ -222,7 +239,7 @@ function avanzar(){
 			<div class="contenido col-12 col-md-6">
 				<h2 class="col-12 sub text-center mt-4 mb-2 float-left">Pizza al paso</h2>  
 				<div class="lista mt-1 text-center">
-					<img class="img_sab d-inline-block" src="img/faq_pizzaporcion.jpg" height="70" alt="Media pizza de uno o dos sabores.">    
+					<img class="img_sab sin-borde d-inline-block" src="img/faq_pizzaporcion.jpg" height="70" alt="Media pizza de uno o dos sabores.">    
 					<p class="clearfix display-5 mt-1 text-center p-4 pt-0 pb-0">
 						Porción de pizza de un sabor <strong>para retirar</strong> en Sarmiento 906. 
 						<strong>Come uno</strong>.

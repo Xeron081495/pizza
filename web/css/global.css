@@ -242,6 +242,7 @@ header#top #titulo h3{
 	}
 	header#top #logo-menu  #logo{
 		margin: 12px 10%;
+		margin-right: 3%;
 		float: left;
 		clear: left;
 	}
@@ -254,14 +255,23 @@ header#top #titulo h3{
 	header#top #logo-menu  nav#menu{
 		display: none;
 	}
-	header#top #logo-menu  a#menu-icono{
-		width: 20%;
+	header#top #logo-menu .redes{
 		text-align: right;
-		margin-left: 15%;
-		margin-right: 10%;
+		float: right;
+		clear: none;
+		visibility: visible;
+		font-size: 20px;
+		padding-top: 31px;
+	}
+	header#top #logo-menu .redes a{
+		color: rgb(233, 233, 233);
+	}
+	header#top #logo-menu  a#menu-icono{
+		text-align: right;
+		margin-left: 10%;
+		margin-right: 15%;
 		margin-top: 24px;
 		float: right;
-		clear: right;
 		visibility: visible;
 		color: rgb(233, 233, 233);
 		font-size: 30px;

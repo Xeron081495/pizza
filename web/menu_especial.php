@@ -2,7 +2,7 @@
 <?php 
 //libreria
 include_once '_clases/productos.php';
-$menu = new Menu();
+/*$menu = new Menu();
 $lista = $menu->getMenuEspecial();
 //$cantidad = floor(count($menu->getMenu())/3);
 //$resto = count($menu->getMenu())%3;
@@ -11,8 +11,10 @@ $lista = $menu->getMenuEspecial();
 $sabor = urldecode($_GET['id']);
 $menu_especial = $menu->getPosibilidades([$sabor]);
 $cantidad = floor(count($menu_especial)/3);
-$resto = count($menu_especial)%3;
+$resto = count($menu_especial)%3;*/
 
+echo '<META HTTP-EQUIV="REFRESH" CONTENT="0;URL=menu">';
+exit;
 
 ?>
 <!DOCTYPE HTML> 

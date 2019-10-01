@@ -1,7 +1,16 @@
+.ancla{
+	position: relative;
+}
+.ancla .punto{
+	position: absolute;
+	top: -90px;
+}
+
 footer{
 	width: 100%;
 	float: left;
 	clear: both;
+	padding-bottom: 85px;
 }
 
 footer nav#menu-celu{
@@ -169,6 +178,7 @@ footer #firma a{
 		width: 100%;
 		float: left;
 		clear: both;
+		padding-bottom: 0px;
 	}
 	footer nav#menu-celu{
 		width: 100%;
@@ -177,7 +187,6 @@ footer #firma a{
 		clear: both;	
 		visibility: visible;
 		height: auto;
-		padding-top: 90px;
 	}
 	footer nav#menu-celu a.opcion-menu{
 		width: 100%;

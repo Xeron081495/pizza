@@ -1,4 +1,7 @@
 <footer>
+	<div class="ancla float-left">
+		<div id="menucel"class="punto"></div>
+	</div>
 	<nav id="menu-celu" class="d-lg-none">
 		   <a class="opcion-menu" href="./">Inicio</a>
 		   <a class="opcion-menu" href="menu">Menú de Pizzas</a>
