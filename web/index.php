@@ -1,5 +1,81 @@
 <?php clearstatcache(); ?>
 
+<?php 
+	$opiniones = [
+		[
+			"nombre" => "Luisa Nélida Pérez Gruppi",
+			"fuente" => "Facebook",
+			"foto" => "https://scontent.fbhi1-1.fna.fbcdn.net/v/t1.0-9/35800756_1993198474058592_2612478522819608576_n.jpg?_nc_cat=109&_nc_oc=AQnBCD66aXADmuIP0Ve-JO8GrRIyPp3yRFZ4Bclpkw7gTgL7KVqpCjUchkL3M-EKHTg&_nc_ht=scontent.fbhi1-1.fna&oh=5ad8207784010deb8861deafd9adc323&oe=5DF527F6",
+			"opinion" => "Nos gusta la calidad del producto, la masa es exquisita. La atención es muy buena y tiene rapidez en la entrega."
+		],
+		[
+			"nombre" => "Horacio Urbano Colman",
+			"fuente" => "Google",
+			"foto" => "https://lh6.ggpht.com/-K0ZmaXvO6L0/AAAAAAAAAAI/AAAAAAAAAAA/50_QeAi89wo/s40-c0x00000000-cc-rp-mo-ba3/photo.jpg",
+			"opinion" => "Buen nivel de pizzas exquisitas, buena relación precio-producto."
+		],
+		[
+			"nombre" => "Ivan Cretton",
+			"fuente" => "Google",
+			"foto" => "https://lh6.ggpht.com/-0Krrf7BQXz0/AAAAAAAAAAI/AAAAAAAAAAA/QqH-eC8iFKM/s40-c0x00000000-cc-rp-mo-ba3/photo.jpg",
+			"opinion" => "Muchisimas variedades y combinaciones de sabores. ¡Me gustó mucho!"
+		],
+		[
+			"nombre" => "Gisela Pallotti",
+			"fuente" => "Facebook",
+			"foto" => "https://scontent.fbhi1-1.fna.fbcdn.net/v/t1.0-9/49140295_10216926421568412_7400550408482979840_n.jpg?_nc_cat=103&_nc_oc=AQkP-G9OzQA9Wm9X3tPEcMAzUycwuM-kY7e6bbFqplrtCFAcpZcM5eDJOS5MJdNZzfU&_nc_ht=scontent.fbhi1-1.fna&oh=3e9d3120015b4778e6a21d7fb5efca3a&oe=5E3D2D79",
+			"opinion" => "Lejos las mejores de bahía. Rinden un montón. Si te pones a comparar precio y tamaño, conviene mucho más."
+		],	
+		[
+			"nombre" => "Ivan Chaparro",
+			"fuente" => "Google",
+			"foto" => "https://lh6.ggpht.com/-RWBFCgh4hN8/AAAAAAAAAAI/AAAAAAAAAAA/x3sHlHhG8nA/s40-c0x00000000-cc-rp-mo-ba3/photo.jpg",
+			"opinion" => "Me gusta este lugar porque las pizzas están terribles y te atienden rápido."
+		],
+		[
+			"nombre" => "Pamela Bodini",
+			"fuente" => "Google",
+			"foto" => "https://lh3.ggpht.com/-Rxw_MDMiaDI/AAAAAAAAAAI/AAAAAAAAAAA/p2ICZC7gVMY/s40-c0x00000000-cc-rp-mo/photo.jpg",
+			"opinion" => "La mejor atención, ¡con toda la onda! Las variedades espectaculares. Recomendamos la de salchichas, papas fritas y chedar 🍕💪"
+		],
+		[
+			"nombre" => "Natalia Promenzio",
+			"fuente" => "Google",
+			"foto" => "https://lh6.ggpht.com/-B16g6xlt-uw/AAAAAAAAAAI/AAAAAAAAAAA/ZDecy5kup4M/s40-c0x00000000-cc-rp-mo-ba2/photo.jpg",
+			"opinion" => "En tiempo forma, riquisimas pizzas y super barato."
+		],
+		[
+			"nombre" => "Mariano Iommi",
+			"fuente" => "Google",
+			"foto" => "https://lh3.ggpht.com/-ZblzmUeGWYE/AAAAAAAAAAI/AAAAAAAAAAA/X929q4fD8H0/s40-c0x00000000-cc-rp-mo-ba3/photo.jpg",
+			"opinion" => "Muy ricas. Suelo pedir a domicilio, y cuando llegan le doy un toque de horno y quedan como caseras!"
+		],
+		[
+			"nombre" => "Karin Gelabert",
+			"fuente" => "Google",
+			"foto" => "https://lh4.ggpht.com/-UcNzva8KwDU/AAAAAAAAAAI/AAAAAAAAAAA/Vke-wrWYR4U/s40-c0x00000000-cc-rp-mo-ba4/photo.jpg",
+			"opinion" => "Excelente calidad, buena atención y precios. ¡muchos sabores!"
+		],
+		[
+			"nombre" => "Leticia Micucci",
+			"fuente" => "Google",
+			"foto" => "https://lh3.ggpht.com/-YngV7CeAobE/AAAAAAAAAAI/AAAAAAAAAAA/vNwgROKmuIQ/s40-c0x00000000-cc-rp-mo-ba3/photo.jpg",
+			"opinion" => "Muy ricas las pizzas, son gigantes y a buen precio"
+		],
+		[
+			"nombre" => "Martin Laggiard",
+			"fuente" => "Google",
+			"foto" => "https://lh4.ggpht.com/-VJF0J1fg8Lw/AAAAAAAAAAI/AAAAAAAAAAA/KgSzuC28KUA/s40-c0x00000000-cc-rp-mo-ba3/photo.jpg",
+			"opinion" => "¡Buenisimas! Las pedí para una cena familiar y la verdad que super rinden. Para mi cumple pediré."
+		],		
+	];
+
+	$fuente = [
+		"Google" => "https://www.google.com/search?q=pizza+al+Cuadrado&oq=pizza+a%C3%B1+&aqs=chrome.1.69i57j0l5.5927j0j4&sourceid=chrome&ie=UTF-8#lrd=0x95eda35421b0579f:0xc6e0b58a6c04d1a6,3,,,",
+		"Facebook" => "https://www.facebook.com/pg/pizzaalCuadrado/reviews/"
+	]
+?>
+
 <!DOCTYPE HTML> 
 <html> 
 <head>
@@ -276,79 +352,30 @@ function avanzar(){
 						<li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
 					</ol>
 					<div class="carousel-inner mt-5">
-						<!-- opinion 1 -->
-						<div class="carousel-item">
-							<div class="opinion">
-								<i class="frase col-12">
-									"Buen nivel de pizzas exquisitas, buena relación precio-producto"
-								</i>
-								<div class="autor col-12 mt-4 pb-5 pb-md-1">
-									<img  width="23px" src="https://lh6.ggpht.com/-K0ZmaXvO6L0/AAAAAAAAAAI/AAAAAAAAAAA/50_QeAi89wo/s40-c0x00000000-cc-rp-mo-ba3/photo.jpg" />
-									<span class="nombre mt-1 ml-2 mr-2">Horacio Urbano Colman</span>
-									<span class="separador mt-1 mr-2 d-none d-lg-inline-block">-</span>
-									<span class="clearfix d-lg-none"></span>
-									<span class="lugar mt-1 d-none d-lg-inline-block">Google</span>
-									<a href="https://www.google.com/search?q=pizza+al+Cuadrado&oq=pizza+a%C3%B1+&aqs=chrome.1.69i57j0l5.5927j0j4&sourceid=chrome&ie=UTF-8#lrd=0x95eda35421b0579f:0xc6e0b58a6c04d1a6,3,,," target="_blank" class="col-12 mt-5 pt-2 float-left text-center">
-										Dejanos tu comentario
-									</a>
+
+
+						<?php 
+						shuffle($opiniones);
+						foreach($opiniones as $opinion){ ?>
+
+							<div class="carousel-item <?php if($opiniones[0]==$opinion) echo 'active'; ?>">
+								<div class="opinion">
+									<i class="frase col-12">
+										"<?php echo $opinion['opinion']; ?>"
+									</i>
+									<div class="autor col-12 mt-4 pb-5 pb-md-1">
+										<img class="imagen" width="23px" src="<?php echo $opinion['foto']; ?>" />
+										<span class="nombre mt-1 ml-2 mr-2"><?php echo $opinion['nombre']; ?></span>
+										<span class="separador mt-1 mr-2 d-none d-lg-inline-block">-</span>
+										<span class="clearfix d-lg-none"></span>
+										<span class="lugar mt-1 d-none d-lg-inline-block"><?php echo $opinion['fuente']; ?></span>
+										<a href="<?php echo $fuente[$opinion['fuente']] ?>" target="_blank" class="col-12 mt-5 pt-2 float-left text-center">
+											Dejanos tu comentario
+										</a>
+									</div>
 								</div>
-							</div>
-						</div>
-						<!-- opinion 2 -->
-						<div class="carousel-item">
-							<div class="opinion">
-								<i class="frase col-12">
-									"Muchisimas variedades y combinaciones de sabores! Me gustó mucho."
-								</i>
-								<div class="autor col-12 mt-4 pb-5 pb-md-1">
-									<img  width="23px" src="https://lh6.ggpht.com/-0Krrf7BQXz0/AAAAAAAAAAI/AAAAAAAAAAA/QqH-eC8iFKM/s40-c0x00000000-cc-rp-mo-ba3/photo.jpg" />
-									<span class="nombre mt-1 ml-2 mr-2">Ivan Cretton</span>
-									<span class="separador mt-1 mr-2 d-none d-lg-inline-block">-</span>
-									<span class="clearfix d-lg-none"></span>
-									<span class="lugar mt-1  d-none d-lg-inline-block">Google</span>
-									<a href="https://www.google.com/search?q=pizza+al+Cuadrado&oq=pizza+a%C3%B1+&aqs=chrome.1.69i57j0l5.5927j0j4&sourceid=chrome&ie=UTF-8#lrd=0x95eda35421b0579f:0xc6e0b58a6c04d1a6,3,,," target="_blank" class="col-12 mt-5 pt-2 float-left text-center">
-										Dejanos tu comentario
-									</a>
-								</div>
-							</div>
-						</div>
-						<!-- opinion 3 -->
-						<div class="carousel-item">
-							<div class="opinion">
-								<i class="frase col-12">
-									"Lejos las mejores de bahía y rinden un monton. Si te pones a comparar precio y tamaño, conviene mucho más."
-								</i>
-								<div class="autor col-12 mt-4 pb-5 pb-md-1">
-									<img class="imagen" width="23px" src="https://scontent.fbhi1-1.fna.fbcdn.net/v/t1.0-9/49140295_10216926421568412_7400550408482979840_n.jpg?_nc_cat=103&_nc_oc=AQkP-G9OzQA9Wm9X3tPEcMAzUycwuM-kY7e6bbFqplrtCFAcpZcM5eDJOS5MJdNZzfU&_nc_ht=scontent.fbhi1-1.fna&oh=3e9d3120015b4778e6a21d7fb5efca3a&oe=5E3D2D79" />
-									<span class="nombre mt-1 ml-2 mr-2">Gisela Pallotti</span>
-									<span class="separador mt-1 mr-2 d-none d-lg-inline-block">-</span>
-									<span class="clearfix d-lg-none"></span>
-									<span class="lugar mt-1  d-none d-lg-inline-block">Facebook</span>
-									<a href="https://www.facebook.com/pg/pizzaalCuadrado/reviews/" target="_blank" class="col-12 mt-5 pt-2 float-left text-center">
-										Dejanos tu comentario
-									</a>
-				
-								</div>
-							</div>
-						</div>
-						<!-- opinion 4 -->
-						<div class="carousel-item active">
-							<div class="opinion">
-								<i class="frase col-12">
-									"Nos gusta la calidad del producto, la masa es exquisita. La atención es muy buena y tiene rapidez en la entrega."
-								</i>
-								<div class="autor col-12 mt-4 pb-5 pb-md-1">
-									<img class="imagen" width="23px" src="https://scontent.fbhi1-1.fna.fbcdn.net/v/t1.0-9/35800756_1993198474058592_2612478522819608576_n.jpg?_nc_cat=109&_nc_oc=AQnBCD66aXADmuIP0Ve-JO8GrRIyPp3yRFZ4Bclpkw7gTgL7KVqpCjUchkL3M-EKHTg&_nc_ht=scontent.fbhi1-1.fna&oh=5ad8207784010deb8861deafd9adc323&oe=5DF527F6" />
-									<span class="nombre mt-1 ml-2 mr-2">Luisa Nélida Pérez Gruppi </span>
-									<span class="separador mt-1 mr-2 d-none d-lg-inline-block">-</span>
-									<span class="clearfix d-lg-none"></span>
-									<span class="lugar mt-1 d-none d-lg-inline-block">Facebook</span>
-									<a href="https://www.facebook.com/pg/pizzaalCuadrado/reviews/" target="_blank" class="col-12 mt-5 pt-2 float-left text-center">
-										Dejanos tu comentario
-									</a>
-								</div>
-							</div>
-						</div>
+							</div>							
+						<?php }	?>
 					</div>
 					<a class="carousel-control-prev carousel-control" href="#carouselExampleIndicators" role="button" data-slide="prev">
 						<span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -373,6 +400,7 @@ function avanzar(){
 		interval: 6000
 	});
 </script>
+
 
 
 <!-- Latest compiled and minified CSS 
