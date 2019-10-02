@@ -236,7 +236,7 @@ function avanzar(){
 			<h3 class="cuadro persona d-none">
 				<a href="http://instagram.com/pizaalCuadrado" target="_blanck"><i class="fab fa-instagram"></i></a>
 			</h3>
-			<h3 class="cuadro persona d-none d-sm-inline-block">
+			<h3 class="cuadro persona">
 				<i class="fab fa-whatsapp mr-2"></i>
 				<a href="https://api.whatsapp.com/send?phone=5492914400810" target="_blanck">Pedí por Whatsapp</a>
 			</h3>
@@ -266,10 +266,10 @@ function avanzar(){
 				<a class="opcion dif" href="menu?desde_inicio">
 					<div class="texto"><i class="fas fa-pizza-slice mr-2"></i>Nuestras Pizzas</div>
 				</a>
-				<a class="opcion" href="https://api.whatsapp.com/send?phone=5492914400810">
+				<a class="opcion d-none" href="https://api.whatsapp.com/send?phone=5492914400810">
 					<div class="texto"><i class="fab fa-whatsapp mr-2"></i>Pedí por Whatsapp</div>
 				</a>
-				<a class="opcion d-none" href="#opiniones">
+				<a class="opcion" href="#opiniones">
 					<div class="texto"><i class="fas fa-comment mr-2"></i>Opiniones</div>
 				</a>
 				<a class="opcion d-none" href="faq">
