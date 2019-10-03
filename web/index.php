@@ -114,7 +114,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
  
-<link rel="stylesheet" href="css/global.css?fecha=29l08l2019" />
+<link rel="stylesheet" href="css/global.css?fecha=02l10l2019" />
 <link rel="stylesheet" href="css/footer.css?fecha=29l08l2019" />
 <link rel="stylesheet" href="css/index.css?fecha=30l08l2019" />
 <link rel="stylesheet" href="css/faq.css?fecha=29l08l2019" />
@@ -129,7 +129,7 @@ $(function() {
 });*/
 
 
-var imagenes = ['header4.jpg','header1.jpg', 'header.jpg'];
+var imagenes = ['header4.jpg','header3.jpg','header2.jpg', 'header1.jpg', 'header5.jpg'];
 var texto1 = ['Pizza al Cuadrado', 'La <span class="d-none d-lg-inline-block">pizza</span> m&aacute;s grande', 'de Bah&iacute;a Blanca'];
 var texto2 = ['Las m&aacute;s deliciosas', 'milanesas a la pizza', 'a partir del Lunes 4'];
 var texto3 = ['Las m&aacute;s deliciosas', 'milanesas a la pizza', 'est&aacute;n en pizza al Cuadrado'];
