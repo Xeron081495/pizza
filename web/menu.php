@@ -218,17 +218,37 @@ function elegirSabor(sel){
 			
 		
 		<h1 id="tag-empanada" class="titulo titulo_chico"><img src="img/linea-curva.png"> Adicionales <img src="img/linea-curva.png"></h1>
-		<div id="info"><i><strong>!Crea tu propia pizza agregandole cualquier sabor!</strong></i></div>
-		<div class="col">
-		   <div class="variedad sombreado"><div class="num">1</div><div class="pizza"></div>Carne</div>
-		   <div class="variedad"><div class="num">3</div><div class="pizza"></div>Jam&oacute;n y queso</div>
-		   <div class="variedad sombreado"><div class="num">4</div><div class="pizza"></div>Queso y cebolla de verdeo</div>
-		   <div class="variedad"><div class="num">6</div><div class="pizza"></div>Pollo</div>
+		<div id="info"><i><strong>Crea tu propia pizza agregandole cualquier ingrediente a alguna de nuestras variedades</strong></i></div>
+		<div class="col col-12 col-md-4 pl-0 pl-md-3 text-center">
+		   <div class="variedad sombreado"><div class="num d-none">&gt;</div><div class="pizza"></div>Ajo</div>
+		   <div class="variedad"><div class="num d-none">&gt;</div><div class="pizza"></div>Albahca</div>
+		   <div class="variedad sombreado"><div class="num d-none">&gt;</div><div class="pizza"></div>Alioli</div>
+		   <div class="variedad"><div class="num d-none">&gt;</div><div class="pizza"></div>Ananá</div>
+		   <div class="variedad sombreado"><div class="num d-none">&gt;</div><div class="pizza"></div>Anchoas</div>
+		   <div class="variedad"><div class="num d-none">&gt;</div><div class="pizza"></div>Apio</div>
+		   <div class="variedad sombreado"><div class="num d-none">&gt;</div><div class="pizza"></div>Berenjena</div>
+		   <div class="variedad"><div class="num d-none">&gt;</div><div class="pizza"></div>Cantimpalo</div>
 		</div>
-		<div class="col">
-		   <div class="variedad sombreado"><div class="num">8</div><div class="pizza"></div>Muzza y cantimpalo</div>
-		   <div class="variedad"><div class="num">10</div><div class="pizza"></div>Verdura</div>
-		   <div class="variedad sombreado"><div class="num">12</div><div class="pizza"></div>Muzza, panceta y cebolla de verdeo</div>
+		<div class="col col-12 col-md-4 pl-0 pl-md-3 text-center">
+		   <div class="variedad sombreado"><div class="num d-none">&gt;</div><div class="pizza"></div>Ciruelas</div>
+		   <div class="variedad"><div class="num d-none">&gt;</div><div class="pizza"></div>Jamón</div>
+		   <div class="variedad sombreado"><div class="num d-none">&gt;</div><div class="pizza"></div>Huevo duro</div>
+		   <div class="variedad"><div class="num d-none">&gt;</div><div class="pizza"></div>Huevo frito</div>
+		   <div class="variedad sombreado"><div class="num d-none">&gt;</div><div class="pizza"></div>Mayonesa</div>
+		   <div class="variedad"><div class="num d-none">&gt;</div><div class="pizza"></div>Ketchup</div>
+		   <div class="variedad sombreado"><div class="num d-none">&gt;</div><div class="pizza"></div>Morrón</div>
+		   <div class="variedad"><div class="num d-none">&gt;</div><div class="pizza"></div>Muzza</div>
+		   <div class="variedad sombreado"><div class="num d-none">&gt;</div><div class="pizza"></div>Tomate disecado</div>
+		</div>
+		<div class="col col-12 col-md-4 pl-0 pl-md-3  text-center">
+		   <div class="variedad"><div class="num d-none">&gt;</div><div class="pizza"></div>Tomate Cherry</div>
+		   <div class="variedad sombreado"><div class="num d-none">&gt;</div><div class="pizza"></div>Panceta</div>
+		   <div class="variedad"><div class="num d-none">&gt;</div><div class="pizza"></div>Palmito</div>
+		   <div class="variedad sombreado"><div class="num d-none">&gt;</div><div class="pizza"></div>Papas</div>
+		   <div class="variedad"><div class="num d-none">&gt;</div><div class="pizza"></div>Provolone</div>
+		   <div class="variedad sombreado"><div class="num d-none">&gt;</div><div class="pizza"></div>Roquefort</div>
+		   <div class="variedad"><div class="num d-none">&gt;</div><div class="pizza"></div>Salchichas</div>
+		   <div class="variedad sombreado"><div class="num d-none">&gt;</div><div class="pizza"></div>Salsa Golf</div>
 		</div>
 
 		

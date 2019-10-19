@@ -129,7 +129,7 @@ $(function() {
 });*/
 
 
-var imagenes = ['header4.jpg','header3.jpg','header2.jpg', 'header1.jpg', 'header5.jpg'];
+var imagenes = ['header3.jpg','header4.jpg','header2.jpg', 'header1.jpg', 'header5.jpg'];
 var texto1 = ['Pizza al Cuadrado', 'La <span class="d-none d-lg-inline-block">pizza</span> m&aacute;s grande', 'de Bah&iacute;a Blanca'];
 var texto2 = ['Las m&aacute;s deliciosas', 'milanesas a la pizza', 'a partir del Lunes 4'];
 var texto3 = ['Las m&aacute;s deliciosas', 'milanesas a la pizza', 'est&aacute;n en pizza al Cuadrado'];
@@ -285,12 +285,12 @@ function avanzar(){
 	<section id="faq" class="pt-4 pt-md-5">   
 		<div class="mx-auto col-12 col-sm-10 col-xl-9 p-0 m-0 container">  
 			<div class="contenido col-12 col-md-6">
-				<h2 class="col-12 sub text-center mt-1 mt-md-4 mb-2 float-left">Pizza completa</h2>  
+				<h2 class="col-12 sub text-center mt-1 mt-md-4 mb-2 float-left">Pizza Completa</h2>  
 				<div class="lista mt-1 text-center ">
 					<!-- <img class="img_sab d-inline-block" src="img/faq_pizza1sab.jpg" width="150" alt="Pizza completa de un sabor">
 					<img class="img_sab d-inline-block" src="img/faq_pizza2sab.jpg" width="150" alt="Pizza completa de dos sabores">
 					<img class="img_sab d-inline-block" src="img/faq_pizza3sab.jpg" width="150" alt="Pizza completa de tres sabores"> -->
-					<img class="img_sab sin-borde d-inline-block" src="img/pizza-completa.png" height="200px" alt="Pizza completa de cuatro sabores">
+					<img class="img_sab sin-borde d-inline-block" src="img/pizza-completa.png?a" height="200px" alt="Pizza completa de cuatro sabores">
 					<p class="clearfix display-5 mt-0 text-center p-4 pt-0 pb-0">
 						Podes elegir hasta cuatro sabores por pizza. <strong>¡Mide 43x43cm!</strong> 
 						Equivale a dos pizzas tradicionales: <strong>comen 4</strong>, pican 5.
@@ -302,7 +302,7 @@ function avanzar(){
 				<h2 class="col-12 sub text-center mt-4 mb-2 float-left">Media Pizza</h2>  
 				<div class="lista mt-1 text-center">
 <!-- 					<img class="img_sab d-inline-block" src="img/faq_mediapizza.jpg" width="75" alt="Media pizza de uno o dos sabores.">    
- -->					<img class="img_sab sin-borde d-inline-block" src="img/pizza-media.png" height="200px" alt="Media pizza de uno o dos sabores.">   
+ -->					<img class="img_sab sin-borde d-inline-block" src="img/pizza-media.png?a" height="200px" alt="Media pizza de uno o dos sabores.">   
 					<p class="clearfix display-5 mt-0 text-center p-4 pt-0 pb-0">
 						Podes elegir hasta dos sabores por pizza. <strong>¡Mide 43x21cm!</strong>
 						Equivale a una pizza tradicional: <strong>comen 2</strong>.
@@ -313,7 +313,7 @@ function avanzar(){
 			<div class="clearfix"></div>
 			
 			<div class="contenido col-12 col-md-6">
-				<h2 class="col-12 sub text-center mt-4 mb-2 float-left">Pizza al paso</h2>  
+				<h2 class="col-12 sub text-center mt-4 mb-2 float-left">Pizza al Paso</h2>  
 				<div class="lista mt-1 text-center">
 					<img class="img_sab sin-borde d-inline-block" src="img/faq_pizzaporcion.jpg" height="70" alt="Media pizza de uno o dos sabores.">    
 					<p class="clearfix display-5 mt-1 text-center p-4 pt-0 pb-0">
