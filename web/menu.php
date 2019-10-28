@@ -221,7 +221,7 @@ function elegirSabor(sel){
 		<div id="info"><i><strong>Crea tu propia pizza agregandole cualquier ingrediente a alguna de nuestras variedades</strong></i></div>
 		<div class="col col-12 col-md-4 pl-0 pl-md-3 text-center">
 		   <div class="variedad sombreado"><div class="num d-none">&gt;</div><div class="pizza"></div>Ajo</div>
-		   <div class="variedad"><div class="num d-none">&gt;</div><div class="pizza"></div>Albahca</div>
+		   <div class="variedad"><div class="num d-none">&gt;</div><div class="pizza"></div>Albahaca</div>
 		   <div class="variedad sombreado"><div class="num d-none">&gt;</div><div class="pizza"></div>Alioli</div>
 		   <div class="variedad"><div class="num d-none">&gt;</div><div class="pizza"></div>Ananá</div>
 		   <div class="variedad sombreado"><div class="num d-none">&gt;</div><div class="pizza"></div>Anchoas</div>
