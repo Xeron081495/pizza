@@ -122,12 +122,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
 <script type="text/javascript">
 
-/*
-$(function() {
-  var imagenes = ['header.jpg', 'header2.jpg', 'header3.jpg', 'header4.jpg'];
-  $('header#top').css({'background-image': 'url(img/' + imagenes[Math.floor(Math.random() * imagenes.length)] + ')'});
-});*/
-
 
 var imagenes = ['header3.jpg','header4.jpg','header2.jpg', 'header1.jpg', 'header5.jpg'];
 var texto1 = ['Pizza al Cuadrado', 'La <span class="d-none d-lg-inline-block">pizza</span> m&aacute;s grande', 'de Bah&iacute;a Blanca'];
@@ -282,7 +276,7 @@ function avanzar(){
 		</div>
 	</section>
 
-	<section id="faq" class="pt-4 pt-md-5">   
+	<section id="faq" class="pt-4 pt-md-5 pb-0">   
 		<div class="mx-auto col-12 col-sm-10 col-xl-9 p-0 m-0 container">  
 			<div class="contenido col-12 col-md-6">
 				<h2 class="col-12 sub text-center mt-1 mt-md-4 mb-2 float-left">Pizza Completa</h2>  
@@ -290,7 +284,7 @@ function avanzar(){
 					<!-- <img class="img_sab d-inline-block" src="img/faq_pizza1sab.jpg" width="150" alt="Pizza completa de un sabor">
 					<img class="img_sab d-inline-block" src="img/faq_pizza2sab.jpg" width="150" alt="Pizza completa de dos sabores">
 					<img class="img_sab d-inline-block" src="img/faq_pizza3sab.jpg" width="150" alt="Pizza completa de tres sabores"> -->
-					<img class="img_sab sin-borde d-inline-block" src="img/pizza-completa.png?a" height="200px" alt="Pizza completa de cuatro sabores">
+					<img class="img_sab sin-borde d-inline-block" src="img/pizza-completa.png?a" height="200px" alt="Pizza completa de uno a cuatro sabores">
 					<p class="clearfix display-5 mt-0 text-center p-4 pt-0 pb-0">
 						Podes elegir hasta cuatro sabores por pizza. <strong>¡Mide 43x43cm!</strong> 
 						Equivale a dos pizzas tradicionales: <strong>comen 4</strong>, pican 5.
@@ -333,12 +327,30 @@ function avanzar(){
 						o llamanos al <a href="tel:02914526024">452-6024</a> para saber si tu zona está incluida.
 					</p>
 				</div> 
-				<div id="opiniones" class="mt-4 pt-5"></div>
+			</div>
+		</div>
+	</section>
+
+	<section class="col-12 p-0 pb-2 bg-dark d-md-none float-left position-relative">
+		<div id="carouselExampleControls" class="carousel2 slide position-relative" data-ride="carousel2">
+			<div class="carousel-inner">
+				<div class="carousel-item active">
+					<img class="d-block w-100" src="img/promos/3.jpg">
+				</div>
+				<div class="carousel-item">
+					<img class="d-block w-100" src="img/promos/2.jpg">
+				</div>
+				<div class="carousel-item">
+					<img class="d-block w-100" src="img/promos/1.jpg">
+				</div>
 			</div>
 		</div>
 	</section>
 
 	<section class="opiniones">
+        <div class="ancla float-left">
+            <div id="opiniones" class="punto"></div>
+        </div>
 		<div class="transparencia h-100 pt-5">
 			<div class="mx-auto col-12 col-sm-10 col-xl-9 p-0 m-0 container">  
 				<h1 class="col-12 text-center">Pizza al Cuadrado</h1>
@@ -390,6 +402,7 @@ function avanzar(){
 		</div>	
 	</section>
 	
+	
     <section id="oferta" class="d-none">
 		<img src="img/promocion.jpg" />
 	</section>	
@@ -399,6 +412,9 @@ function avanzar(){
 	$('.carousel').carousel({
 		interval: 6000
 	});
+	$('.carousel2').carousel({
+		interval: 4000
+	})
 </script>
 
 

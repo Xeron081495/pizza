@@ -33,10 +33,19 @@ html, body {
 	
 }
 
+.ancla{
+	position: relative;
+}
+.ancla .punto{
+	position: absolute;
+	top: -130px;
+}
+
 body{
 	font-family: "Karla", Arial, Helvetica;
 	font-size: 1em;
 	min-width: 1300px;
+	background-image: url(../img/fondo-marron.jpg);
 }
 header#top{
 	width: 100%;
