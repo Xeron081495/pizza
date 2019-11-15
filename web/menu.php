@@ -141,9 +141,11 @@ function elegirSabor(sel){
 			  <img src="img/linea-curva.png">
 		</h1>
 		<!-- INFORMACION EXTRA DEL MENU COMPLETO -->
-		<div id="info"><i><strong>¡Nuestras pizzas (43x43cm) equivalen a dos de las tradicionales!</strong> Comen 4, pican 5.</i> <br>
-			En <a href="faq.php">Información</a> podés saber más del tamaño de nuestras pizzas<!-- Media pizza (43cm por 21cm) equivale a una tradicional y rinde para comer 2 o picar 3 personas. --></i></div>
-		<!-- <div id="info"><i><strong>Hace clic sobre cualquier gusto</strong> para ajustar la búsqueda a pizzas que contengan ese sabor.</i></div> -->
+		<div id="info">
+			<i><strong>¡Nuestras pizzas (43x43cm) equivalen a dos de las tradicionales!</strong> Comen 4, pican 5. </i> <a href="faq.php">(Más información)</a>.</i>
+			<br class="d-md-none"><br><i>Podés elegir masa de harina integral y semillas</i>
+		</div>
+
 		
 		
 		<div class="botones m-0 p-0">
