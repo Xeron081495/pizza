@@ -173,7 +173,7 @@ function avanzar(){
 	<!-- End Google Tag Manager (noscript) -->
     <header id="top">
        <div id="logo-menu">
-			<div id="logo"><a href="./"><img src="img/logo.png" /></a></div>
+			<div id="logo"><a href="./"><img loading="lazy" src="img/logo.png" /></a></div>
 			<div id="datos">
 				<span class="dato"><span class="d-none d-xl-inline-block mr-2">Encontranos en </span><strong>Sarmiento 906</strong></span>
 				<span class="dato"><span class="d-none d-xl-inline-block mr-2">Delivery al</span> (0291) <strong>4526-024</strong></span>
@@ -281,10 +281,10 @@ function avanzar(){
 			<div class="contenido col-12 col-md-6">
 				<h2 class="col-12 sub text-center mt-1 mt-md-4 mb-2 float-left">Pizza Completa</h2>  
 				<div class="lista mt-1 text-center ">
-					<!-- <img class="img_sab d-inline-block" src="img/faq_pizza1sab.jpg" width="150" alt="Pizza completa de un sabor">
-					<img class="img_sab d-inline-block" src="img/faq_pizza2sab.jpg" width="150" alt="Pizza completa de dos sabores">
-					<img class="img_sab d-inline-block" src="img/faq_pizza3sab.jpg" width="150" alt="Pizza completa de tres sabores"> -->
-					<img class="img_sab sin-borde d-inline-block" src="img/pizza-completa.png?a" height="200px" alt="Pizza completa de uno a cuatro sabores">
+					<!-- <img loading="lazy" class="img_sab d-inline-block" src="img/faq_pizza1sab.jpg" width="150" alt="Pizza completa de un sabor">
+					<img loading="lazy" class="img_sab d-inline-block" src="img/faq_pizza2sab.jpg" width="150" alt="Pizza completa de dos sabores">
+					<img loading="lazy" class="img_sab d-inline-block" src="img/faq_pizza3sab.jpg" width="150" alt="Pizza completa de tres sabores"> -->
+					<img loading="lazy" class="img_sab sin-borde d-inline-block" src="img/pizza-completa.png?a" height="200px" alt="Pizza completa de uno a cuatro sabores">
 					<p class="clearfix display-5 mt-0 text-center p-4 pt-0 pb-0">
 						Podes elegir hasta cuatro sabores por pizza. <strong>¡Mide 43x43cm!</strong> 
 						Equivale a dos pizzas tradicionales: <strong>comen 4</strong>, pican 5.
@@ -295,8 +295,8 @@ function avanzar(){
 			<div class="contenido col-12 col-md-6">
 				<h2 class="col-12 sub text-center mt-4 mb-2 float-left">Media Pizza</h2>  
 				<div class="lista mt-1 text-center">
-<!-- 					<img class="img_sab d-inline-block" src="img/faq_mediapizza.jpg" width="75" alt="Media pizza de uno o dos sabores.">    
- -->					<img class="img_sab sin-borde d-inline-block" src="img/pizza-media.png?a" height="200px" alt="Media pizza de uno o dos sabores.">   
+<!-- 					<img loading="lazy" class="img_sab d-inline-block" src="img/faq_mediapizza.jpg" width="75" alt="Media pizza de uno o dos sabores.">    
+ -->					<img loading="lazy" class="img_sab sin-borde d-inline-block" src="img/pizza-media.png?a" height="200px" alt="Media pizza de uno o dos sabores.">   
 					<p class="clearfix display-5 mt-0 text-center p-4 pt-0 pb-0">
 						Podes elegir hasta dos sabores por pizza. <strong>¡Mide 43x21cm!</strong>
 						Equivale a una pizza tradicional: <strong>comen 2</strong>.
@@ -309,7 +309,7 @@ function avanzar(){
 			<div class="contenido col-12 col-md-6">
 				<h2 class="col-12 sub text-center mt-4 mb-2 float-left">Pizza al Paso</h2>  
 				<div class="lista mt-1 text-center">
-					<img class="img_sab sin-borde d-inline-block" src="img/faq_pizzaporcion.jpg" height="70" alt="Media pizza de uno o dos sabores.">    
+					<img loading="lazy" class="img_sab sin-borde d-inline-block" src="img/faq_pizzaporcion.jpg" height="70" alt="Media pizza de uno o dos sabores.">    
 					<p class="clearfix display-5 mt-1 text-center p-4 pt-0 pb-0">
 						Porción de pizza de un sabor <strong>para retirar</strong> en Sarmiento 906. 
 						<strong>Come uno</strong>.
@@ -335,13 +335,13 @@ function avanzar(){
 		<div id="carouselExampleControls" class="carousel2 slide position-relative" data-ride="carousel2">
 			<div class="carousel-inner">
 				<div class="carousel-item active">
-					<img class="d-block w-100" src="img/promos/3.jpg">
+					<img loading="lazy" class="d-block w-100" src="img/promos/3.jpg">
 				</div>
 				<div class="carousel-item">
-					<img class="d-block w-100" src="img/promos/2.jpg">
+					<img loading="lazy" class="d-block w-100" src="img/promos/2.jpg">
 				</div>
 				<div class="carousel-item">
-					<img class="d-block w-100" src="img/promos/1.jpg">
+					<img loading="lazy" class="d-block w-100" src="img/promos/1.jpg">
 				</div>
 			</div>
 		</div>
@@ -376,7 +376,7 @@ function avanzar(){
 										"<?php echo $opinion['opinion']; ?>"
 									</i>
 									<div class="autor col-12 mt-4 pb-5 pb-md-1">
-										<img class="imagen" width="23px" src="<?php echo $opinion['foto']; ?>" />
+										<img loading="lazy" class="imagen" width="23px" src="<?php echo $opinion['foto']; ?>" />
 										<span class="nombre mt-1 ml-2 mr-2"><?php echo $opinion['nombre']; ?></span>
 										<span class="separador mt-1 mr-2 d-none d-lg-inline-block">-</span>
 										<span class="clearfix d-lg-none"></span>
@@ -404,7 +404,7 @@ function avanzar(){
 	
 	
     <section id="oferta" class="d-none">
-		<img src="img/promocion.jpg" />
+		<img loading="lazy" src="img/promocion.jpg" />
 	</section>	
 	<?php include_once 'bloques/footer.php'; ?>
 </body>

@@ -67,3 +67,5 @@
 		<div id="sombra"><h3><?php echo $lugar; ?></h3></div>
 	</div>
 </header>	
+
+
