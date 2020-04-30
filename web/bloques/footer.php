@@ -33,7 +33,7 @@
 <script>
       $(document).ready(function()
       {
-         $("#exampleModalCenter").modal("show");
+         //$("#exampleModalCenter").modal("show");
       });
 </script>
 
@@ -49,7 +49,7 @@
         </button>
       </div>
       <div class="modal-body">
-        Debido a las circunstancias de público conocimiento, Pizza al Cuadrado <b>cierra sus puertas hasta el 31 de marzo</b> inclusive. 
+        Pizza al Cuadrado <b>abre sus puertas</b> desde el <b>lunes 13 de abril</b>. Los pedidos serán entregados <b>únicamente por delivery</b>. 
 		<br>
 		<br>
 		Nos cuidamos entre todos <br>  #QuedateEnTuCasa

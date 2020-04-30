@@ -254,12 +254,25 @@ function elegirSabor(sel){
 		</div>
 
 		
-		<!--<h1 id="tag-milanesa" class="titulo"><img src="img/linea-curva.png"> Milanesas a la pizza <img src="img/linea-curva.png"></h1>
-		<div id="info"><i>
+		<h1 id="tag-empanada" class="titulo titulo_chico"><img src="img/linea-curva.png"> Papas fritas <img src="img/linea-curva.png"></h1>
+		<div class="col col-12 col-md-4 pl-0 pl-md-3 text-center">
+		</div>
+		<div class="col col-12 col-md-4 pl-0 pl-md-3 text-center">
+		   <div class="variedad sombreado"><div class="num d-none">&gt;</div><div class="pizza"></div>Papas Fritas</div>
+		   <div class="variedad"><div class="num d-none">&gt;</div><div class="pizza"></div>Papas Fritas con Cheddar y Salchichas</div>
+		</div>
+		<div class="col col-12 col-md-4 pl-0 pl-md-3  text-center">
+		</div>
+
+		
+		<!-- <h1 id="tag-milanesa" class="titulo"><img src="img/linea-curva.png"> Milanesas a la pizza <img src="img/linea-curva.png"></h1>
+		<div id="info">
+			<i>
 				Todas las variedades vienen con medio kilo de papa fritas. Preguntá por la opción de convertir tu milanesa en pizzanesa y sorpendete!
-				<br />
+				<br/>
 				<b>Menú disponible de martes a jueves</b>
-		</i></div>
+			</i>
+		</div>
 		<div class="col">
 		   <div class="variedad"><div class="num">1</div><div class="pizza"></div>Simple</div>
 		   <div class="variedad"><div class="num">2</div><div class="pizza"></div>Muzza y cantimpalo</div>
@@ -280,25 +293,80 @@ function elegirSabor(sel){
 		   <div class="variedad"><div class="num">13</div><div class="pizza"></div>Muzza y Champignones a la provenzal</div>
 		   <div class="variedad"><div class="num">14</div><div class="pizza"></div>Muzza, Cebolla de Verdeo y Ajo</div>
 		</div>
-		-->
-		
-		<!-- <h1 id="tag-empanada" class="titulo titulo_chico"><img src="img/linea-curva.png"> Adicionales <img src="img/linea-curva.png"></h1>
-		<div id="info"><i><strong>!Crea tu propia pizza agregandole cualquier sabor!</strong></i></div>
-		<div class="col">
-		   <div class="variedad"><div class="num">1</div><div class="pizza"></div>Carne</div>
-		   <div class="variedad"><div class="num">3</div><div class="pizza"></div>Jam&oacute;n y queso</div>
-		   <div class="variedad"><div class="num">4</div><div class="pizza"></div>Queso y cebolla de verdeo</div>
-		</div>
-		<div class="col">
-		   <div class="variedad"><div class="num">6</div><div class="pizza"></div>Pollo</div>
-		   <div class="variedad"><div class="num">8</div><div class="pizza"></div>Muzza y cantimpalo</div>
-		   <div class="variedad"><div class="num">10</div><div class="pizza"></div>Verdura</div>
-		</div>
-		<div class="col">
-		   <div class="variedad"><div class="num">12</div><div class="pizza"></div>Muzza, panceta y cebolla de verdeo</div>
-		</div> -->
+		 -->
 		
 	</section>	
 	<?php include_once 'bloques/footer.php'; ?>    
+
+	<!-- Modal ofertas precios cuidados -->
+	<div class="modal fade" id="ofertasModal" tabindex="-1" role="dialog" aria-labelledby="ofertasModalTitle" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered" role="document">
+			<div class="modal-content">
+			<div class="modal-header">
+				<h5 class="modal-title" id="exampleModalLongTitle">Precios cuidados (comen 4)</h5>
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+				<span aria-hidden="true">&times;</span>
+				</button>
+			</div>
+			<div class="modal-body">
+		  		<img src="img/promos/menu/precios-cuidados.jpg" class="col-12">
+			</div>
+			<div class="modal-footer">
+				<a onclick="ocultar('ofertas')" href="https://api.whatsapp.com/send?phone=5492914400810&text=Quiero saber las variedades de precios cuidados" target="_blank" class="btn btn-success btn-sm"><i class="fab fa-whatsapp mt-1 mr-2"></i>Consultar</a>
+				<button onclick="noMostrarMas('precios-cuidados')" type="button" class="btn btn-sm btn-secondary" data-dismiss="modal">No mostrar más</button>
+			</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Modal ofertas customizada -->
+	<div class="modal fade" id="customizadaModal" tabindex="-1" role="dialog" aria-labelledby="customizadaModalTitle" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered" role="document">
+			<div class="modal-content">
+			<div class="modal-header">
+				<h5 class="modal-title" id="exampleModalLongTitle">Pizza customizada (comen 4)</h5>
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+				<span aria-hidden="true">&times;</span>
+				</button>
+			</div>
+			<div class="modal-body">
+				<img src="img/promos/menu/customizada.jpg" class="col-12">
+			</div>
+			<div class="modal-footer">
+				<a onclick="ocultar('customizada')" href="https://api.whatsapp.com/send?phone=5492914400810&text=Quiero saber más info de la pizza customizada" target="_blank" class="btn btn-success btn-sm"><i class="fab fa-whatsapp mt-1 mr-2"></i>Consultar</a>
+				<button onclick="noMostrarMas('customizada')" type="button" class="btn btn-sm btn-secondary" data-dismiss="modal">No mostrar más</button>
+			</div>
+			</div>
+		</div>
+	</div>
+
 </body>
+<script>
+$(document).ready(function(){
+
+	const mostrar = Math.floor(Math.random() * 2);
+
+	console.log(mostrar);
+	if(mostrar==0 && verificarEstado('precios-cuidados'))
+		$("#ofertasModal").modal("show");	
+	else if(mostrar==1 && verificarEstado('customizada'))
+		$("#customizadaModal").modal("show");
+
+});	
+
+function noMostrarMas(tipo){	
+	localStorage.setItem('publi-'+tipo,'0');
+}
+
+function verificarEstado(tipo){
+	const estado = localStorage.getItem('publi-'+tipo);
+	return !(estado!=null && estado==0);
+}
+
+function ocultar(tipo){
+	$('#'+tipo+'Modal').modal("hide");	
+}
+
+</script>
 </html>
+
