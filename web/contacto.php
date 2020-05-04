@@ -49,7 +49,7 @@ $(function() {
 	
 	<section id="contacto">
 	<div id="cuadros" class="cuadros_pc d-inline-block">
-		<h3 class="cuadro calendario"><i class="fas fa-calendar-alt mr-2"></i> Martes a Domingo</h3>
+		<h3 class="cuadro calendario"><i class="fas fa-calendar-alt mr-2"></i> Miércoles a Lunes</h3>
 		<h3 class="cuadro reloj"><i class="far fa-clock mr-2"></i>20hs a 23hs</h3>
 		<h3 class="cuadro lugar" onclick="siguiente()"><i class="fas fa-map-marked-alt mr-2"></i>Sarmiento 906</h3>
 		<h3 class="cuadro persona">

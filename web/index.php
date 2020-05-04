@@ -201,7 +201,7 @@ function avanzar(){
 	   <h1 id="slogan2">de Bah&iacute;a Blanca</h1>
 	   <div id="cuadros" class="cuadros_celu d-none">
 			<div class="linea">
-				<h3 class="cuadro calendario"><i class="fas fa-calendar-alt mr-2"></i> Martes a Domingo</h3>
+				<h3 class="cuadro calendario"><i class="fas fa-calendar-alt mr-2"></i> Miércoles a Lunes</h3>
 				<h3 class="cuadro reloj"><i class="far fa-clock mr-2"></i>20hs a <br> 23hs</h3>
 			</div>
 			<div class="linea">
@@ -215,7 +215,7 @@ function avanzar(){
 			</div>
 	   </div>
 	   <div id="cuadros" class="cuadros_pc d-inline-block">
-			<h3 class="cuadro calendario"><i class="fas fa-calendar-alt mr-2"></i> Martes a Domingo</h3>
+			<h3 class="cuadro calendario"><i class="fas fa-calendar-alt mr-2"></i>Miércoles a Lunes</h3>
 			<h3 class="cuadro reloj"><i class="far fa-clock mr-2"></i>20hs a 23hs</h3>
 			<h3 class="cuadro lugar" onclick="siguiente()">
 				<a href="contacto">
