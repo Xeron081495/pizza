@@ -76,6 +76,8 @@ function elegirSabor(sel){
 <body>
 	<?php include_once 'bloques/header.php'; ?>
 
+	
+
 	<section id="menu">		
 		<!-- menu personalizados -->
 		<?php if(isset($_GET['id'])){ ?>
@@ -299,42 +301,42 @@ function elegirSabor(sel){
 	<?php include_once 'bloques/footer.php'; ?>    
 
 	<!-- Modal ofertas precios cuidados -->
-	<div class="modal fade" id="ofertasModal" tabindex="-1" role="dialog" aria-labelledby="ofertasModalTitle" aria-hidden="true">
+	<div class="modal fade" id="oferta-3-Modal" tabindex="-1" role="dialog" aria-labelledby="oferta-3-ModalTitle" aria-hidden="true">
 		<div class="modal-dialog modal-dialog-centered" role="document">
 			<div class="modal-content">
 			<div class="modal-header">
-				<h5 class="modal-title" id="exampleModalLongTitle">Precios cuidados (comen 4)</h5>
+				<h5 class="modal-title" id="exampleModalLongTitle">Nuevo producto: Quesos</h5>
 				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
 				<span aria-hidden="true">&times;</span>
 				</button>
 			</div>
 			<div class="modal-body">
-		  		<img src="img/promos/menu/precios-cuidados.jpg" class="col-12">
+		  		<img src="img/promos/menu/oferta-3.jpg" class="col-12">
 			</div>
 			<div class="modal-footer">
-				<a onclick="ocultar('ofertas')" href="https://api.whatsapp.com/send?phone=5492914400810&text=Quiero saber las variedades de precios cuidados" target="_blank" class="btn btn-success btn-sm"><i class="fab fa-whatsapp mt-1 mr-2"></i>Consultar</a>
-				<button onclick="noMostrarMas('precios-cuidados')" type="button" class="btn btn-sm btn-secondary" data-dismiss="modal">No mostrar más</button>
+				<a onclick="ocultar('ofertas')" href="https://api.whatsapp.com/send?phone=5492914400810&text=Quiero saber las variedades de quesos" target="_blank" class="btn btn-success btn-sm"><i class="fab fa-whatsapp mt-1 mr-2"></i>Consultar</a>
+				<button onclick="noMostrarMas('oferta-3')" type="button" class="btn btn-sm btn-secondary" data-dismiss="modal">No mostrar más</button>
 			</div>
 			</div>
 		</div>
 	</div>
 
-	<!-- Modal ofertas customizada -->
-	<div class="modal fade" id="customizadaModal" tabindex="-1" role="dialog" aria-labelledby="customizadaModalTitle" aria-hidden="true">
+	<!-- Modal ofertas oferta-4 -->
+	<div class="modal fade" id="oferta-4-Modal" tabindex="-1" role="dialog" aria-labelledby="oferta-4-ModalTitle" aria-hidden="true">
 		<div class="modal-dialog modal-dialog-centered" role="document">
 			<div class="modal-content">
 			<div class="modal-header">
-				<h5 class="modal-title" id="exampleModalLongTitle">Pizza customizada (comen 4)</h5>
+				<h5 class="modal-title" id="exampleModalLongTitle">Nuevo producto: papas fritas</h5>
 				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
 				<span aria-hidden="true">&times;</span>
 				</button>
 			</div>
 			<div class="modal-body">
-				<img src="img/promos/menu/customizada.jpg" class="col-12">
+				<img src="img/promos/menu/oferta-4.jpg" class="col-12">
 			</div>
 			<div class="modal-footer">
-				<a onclick="ocultar('customizada')" href="https://api.whatsapp.com/send?phone=5492914400810&text=Quiero saber más info de la pizza customizada" target="_blank" class="btn btn-success btn-sm"><i class="fab fa-whatsapp mt-1 mr-2"></i>Consultar</a>
-				<button onclick="noMostrarMas('customizada')" type="button" class="btn btn-sm btn-secondary" data-dismiss="modal">No mostrar más</button>
+				<a onclick="ocultar('oferta-4')" href="https://api.whatsapp.com/send?phone=5492914400810&text=Quiero papa fritas!!!" target="_blank" class="btn btn-success btn-sm"><i class="fab fa-whatsapp mt-1 mr-2"></i>Consultar</a>
+				<button onclick="noMostrarMas('oferta-4')" type="button" class="btn btn-sm btn-secondary" data-dismiss="modal">No mostrar más</button>
 			</div>
 			</div>
 		</div>
@@ -342,30 +344,33 @@ function elegirSabor(sel){
 
 </body>
 <script>
-$(document).ready(function(){
+	$(document).ready(function(){
 
-	const mostrar = Math.floor(Math.random() * 2);
+		const mostrar = Math.floor(Math.random() * 2);
 
-	console.log(mostrar);
-	if(mostrar==0 && verificarEstado('precios-cuidados'))
-		$("#ofertasModal").modal("show");	
-	else if(mostrar==1 && verificarEstado('customizada'))
-		$("#customizadaModal").modal("show");
+		const ofertas = [3, 4];
 
-});	
+		ofertas.forEach(oferta => {
+			
+			if(ofertas[mostrar]==oferta && verificarEstado('oferta-' + oferta))
+				$('#oferta-' + oferta +'-Modal').modal("show");	
 
-function noMostrarMas(tipo){	
-	localStorage.setItem('publi-'+tipo,'0');
-}
+		});
 
-function verificarEstado(tipo){
-	const estado = localStorage.getItem('publi-'+tipo);
-	return !(estado!=null && estado==0);
-}
+	});	
 
-function ocultar(tipo){
-	$('#'+tipo+'Modal').modal("hide");	
-}
+	function noMostrarMas(tipo){	
+		localStorage.setItem('oferta-'+tipo,'0');
+	}
+
+	function verificarEstado(tipo){
+		const estado = localStorage.getItem('oferta-'+tipo);
+		return !(estado!=null && estado==0);
+	}
+
+	function ocultar(tipo){
+		$('#'+tipo+'Modal').modal("hide");	
+	}
 
 </script>
 </html>
