@@ -321,22 +321,22 @@ function elegirSabor(sel){
 		</div>
 	</div>
 
-	<!-- Modal ofertas oferta-4 -->
-	<div class="modal fade" id="oferta-4-Modal" tabindex="-1" role="dialog" aria-labelledby="oferta-4-ModalTitle" aria-hidden="true">
+	<!-- Modal ofertas oferta-5 -->
+	<div class="modal fade" id="oferta-5-Modal" tabindex="-1" role="dialog" aria-labelledby="oferta-5-ModalTitle" aria-hidden="true">
 		<div class="modal-dialog modal-dialog-centered" role="document">
 			<div class="modal-content">
 			<div class="modal-header">
-				<h5 class="modal-title" id="exampleModalLongTitle">Nuevo producto: papas fritas</h5>
+				<h5 class="modal-title" id="exampleModalLongTitle">Precios cuidados</h5>
 				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
 				<span aria-hidden="true">&times;</span>
 				</button>
 			</div>
 			<div class="modal-body">
-				<img src="img/promos/menu/oferta-4.jpg" class="col-12">
+				<img src="img/promos/menu/oferta-5.jpg" class="col-12">
 			</div>
 			<div class="modal-footer">
-				<a onclick="ocultar('oferta-4')" href="https://api.whatsapp.com/send?phone=5492914400810&text=Quiero papa fritas!!!" target="_blank" class="btn btn-success btn-sm"><i class="fab fa-whatsapp mt-1 mr-2"></i>Consultar</a>
-				<button onclick="noMostrarMas('oferta-4')" type="button" class="btn btn-sm btn-secondary" data-dismiss="modal">No mostrar más</button>
+				<a onclick="ocultar('oferta-5')" href="https://api.whatsapp.com/send?phone=5492914400810&text=Quiero pedir la promo 1 pizza más 2 cervezas artesanales María" target="_blank" class="btn btn-success btn-sm"><i class="fab fa-whatsapp mt-1 mr-2"></i>Pedir</a>
+				<button onclick="noMostrarMas('oferta-5')" type="button" class="btn btn-sm btn-secondary" data-dismiss="modal">No mostrar más</button>
 			</div>
 			</div>
 		</div>
@@ -348,7 +348,7 @@ function elegirSabor(sel){
 
 		const mostrar = Math.floor(Math.random() * 2);
 
-		const ofertas = [3, 4];
+		const ofertas = [3, 5];
 
 		ofertas.forEach(oferta => {
 			
