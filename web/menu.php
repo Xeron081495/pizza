@@ -348,7 +348,7 @@ function elegirSabor(sel){
 
 		const mostrar = Math.floor(Math.random() * 2);
 
-		const ofertas = [3, 5];
+		const ofertas = [3];
 
 		ofertas.forEach(oferta => {
 			
