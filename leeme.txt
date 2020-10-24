@@ -1,0 +1,12 @@
+En Web se encuentra la página web.
+
+Requisitos para que funcione la web:
+*php
+*mysql
+
+Datos adicionales:
+*En el archivo web/_clases/conexion.php se setea la conexion a la base de datos.
+*En la carpeta panel de la web se encuentra el panel para agregar sabores. Solo se agregan, para eliminar/editar 
+hay que hacerlo desde mysql.
+
+Creado por xeronweb.com

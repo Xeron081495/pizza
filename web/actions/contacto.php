@@ -42,17 +42,17 @@ function enviarCorreo($to,$asunto,$mensaje,$from,$from_name=NULL){
 	//tipo de envio
 	$mail->isSMTP();
 	//tipo de smtp
-	$mail->SMTPDebug = 0;
+	$mail->SMTPDebug = 3;
 	//host mail de neolo
-	$mail->Host = 'email-smtp.us-east-1.amazonaws.com';
+	$mail->Host = 'rap.webserverns.com';
 	// puerto para ssl/tls
-	$mail->Port = 587;
+	$mail->Port = 465;
 	//seguridad
 	$mail->SMTPAuth = true;
-	$mail->SMTPSecure = "tls";
+	$mail->SMTPSecure = "ssl";
 	//usuario y pass
-	$mail->Username = 'AKIA2G4PNIAUR4YSLGKK';
-	$mail->Password = 'BJSWmp72X/90FT7Mr9zKgrjKPzS4g06nfwqVZ0/e9mll';
+	$mail->Username = '_mainaccount@pizzaalcuadrado.com';
+	$mail->Password = 'cuadrado1520';
 	//quien envia
 	if($from_name!=NULL){
 		$mail->setFrom($from, $from_name);

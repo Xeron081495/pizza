@@ -1,0 +1,4 @@
+AuthType Basic
+AuthName "panel"
+AuthUserFile "/home/pizzacuadrado/.htpasswds/public_html/panel/passwd"
+require valid-user
